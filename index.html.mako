@@ -34,20 +34,21 @@
         <h2>I'm passionate about things like&hellip;</h2>
 
         <ul class="horizontal">
-            <li>Open Source</li>
-            <li>Linux</li>
-            <li>Web Technology</li>
+            <li>Apple Pie</li>
+            <li>Bitcoins</li>
+            <li>Chess</li>
             <li>Distributed Peer-to-peer</li>
+            <li>Linux</li>
             <li>Massively-multiplayer Games</li>
             <li>Metaverse</li>
+            <li>Node.js</li>
+            <li>Open Source</li>
+            <li>PostgreSQL</li>
+            <li>Pylons</li>
             <li>Science Fiction &amp; Futurism</li>
             <li>Social Psychology</li>
-            <li>Bitcoins</li>
-            <li>Pylons</li>
-            <li>PostgreSQL</li>
-            <li>Node.js</li>
             <li>Stickfigures</li>
-            <li>Chess</li>
+            <li>Web Technology</li>
         </ul>
     </div>
 

@@ -26,3 +26,4 @@ ${next.body()}
 <%block name="tail" /></body>
 
 </html>
+<!-- Hi. -->
