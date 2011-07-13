@@ -8,8 +8,8 @@
     </ul>
 
     <div class="section identity">
-        <ul class="horizontal slots">
-            <li>I'm shazow on</li>
+        <h2>I'm shazow on&hellip;</h2>
+        <ul class="vertical">
             <li><a href="https://github.com/shazow">Github</a></li>
             <li><a href="https://www.google.com/profiles/shazow">Google+</a></li>
             <li><a href="https://twitter.com/shazow">Twitter</a></li>
@@ -18,8 +18,8 @@
     </div>
 
     <div class="section projects">
-        <ul class="horizontal slots">
-            <li>You should try some things I've built like</li>
+        <h2>You should try some things I've built like&hellip;</h2>
+        <ul class="vertical">
             <li><a href="http://socialgrapple.com/">SocialGrapple</a></li>
             <li><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a></li>
             <li><a href="http://bit.ly/linerage-chrome">LineRage</a></li>
