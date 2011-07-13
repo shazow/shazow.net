@@ -1,7 +1,7 @@
 /** Reset: */
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{background:transparent;border:0;margin:0;outline:0;padding:0;vertical-align:baseline}
-body{color:#444;font:12px 'Lucida Grande', Arial, sans-serif}
+body{color:#444;font:14px 'Lucida Grande', Arial, sans-serif}
 html{overflow-y:scroll}
 select,input,textarea,button{font:99% sans-serif}
 h2,h3,h4{font-weight:400}
@@ -50,9 +50,6 @@ ul.horizontal > li {
 ul.horizontal > li:last-child {
     margin-right: 0px;
 }
-ul.spaced li {
-    margin-bottom: 1em;
-}
 .rounded-5 {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -82,6 +79,12 @@ h1 {
     color: #000;
 }
 
+h2 {
+    font-style: normal;
+    font-size: 26px;
+    color: #000;
+}
+
 .email-address {
     padding-left: 164px;
     background-position: top center;
@@ -98,45 +101,21 @@ h1 {
     font-size: 14px;
     font-family: 'OFL Sorts Mill Goudy TT', serif;
     letter-spacing: 0.5px;
-    height: 64px;
-
-    margin-bottom: 40px;
-}
-
-.slots {
-    line-height: 50px;
-    font-size: 28px;
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
-    font-style: italic;
-}
-
-.slots a {
-    background: #999;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    font-style: normal;
-
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    height: 52px;
 }
 
 .section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
 }
 
-.section.identity {
-    color: #3d7995;
-}
-.section.identity a {
-    background: #3d7995;
+.section a {
+    font-style: normal;
+    color: #3876b3;
 }
 
-.section.projects {
-    color: #d88900;
-}
-.section.projects a {
-    background: #d88900;
+.section.more {
+    text-align: center;
 }
