@@ -1,1 +1,1 @@
-site.url = "http://localhost:8080/"
+site.absolute_prefix = ""
