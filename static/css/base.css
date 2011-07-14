@@ -97,18 +97,22 @@ h2 {
 }
 
 
-.bio-header {
+.section {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
+}
+
+.section.header {
     font-size: 14px;
     font-family: 'OFL Sorts Mill Goudy TT', serif;
     letter-spacing: 0.5px;
     height: 42px;
 }
 
-.section {
-    margin-bottom: 30px;
-    font-size: 16px;
+
+.section.identity, .section.projects, .section.likes {
     font-style: italic;
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
 }
 
 .section a {

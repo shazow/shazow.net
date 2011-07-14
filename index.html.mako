@@ -2,7 +2,7 @@
 
 <div class="container">
 
-    <div class="section bio-header">
+    <div class="section header">
         <ul class="vertical" style="text-align: center; line-height: 26px;">
             <li>Silicon Valley (California) / Toronto (Ontario)</li>
             <li><span class="email-address"></span></li>
