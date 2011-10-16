@@ -1,4 +1,4 @@
-<%inherit file="_templates/base.mako"/>
+<%inherit file="base.mako"/>
 
 <div class="container">
 
@@ -59,5 +59,5 @@
     </div>
 
 <%block name="tail">
-<script src="${bf.config.site.absolute_prefix}/static/js/email.js"></script>
+<script src="/static/js/email.js"></script>
 </%block>
