@@ -59,5 +59,5 @@
     </div>
 
 <%block name="tail">
-<script src="/static/js/email.js"></script>
+<script src="static/js/email.js"></script>
 </%block>
