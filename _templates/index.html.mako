@@ -1,5 +1,7 @@
 <%inherit file="base.mako"/>
 
+<h1>Andrey Petrov</h1>
+
 <div class="container">
 
     <div class="section header">

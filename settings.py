@@ -25,9 +25,21 @@ def _mako_filter(content):
 from markdown import markdown as _markdown_filter
 
 
+def _post_filter(content):
+    from mako.lookup import TemplateLookup
+    template_lookup = TemplateLookup(
+        directories=[source_path],
+        input_encoding='utf-8', output_encoding='utf-8',
+        encoding_errors='replace',
+    )
+
+    t = template_lookup.get_template('post.mako')
+    return t.render(content=content)
+
 
 filters = {
     'mako': _mako_filter,
+    'post': _post_filter,
     'markdown': _markdown_filter,
 }
 
