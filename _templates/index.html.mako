@@ -33,6 +33,15 @@
     </div>
 
     <div class="section likes">
+        <h2>I've written about&hellip;</h2>
+        <ul class="vertical">
+        % for post in (route for route in environ['routes'] if 'post' in route.get('tags', [])):
+            <li><a href="${post['url']}">${post['title']}</a></li>
+        % endfor
+        </ul>
+    </div>
+
+    <div class="section likes">
         <h2>I'm passionate about things like&hellip;</h2>
 
         <ul class="horizontal">
@@ -40,13 +49,14 @@
             <li>Bitcoins</li>
             <li>Chess</li>
             <li>Distributed Peer-to-peer</li>
+            <li>Everything2</li>
+            <li>JavaScript</li>
             <li>Linux</li>
             <li>Massively-multiplayer Games</li>
             <li>Metaverse</li>
-            <li>Node.js</li>
             <li>Open Source</li>
             <li>PostgreSQL</li>
-            <li>Pylons</li>
+            <li>Python</li>
             <li>Science Fiction &amp; Futurism</li>
             <li>Social Psychology</li>
             <li>Stickfigures</li>

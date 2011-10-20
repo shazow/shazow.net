@@ -24,22 +24,30 @@
         {
             "file": "_everything/design/rules-of-thumb-for-novice-designers.md",
             "filters": ["markdown", "post"],
-            "url": "/posts/design/rules-of-thumb-for-novice-designers"
-        },
-        {
-            "file": "_everything/economics/3-types-of-paid-and-sponsored-events.md",
-            "filters": ["markdown", "post"],
-            "url": "/posts/economics/3-types-of-paid-and-sponsored-events"
+            "tags": ["post"],
+            "title": "Rules of thumb for novice designers (like myself)",
+            "url": "/everything/design/rules-of-thumb-for-novice-designers"
         },
         {
             "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md",
             "filters": ["markdown", "post"],
-            "url": "/posts/idea/arbitrarily-structured-data-in-rdbms"
+            "tags": ["post"],
+            "title": "Arbitrary structured data in RDBMs",
+            "url": "/everything/idea/arbitrarily-structured-data-in-rdbms"
+        },
+        {
+            "file": "_everything/economics/3-types-of-paid-and-sponsored-events.md",
+            "filters": ["markdown", "post"],
+            "tags": ["post"],
+            "title": "Three types of paid and sponsored events",
+            "url": "/everything/economics/3-types-of-paid-and-sponsored-events"
         },
         {
             "file": "_everything/research/password-management-utilities.md",
             "filters": ["markdown", "post"],
-            "url": "/posts/research/password-management-utilities"
+            "tags": ["post"],
+            "title": "Password management utilities",
+            "url": "/everything/research/password-management-utilities"
         }
     ]
 }
