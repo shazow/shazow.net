@@ -7,8 +7,8 @@
     },
     "static": [
         {
-            "url": "static",
-            "path": "_static"
+            "url": "/",
+            "file": "_static"
         }
     ],
     "routes": [
