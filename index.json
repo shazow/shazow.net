@@ -7,6 +7,10 @@
         "post": {
             "class": "composer.filters:MakoContainer",
             "kwargs": {"directories": ["_templates"], "template": "post.mako"}
+        },
+        "markdown": {
+            "class": "composer.filters:Markdown",
+            "kwargs": {"extras": ["smarty-pants"]}
         }
     },
     "static": [

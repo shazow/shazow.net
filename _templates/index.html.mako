@@ -29,6 +29,7 @@
             <li><a href="http://bit.ly/linerage-chrome">LineRage</a>  &mdash; Arcade-style game where you're a line and you try not to hit stuff.</li>
             <li><a href="http://code.google.com/p/urllib3/">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
             <li><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
+            <li><a href="https://github.com/shazow/composer">Composer</a>  &mdash; Static site generator in Python powering this very site.</li>
         </ul>
     </div>
 
@@ -71,5 +72,8 @@
     </div>
 
 <%block name="tail">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="/static/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+
 <script src="static/js/email.js"></script>
 </%block>

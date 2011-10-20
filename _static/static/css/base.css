@@ -85,6 +85,23 @@ h2 {
     color: #000;
 }
 
+a {
+    font-style: normal;
+    color: #3876b3;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
+}
+footer:before {
+    content: '« ';
+}
+
+
 .email-address {
     padding-left: 164px;
     background-position: top center;
@@ -99,13 +116,13 @@ h2 {
 
 .section {
     margin-bottom: 30px;
+
     font-size: 16px;
     font-family: 'OFL Sorts Mill Goudy TT', serif;
 }
 
 .section.header {
     font-size: 14px;
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
     letter-spacing: 0.5px;
     height: 42px;
 }
@@ -115,11 +132,31 @@ h2 {
     font-style: italic;
 }
 
-.section a {
-    font-style: normal;
-    color: #3876b3;
-}
-
 .section.more {
     text-align: center;
+}
+
+.post {
+    width: 640px;
+    line-height: 1.5em;
+
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+
+    color: #444;
+}
+.post h1 {
+    text-align: left;
+    font-size: 36px;
+    line-height: 1.2em;
+
+    color: #111;
+}
+.post h2 {
+    margin-bottom: 1em;
+}
+.post li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    text-indent: -1em;
 }
