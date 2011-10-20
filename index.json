@@ -1,0 +1,36 @@
+{
+    "filters": {
+        "post": {
+            "class": "composer.filters:MakoContainer",
+            "kwargs": {"directories": ["_templates"], "template": "post.mako"}
+        }
+    },
+    "static": [
+        {
+            "url": "static",
+            "path": "_static"
+        }
+    ],
+    "routes": [
+        {
+            "file": "_everything/design/rules-of-thumb-for-novice-designers.md",
+            "filters": ["markdown", "post"],
+            "url": "posts/design/rules-of-thumb-for-novice-designers"
+        },
+        {
+            "file": "_everything/economics/3-types-of-paid-and-sponsored-events.md",
+            "filters": ["markdown", "post"],
+            "url": "posts/economics/3-types-of-paid-and-sponsored-events"
+        },
+        {
+            "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md",
+            "filters": ["markdown", "post"],
+            "url": "posts/idea/arbitrarily-structured-data-in-rdbms"
+        },
+        {
+            "file": "_everything/research/password-management-utilities.md",
+            "filters": ["markdown", "post"],
+            "url": "posts/research/password-management-utilities"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 all: build
 
 build:
-	composer -b ./build -s _templates/
+	composer build index.json
 	cp -vr _static/* ./build/
 
 deploy:
