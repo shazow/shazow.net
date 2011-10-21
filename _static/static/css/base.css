@@ -153,7 +153,7 @@ footer:before {
 .post h2 {
     margin-bottom: 1em;
 }
-.post ol {
+.post ol, .post ul {
     margin-left: 1.8em;
 }
 .post li {
