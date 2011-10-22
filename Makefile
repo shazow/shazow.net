@@ -6,7 +6,7 @@ build:
 serve: build
 	composer serve index.json
 
-deploy: clean build
+deploy: build
 	rsync -az -e ssh build/ shazow.net:shazow.net/
 
 clean:

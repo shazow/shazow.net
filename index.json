@@ -10,7 +10,7 @@
         },
         "markdown": {
             "class": "composer.filters:Markdown",
-            "kwargs": {"extras": ["smarty-pants"]}
+            "kwargs": {"extras": ["smarty-pants", "code-color"]}
         }
     },
     "static": [

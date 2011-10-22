@@ -22,7 +22,7 @@ strong,th{font-weight:700}
 td,td img{vertical-align:top}
 sub{font-size:smaller;vertical-align:sub}
 sup{font-size:smaller;vertical-align:super}
-pre{padding:15px;white-space:pre-line;word-wrap:break-word}
+pre{word-wrap:nowrap;overflow-x:auto;}
 textarea{overflow:auto}
 input[type=radio]{vertical-align:text-bottom}
 label,input[type=button],input[type=submit],button{cursor:pointer}
@@ -142,7 +142,7 @@ footer:before {
     width: 640px;
     line-height: 1.5em;
 
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Verdana', sans-serif;
 
     color: #444;
@@ -154,12 +154,35 @@ footer:before {
 
     color: #111;
 }
-.post h2 {
-    margin-bottom: 1em;
+.post h2, .post h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.post h3 {
+    font-weight: bold;
 }
 .post ol, .post ul {
+    margin-top: 0.5em;
     margin-left: 1.8em;
 }
 .post li {
     margin-bottom: 0.5em;
+}
+.post pre {
+    padding: 0px 5px;
+    margin-bottom: 1em;
+}
+.post code {
+    background: #eaeaea;
+    color: #222;
+}
+.post .codehilite {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.post .codehilite code {
+    font-size: 12px;
+    line-height: 1em;
+    background: inherit;
 }
