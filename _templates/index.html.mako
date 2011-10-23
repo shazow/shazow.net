@@ -25,7 +25,7 @@
         <h2>You should try some things I've built recently like&hellip;</h2>
         <ul class="vertical">
             <li><a href="http://socialgrapple.com/">SocialGrapple</a>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
-            <li><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &mdash; Color blending tool so you don't have to open Photoshop to overlay or multiple a couple of colours.</li>
+            <li><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &mdash; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
             <li><a href="http://bit.ly/linerage-chrome">LineRage</a>  &mdash; Arcade-style game where you're a line and you try not to hit stuff.</li>
             <li><a href="http://code.google.com/p/urllib3/">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
             <li><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
