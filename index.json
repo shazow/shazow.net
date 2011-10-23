@@ -1,57 +1,120 @@
 {
-    "filters": {
-        "mako": {
-            "class": "composer.filters:Mako",
-            "kwargs": {"directories": ["_templates"]}
-        },
-        "post": {
-            "class": "composer.filters:MakoContainer",
-            "kwargs": {"directories": ["_templates"], "template": "post.mako"}
-        },
-        "markdown": {
-            "class": "composer.filters:Markdown",
-            "kwargs": {"extras": ["smarty-pants", "code-color"]}
-        }
-    },
-    "static": [
-        {
-            "url": "/",
-            "file": "_static"
-        }
-    ],
     "routes": [
         {
-            "file": "_templates/index.html.mako",
-            "filters": ["mako"],
-            "url": "/"
-        },
+            "url": "/", 
+            "context": {
+                "title": "Andrey Petrov | shazow.net"
+            }, 
+            "filters": [
+                "mako"
+            ], 
+            "file": "_templates/index.html.mako"
+        }, 
         {
-            "file": "_everything/design/rules-of-thumb-for-novice-designers.md",
-            "filters": ["markdown", "post"],
-            "tags": ["post"],
-            "title": "Rules of thumb for novice designers (like myself)",
-            "url": "/everything/design/rules-of-thumb-for-novice-designers"
-        },
+            "url": "/design/rules-of-thumb-for-novice-designers", 
+            "context": {
+                "time_updated": "1319099506", 
+                "name": "Andrey Petrov", 
+                "title": "Rules of thumb for novice designers (like myself)", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1285097993", 
+                "email": "andrey.petrov@shazow.net"
+            }, 
+            "filters": [
+                "markdown", 
+                "post"
+            ], 
+            "file": "_everything/design/rules-of-thumb-for-novice-designers.md"
+        }, 
         {
-            "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md",
-            "filters": ["markdown", "post"],
-            "tags": ["post"],
-            "title": "Arbitrary structured data in RDBMs",
-            "url": "/everything/idea/arbitrarily-structured-data-in-rdbms"
-        },
+            "url": "/economics/3-types-of-paid-and-sponsored-events", 
+            "context": {
+                "time_updated": "1319235604", 
+                "name": "Andrey Petrov", 
+                "title": "Paid events versus sponsored events, and the other one", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1288118090", 
+                "email": "shazow@gmail.com"
+            }, 
+            "filters": [
+                "markdown", 
+                "post"
+            ], 
+            "file": "_everything/economics/3-types-of-paid-and-sponsored-events.md"
+        }, 
         {
-            "file": "_everything/economics/3-types-of-paid-and-sponsored-events.md",
-            "filters": ["markdown", "post"],
-            "tags": ["post"],
-            "title": "Three types of paid and sponsored events",
-            "url": "/everything/economics/3-types-of-paid-and-sponsored-events"
-        },
+            "url": "/idea/arbitrarily-structured-data-in-rdbms", 
+            "context": {
+                "time_updated": "1319245807", 
+                "name": "Andrey Petrov", 
+                "title": "Arbitrarily-Structured Data in Relational Databases", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1287615713", 
+                "email": "andrey.petrov@shazow.net"
+            }, 
+            "filters": [
+                "markdown", 
+                "post"
+            ], 
+            "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md"
+        }, 
         {
-            "file": "_everything/research/password-management-utilities.md",
-            "filters": ["markdown", "post"],
-            "tags": ["post"],
-            "title": "Password management utilities",
-            "url": "/everything/research/password-management-utilities"
+            "url": "/research/password-management-utilities", 
+            "context": {
+                "time_updated": "1308623663", 
+                "name": "Andrey Petrov", 
+                "title": "Password Management Utilities", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1308623180", 
+                "email": "shazow@gmail.com"
+            }, 
+            "filters": [
+                "markdown", 
+                "post"
+            ], 
+            "file": "_everything/research/password-management-utilities.md"
         }
-    ]
+    ], 
+    "static": [
+        {
+            "url": "/", 
+            "file": "_static"
+        }
+    ], 
+    "filters": {
+        "mako": {
+            "class": "composer.filters:Mako", 
+            "kwargs": {
+                "directories": [
+                    "_templates"
+                ]
+            }
+        }, 
+        "post": {
+            "class": "composer.filters:MakoContainer", 
+            "kwargs": {
+                "directories": [
+                    "_templates"
+                ], 
+                "template": "post.mako"
+            }
+        }, 
+        "markdown": {
+            "class": "composer.filters:Markdown", 
+            "kwargs": {
+                "extras": [
+                    "smarty-pants", 
+                    "code-color"
+                ]
+            }
+        }
+    }
 }

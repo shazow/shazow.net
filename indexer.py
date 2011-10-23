@@ -3,7 +3,7 @@
 import commands
 
 from composer.index import Index, Route, Static
-from composer.filters import MakoContainer
+from composer.filters import MakoContainer, Mako, Markdown
 
 
 def git_metadata(work_dir, file):
@@ -26,31 +26,43 @@ def markdown_title(file):
             return line[2:].strip()
 
 
+def strip_ends(s, prefix='', suffix=''):
+    return s[len(prefix):-len(suffix)]
+
 class ShazowIndex(Index):
 
     def _register_filters(self):
         super(ShazowIndex, self)._register_filters()
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
+        self.register_filter('mako', Mako, {'directories': ['_templates']})
+        self.register_filter('markdown', Markdown, {'extras': ['smarty-pants', 'code-color']})
 
     def _generate_static(self):
-        yield Static('static', file='_static')
+        yield Static('/', file='_static')
 
     def _generate_routes(self):
         # Fixed pages
         for file in self.walk('_templates', include_only=['*.html.mako']):
-            url = file[:-len('.html.mako')]
+            url = strip_ends(file, '_templates/', '.html.mako')
             url = self.absolute_url(url.replace('index', ''))
 
-            yield Route(url, file=file, filters=['mako'], context={'title': 'Andrey Petrov | shazow.net'})
+            filters = ['mako']
+            context = {'title': 'Andrey Petrov | shazow.net'}
+
+            yield Route(url, file=file, filters=filters, context=context)
 
         # From my blog submodule
-        for file in self.walk('_everything', include_only=['*/*.md']):
-            url = file[:-len('.md')]
+        for file in self.walk('_everything', include_only=['_everything/*/*.md']):
+            url = strip_ends(file, '_everything/', '.md')
+            url = self.absolute_url(url.replace('index', ''))
 
-            context = git_metadata('_everything', file)
-            context['title'] = '%s | shazow.net' % markdown_title(self.absolute_path(file, '_everything')) or 'Untitled'
+            filters = ['markdown', 'post']
 
-            yield Route(url, file=file, filters=['markdown', 'mako'], context=context)
+            context = git_metadata('_everything', self.relative_path(file, '_everything'))
+            context['title'] = markdown_title(self.absolute_path(file)) or 'Untitled'
+            context['tags'] = ['post']
+
+            yield Route(url, file=file, filters=filters, context=context)
 
 
 if __name__ == '__main__':

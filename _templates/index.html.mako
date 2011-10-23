@@ -36,8 +36,8 @@
     <div class="section likes">
         <h2>I've written about&hellip;</h2>
         <ul class="vertical">
-        % for post in (route for route in environ['routes'] if 'post' in route.get('tags', [])):
-            <li><a href="${post['url']}">${post['title']}</a></li>
+        % for post in (r for r in index.routes if 'post' in r.context.get('tags', [])):
+            <li><a href="${post.url}">${post.context['title']}</a></li>
         % endfor
         </ul>
     </div>

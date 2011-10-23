@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>shazow | Andrey Petrov</title>
+    <title><%block name="title">shazow | Andrey Petrov</%block></title>
 
     <link href="/static/css/base.css" media="screen" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="/static/images/icon.png" />
