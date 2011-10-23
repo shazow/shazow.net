@@ -1,68 +1,59 @@
 #!/usr/bin/env python
 
-import json
-import os
 import commands
 
-def path(p):
-    return os.path.join(os.path.dirname(__file__), p)
+from composer.index import Index, Route, Static
+from composer.filters import MakoContainer
 
 
 def git_metadata(work_dir, file):
+    """
+    Given a repo and a file within it, get the author, email, time created, and time updated.
+    """
     cmd = 'git --git-dir=%s/.git log --pretty="%%an\t%%ae\t%%at" -- %s' % (work_dir, file)
     name, email, updated = commands.getoutput(cmd + ' | head -n1').split('\t')
     _, _, created = commands.getoutput(cmd + ' | tail -n1').split('\t')
 
-    return name, email, created, updated
+    r = {'name': name, 'email': email, 'time_created': created}
+    if created != updated:
+        r['time_updated'] = updated
 
-##
+    return r
 
-def index_git_repo(work_dir):
-    for root, dirs, files in os.walk(work_dir):
-        if root.startswith(os.path.join(work_dir, '.git')) or root == work_dir:
-            continue
-
-        for file in files:
-            file = os.path.relpath(os.path.join(root, file), work_dir)
-            name, email, created, updated = git_metadata(work_dir, file)
-            route = {
-                'file': os.path.join(root, file),
-                'url': file.split('.', 1)[0],    # <-- TODO: Generalize these
-                'filters': ['markdown', 'post'], # <--
-                'tags': ['post'],                # <--
-                'context': {
-                    'time_created': created,
-                    'author_name': name,
-                    'author_email': email,
-                }
-            }
-            # TODO: Extract title
-            if created != updated:
-                route['context']['time_updated'] = updated
-
-            yield route
-
-routes = list(index_git_repo(path('_everything')))
-
-filters = {
-    'mako': {
-        'class': 'composer.filters:Mako',
-        'kwargs': {'directories': ['_templates']},
-    },
-    'post': {
-        'class': 'composer.filters:MakoContainer',
-        'kwargs': {'directories': ['_templates'], 'template': 'post.mako'},
-    },
-    'markdown': {
-        'class': 'composer.filters:Markdown',
-        'kwargs': {'extras': ['smarty-pants']},
-    }
-}
+def markdown_title(file):
+    for line in open(file):
+        if line.startswith('# '):
+            return line[2:].strip()
 
 
-index = {
-    'filters': filters,
-    'routes': routes,
-    'static': {'url': '/', 'file': '_static'},
-}
-print json.dumps(index, indent=4)
+class ShazowIndex(Index):
+
+    def _register_filters(self):
+        super(ShazowIndex, self)._register_filters()
+        self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
+
+    def _generate_static(self):
+        yield Static('static', file='_static')
+
+    def _generate_routes(self):
+        # Fixed pages
+        for file in self.walk('_templates', include_only=['*.html.mako']):
+            url = file[:-len('.html.mako')]
+            url = self.absolute_url(url.replace('index', ''))
+
+            yield Route(url, file=file, filters=['mako'], context={'title': 'Andrey Petrov | shazow.net'})
+
+        # From my blog submodule
+        for file in self.walk('_everything', include_only=['*/*.md']):
+            url = file[:-len('.md')]
+
+            context = git_metadata('_everything', file)
+            context['title'] = '%s | shazow.net' % markdown_title(self.absolute_path(file, '_everything')) or 'Untitled'
+
+            yield Route(url, file=file, filters=['markdown', 'mako'], context=context)
+
+
+if __name__ == '__main__':
+    import json
+    index = ShazowIndex()
+    print json.dumps(index.to_dict(), indent=4)
