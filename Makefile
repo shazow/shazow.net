@@ -1,12 +1,12 @@
 all: build
 
-index: index.json indexer.py
+index.json: indexer.py _templates/ _everything/
 	python indexer.py > index.json
 
-build: index
+build: index.json
 	composer build index.json
 
-serve: build
+serve: index.json
 	composer serve index.json
 
 deploy: build
