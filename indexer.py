@@ -29,10 +29,9 @@ def markdown_title(file):
 def strip_ends(s, prefix='', suffix=''):
     return s[len(prefix):-len(suffix)]
 
-class ShazowIndex(Index):
 
+class ShazowIndex(Index):
     def _register_filters(self):
-        super(ShazowIndex, self)._register_filters()
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
         self.register_filter('mako', Mako, {'directories': ['_templates']})
         self.register_filter('markdown', Markdown, {'extras': ['smarty-pants', 'code-color']})
@@ -67,5 +66,7 @@ class ShazowIndex(Index):
 
 if __name__ == '__main__':
     import json
-    index = ShazowIndex()
+    import os
+
+    index = ShazowIndex(os.path.dirname(__file__))
     print json.dumps(index.to_dict(), indent=4)

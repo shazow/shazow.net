@@ -1,6 +1,9 @@
 all: build
 
-build:
+index: index.json indexer.py
+	python indexer.py > index.json
+
+build: index
 	composer build index.json
 
 serve: build
