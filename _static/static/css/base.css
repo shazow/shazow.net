@@ -186,3 +186,19 @@ footer:before {
     line-height: 1em;
     background: inherit;
 }
+
+.return-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.return-home img {
+    width: 50px;
+    height: 50px;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

@@ -8,8 +8,8 @@
 
 <div class="container post">
 ${body}
-
-    <footer>
-        <a href="/">shazow.net</a>
-    </footer>
 </div>
+
+<a href="/" rel="author" class="return-home">
+    <img title="Return to shazow.net" alt="Return to shazow.net" src="/static/images/turkey_50px.png" />
+</a>
