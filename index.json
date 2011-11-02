@@ -17,7 +17,8 @@
                 "name": "Andrey Petrov", 
                 "title": "Rules of thumb for novice designers (like myself)", 
                 "tags": [
-                    "post"
+                    "post", 
+                    "design"
                 ], 
                 "time_created": "1285097993", 
                 "email": "andrey.petrov@shazow.net"
@@ -35,7 +36,8 @@
                 "name": "Andrey Petrov", 
                 "title": "Paid events versus sponsored events, and the other one", 
                 "tags": [
-                    "post"
+                    "post", 
+                    "economics"
                 ], 
                 "time_created": "1288118090", 
                 "email": "shazow@gmail.com"
@@ -53,7 +55,8 @@
                 "name": "Andrey Petrov", 
                 "title": "Arbitrarily-Structured Data in Relational Databases", 
                 "tags": [
-                    "post"
+                    "post", 
+                    "idea"
                 ], 
                 "time_created": "1287615713", 
                 "email": "andrey.petrov@shazow.net"
@@ -71,7 +74,8 @@
                 "name": "Andrey Petrov", 
                 "title": "Password Management Utilities", 
                 "tags": [
-                    "post"
+                    "post", 
+                    "research"
                 ], 
                 "time_created": "1308623180", 
                 "email": "shazow@gmail.com"
@@ -98,6 +102,10 @@
                 ]
             }
         }, 
+        "rst": {
+            "class": "composer.filters:RestructuredText", 
+            "kwargs": {}
+        }, 
         "post": {
             "class": "composer.filters:MakoContainer", 
             "kwargs": {
@@ -115,6 +123,10 @@
                     "code-color"
                 ]
             }
+        }, 
+        "jinja2": {
+            "class": "composer.filters:Jinja2", 
+            "kwargs": {}
         }
     }
 }

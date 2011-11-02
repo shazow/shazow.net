@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import time
 import commands
 
 from composer.index import Index, Route, Static
@@ -27,7 +28,23 @@ def markdown_title(file):
 
 
 def strip_ends(s, prefix='', suffix=''):
-    return s[len(prefix):-len(suffix)]
+    return s[len(prefix):-len(suffix) or None]
+
+
+class PostRoute(Route):
+    def timestamp_to_html(self, seconds):
+        t = time.gmtime(float(seconds))
+        humane = time.strftime('%b ', t) + time.strftime('%d, ', t).lstrip('0') + time.strftime('%Y', t)
+        return '<span data-timestamp="%s" class="timestamp">%s</span>' % (seconds, humane)
+
+    def render_created(self):
+        return self.timestamp_to_html(self.context['time_created'])
+
+    def render_updated(self):
+        return self.timestamp_to_html(self.context['time_updated'])
+
+    def commits_url(self):
+        return "https://github.com/shazow/everything/commits/master/%s" % strip_ends(self.file, '_everything/')
 
 
 class ShazowIndex(Index):
@@ -53,15 +70,18 @@ class ShazowIndex(Index):
         # From my blog submodule
         for file in self.walk('_everything', include_only=['_everything/*/*.md']):
             url = strip_ends(file, '_everything/', '.md')
+            category = url.split('/', 1)[0]
             url = self.absolute_url(url.replace('index', ''))
 
             filters = ['markdown', 'post']
 
             context = git_metadata('_everything', self.relative_path(file, '_everything'))
             context['title'] = markdown_title(self.absolute_path(file)) or 'Untitled'
-            context['tags'] = ['post']
+            context['tags'] = ['post', category]
 
-            yield Route(url, file=file, filters=filters, context=context)
+            yield PostRoute(url, file=file, filters=filters, context=context)
+
+        # TODO: Generate table of contents based on tags
 
 
 if __name__ == '__main__':

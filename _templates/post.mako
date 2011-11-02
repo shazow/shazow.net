@@ -8,6 +8,15 @@
 
 <div class="container post">
 ${body}
+
+% if 'name' in route.context:
+    <a class="credits" href="${route.commits_url()}">
+        Written by ${route.context.get('name')} on ${route.render_created()}.
+        % if 'time_updated' in route.context:
+            Updated on ${route.render_updated()}.
+        % endif
+    </a>
+% endif
 </div>
 
 
