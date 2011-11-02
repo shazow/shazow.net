@@ -25,7 +25,7 @@ ${body}
 
 % if 'name' in route.context:
     <p class="credits">
-        <a href="https://github.com/shazow/everything/commits/master/${index.relative_path(index.file, '_everything')}">
+        <a href="https://github.com/shazow/everything/commits/master/${index.relative_path(route.file, '_everything')}">
             Written by ${route.context.get('name')}${time_created and ' on %s' % time_created}.
             % if time_updated:
                 Updated on ${time_updated}.

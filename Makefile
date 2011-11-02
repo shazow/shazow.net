@@ -13,8 +13,7 @@ deploy: clean build
 	rsync --archive --delete --compress -e ssh build/ shazow.net:shazow.net/composed/
 
 pull:
-	git submodule foreach git pull
-	git submodule update
+	git submodule foreach --recursive git pull origin master
 
 clean:
 	rm -rf ./build
