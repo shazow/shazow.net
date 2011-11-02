@@ -10,7 +10,7 @@ serve: index.json
 	composer serve index.json
 
 deploy: build
-	rsync -az -e ssh build/ shazow.net:shazow.net/
+	rsync --archive --delete --compress -e ssh build/ shazow.net:shazow.net/composed/
 
 clean:
 	rm -rf ./build
