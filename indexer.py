@@ -31,22 +31,6 @@ def strip_ends(s, prefix='', suffix=''):
     return s[len(prefix):-len(suffix) or None]
 
 
-class PostRoute(Route):
-    def timestamp_to_html(self, seconds):
-        t = time.gmtime(float(seconds))
-        humane = time.strftime('%b ', t) + time.strftime('%d, ', t).lstrip('0') + time.strftime('%Y', t)
-        return '<span data-timestamp="%s" class="timestamp">%s</span>' % (seconds, humane)
-
-    def render_created(self):
-        return self.timestamp_to_html(self.context['time_created'])
-
-    def render_updated(self):
-        return self.timestamp_to_html(self.context['time_updated'])
-
-    def commits_url(self):
-        return "https://github.com/shazow/everything/commits/master/%s" % strip_ends(self.file, '_everything/')
-
-
 class ShazowIndex(Index):
     def _register_filters(self):
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
@@ -79,7 +63,7 @@ class ShazowIndex(Index):
             context['title'] = markdown_title(self.absolute_path(file)) or 'Untitled'
             context['tags'] = ['post', category]
 
-            yield PostRoute(url, file=file, filters=filters, context=context)
+            yield Route(url, file=file, filters=filters, context=context)
 
         # TODO: Generate table of contents based on tags
 
