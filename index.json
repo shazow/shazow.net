@@ -30,25 +30,6 @@
             "file": "_everything/design/rules-of-thumb-for-novice-designers.md"
         }, 
         {
-            "url": "/economics/3-types-of-paid-and-sponsored-events", 
-            "context": {
-                "time_updated": "1319235604", 
-                "name": "Andrey Petrov", 
-                "title": "Paid events versus sponsored events, and the other one", 
-                "tags": [
-                    "post", 
-                    "economics"
-                ], 
-                "time_created": "1288118090", 
-                "email": "shazow@gmail.com"
-            }, 
-            "filters": [
-                "markdown", 
-                "post"
-            ], 
-            "file": "_everything/economics/3-types-of-paid-and-sponsored-events.md"
-        }, 
-        {
             "url": "/idea/arbitrarily-structured-data-in-rdbms", 
             "context": {
                 "time_updated": "1319245807", 
