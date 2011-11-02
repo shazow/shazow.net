@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import time
 import commands
 
 from composer.index import Index, Route, Static

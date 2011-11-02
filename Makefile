@@ -9,11 +9,10 @@ build: index.json
 serve: index.json
 	composer serve index.json
 
-deploy: clean pull build
+deploy: clean build
 	rsync --archive --delete --compress -e ssh build/ shazow.net:shazow.net/composed/
 
 pull:
-	git pull
 	git submodule foreach git pull
 	git submodule update
 
