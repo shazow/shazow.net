@@ -196,7 +196,9 @@ footer a {
 }
 
 .post .credits {
-    margin-top: 2em;
-    color: #999;
+    padding-top: 20px;
     font-size: 0.8em;
+}
+.post .credits a {
+    color: #999;
 }
