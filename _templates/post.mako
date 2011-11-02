@@ -10,6 +10,10 @@
 ${body}
 </div>
 
-<a href="/" rel="author" class="return-home">
-    <img title="Return to shazow.net" alt="Return to shazow.net" src="/static/images/turkey_50px.png" />
-</a>
+
+<footer>
+    <a href="/" rel="author" class="return-home">
+        <img title="shazow.net" alt="shazow.net" src="/static/images/turkey_50px.png" />
+        <span>shazow.net</span>
+    </a>
+</footer>
