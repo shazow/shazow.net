@@ -53,11 +53,15 @@
         {
             "url": "/negotiation/checklist-for-considering-job-offers", 
             "context": {
+                "time_updated": "1325295771", 
+                "name": "Andrey Petrov", 
+                "title": "Considering job offers? A checklist in alphabetical order", 
                 "tags": [
                     "post", 
                     "negotiation"
                 ], 
-                "title": "Considering job offers? A checklist in alphabetical order"
+                "time_created": "1325295508", 
+                "email": "andrey.petrov@shazow.net"
             }, 
             "filters": [
                 "markdown", 

@@ -36,7 +36,11 @@
     <div class="section likes">
         <h2>I've written about&hellip;</h2>
         <ul class="vertical">
-        % for post in (r for r in index.routes if 'post' in (r.context or {}).get('tags', [])):
+        <%
+            posts = (r for r in index.routes if 'post' in (r.context or {}).get('tags', []))
+            posts = sorted(posts, key=lambda r: r.context.get('time_created'))
+        %>
+        % for post in posts:
             <li><a href="${post.url}">${post.context['title']}</a></li>
         % endfor
         </ul>
