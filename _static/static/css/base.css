@@ -85,6 +85,7 @@ h2 {
     font-style: normal;
     font-size: 26px;
     color: #000;
+    line-height: 1.2em;
 }
 
 a {
@@ -193,10 +194,18 @@ footer a {
     line-height: 1.5em;
 }
 
+.post img {
+    text-align: center;
+}
+
 .post .credits {
     padding-top: 1em;
     font-size: 0.8em;
 }
 .post .credits a {
     color: #999;
+}
+
+.post hr {
+    margin-top: 3em;
 }

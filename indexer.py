@@ -3,7 +3,7 @@
 import commands
 
 from composer.index import Index, Route, Static
-from composer.filters import MakoContainer, Mako, Markdown, Pygments
+from composer.filters import MakoContainer, Mako, Markdown
 
 import misaka as md
 
@@ -13,8 +13,12 @@ def git_metadata(work_dir, file):
     Given a repo and a file within it, get the author, email, time created, and time updated.
     """
     cmd = 'git --git-dir=%s/.git log --pretty="%%an\t%%ae\t%%at" -- %s' % (work_dir, file)
-    name, email, updated = commands.getoutput(cmd + ' | head -n1').split('\t')
-    _, _, created = commands.getoutput(cmd + ' | tail -n1').split('\t')
+
+    try:
+        name, email, updated = commands.getoutput(cmd + ' | head -n1').split('\t')
+        _, _, created = commands.getoutput(cmd + ' | tail -n1').split('\t')
+    except ValueError:
+        return {}
 
     r = {'name': name, 'email': email, 'time_created': created}
     if created != updated:

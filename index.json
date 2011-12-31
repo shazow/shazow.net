@@ -51,6 +51,22 @@
             "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md"
         }, 
         {
+            "url": "/negotiation/checklist-for-considering-job-offers", 
+            "context": {
+                "tags": [
+                    "post", 
+                    "negotiation"
+                ], 
+                "title": "Considering job offers? A checklist in alphabetical order"
+            }, 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "file": "_everything/negotiation/checklist-for-considering-job-offers.md"
+        }, 
+        {
             "url": "/research/password-management-utilities", 
             "context": {
                 "time_updated": "1308623663", 
