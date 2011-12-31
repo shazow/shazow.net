@@ -184,15 +184,13 @@ footer a {
     background: #eaeaea;
     color: #222;
 }
-.post .codehilite {
+.post .highlight {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-}
-.post .codehilite code {
+
     font-size: 12px;
-    line-height: 1em;
-    background: inherit;
+    line-height: 1.5em;
 }
 
 .post .credits {

@@ -3,7 +3,9 @@
 import commands
 
 from composer.index import Index, Route, Static
-from composer.filters import MakoContainer, Mako, Markdown
+from composer.filters import MakoContainer, Mako, Markdown, Pygments
+
+import misaka as md
 
 
 def git_metadata(work_dir, file):
@@ -34,7 +36,10 @@ class ShazowIndex(Index):
     def _register_filters(self):
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
         self.register_filter('mako', Mako, {'directories': ['_templates']})
-        self.register_filter('markdown', Markdown, {'extras': ['smarty-pants', 'code-color']})
+        self.register_filter('markdown', Markdown, {
+            'extensions': md.EXT_STRIKETHROUGH | md.EXT_FENCED_CODE,
+            'render_flags': md.HTML_GITHUB_BLOCKCODE | md.HTML_SMARTYPANTS,
+        })
 
     def _generate_static(self):
         yield Static('/', file='_static')
@@ -56,7 +61,7 @@ class ShazowIndex(Index):
             category = url.split('/', 1)[0]
             url = self.absolute_url(url.replace('index', ''))
 
-            filters = ['markdown', 'post']
+            filters = ['markdown', 'post', 'pygments']
 
             context = git_metadata('_everything', self.relative_path(file, '_everything'))
             context['title'] = markdown_title(self.absolute_path(file)) or 'Untitled'
