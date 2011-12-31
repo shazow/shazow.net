@@ -37,8 +37,8 @@ class ShazowIndex(Index):
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
         self.register_filter('mako', Mako, {'directories': ['_templates']})
         self.register_filter('markdown', Markdown, {
-            'extensions': md.EXT_STRIKETHROUGH | md.EXT_FENCED_CODE,
-            'render_flags': md.HTML_GITHUB_BLOCKCODE | md.HTML_SMARTYPANTS,
+            'extensions': md.EXT_STRIKETHROUGH | md.EXT_FENCED_CODE | md.EXT_AUTOLINK,
+            'render_flags': md.HTML_GITHUB_BLOCKCODE | md.HTML_SMARTYPANTS | md.HTML_TOC,
         })
 
     def _generate_static(self):

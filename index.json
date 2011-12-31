@@ -33,7 +33,7 @@
         {
             "url": "/idea/arbitrarily-structured-data-in-rdbms", 
             "context": {
-                "time_updated": "1319245807", 
+                "time_updated": "1325289958", 
                 "name": "Andrey Petrov", 
                 "title": "Arbitrarily-Structured Data in Relational Databases", 
                 "tags": [
@@ -71,15 +71,15 @@
             "file": "_everything/research/password-management-utilities.md"
         }, 
         {
-            "url": "/software/list-of-must-have-apps-on-osx", 
+            "url": "/tools/list-of-must-have-apps-on-osx", 
             "context": {
                 "tags": [
                     "post", 
-                    "software"
+                    "tools"
                 ], 
                 "title": "List of must-have apps on OSX", 
                 "name": "Andrey Petrov", 
-                "time_created": "1325283235", 
+                "time_created": "1325289995", 
                 "email": "andrey.petrov@shazow.net"
             }, 
             "filters": [
@@ -87,7 +87,7 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/software/list-of-must-have-apps-on-osx.md"
+            "file": "_everything/tools/list-of-must-have-apps-on-osx.md"
         }
     ], 
     "static": [
@@ -108,8 +108,8 @@
         "markdown": {
             "class": "composer.filters:Markdown", 
             "kwargs": {
-                "render_flags": 5120, 
-                "extensions": 20
+                "render_flags": 5376, 
+                "extensions": 28
             }
         }, 
         "pygments": {
