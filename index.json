@@ -11,14 +11,51 @@
             "file": "_templates/index.html.mako"
         }, 
         {
-            "url": "/design/rules-of-thumb-for-novice-designers", 
+            "url": "/everything/checklist-for-considering-job-offers", 
             "context": {
-                "time_updated": "1320267893", 
+                "time_updated": "1333165102", 
+                "name": "Andrey Petrov", 
+                "title": "Considering job offers? A checklist in alphabetical order", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1325295508", 
+                "email": "andrey.petrov@shazow.net"
+            }, 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "file": "_everything/checklist-for-considering-job-offers.md"
+        }, 
+        {
+            "url": "/everything/list-of-must-have-apps-on-osx", 
+            "context": {
+                "time_updated": "1333165102", 
+                "name": "Andrey Petrov", 
+                "title": "List of must-have apps on OSX", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1325283235", 
+                "email": "andrey.petrov@shazow.net"
+            }, 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "file": "_everything/list-of-must-have-apps-on-osx.md"
+        }, 
+        {
+            "url": "/everything/rules-of-thumb-for-novice-designers", 
+            "context": {
+                "time_updated": "1333165102", 
                 "name": "Andrey Petrov", 
                 "title": "Rules of thumb for novice designers (like myself)", 
                 "tags": [
-                    "post", 
-                    "design"
+                    "post"
                 ], 
                 "time_created": "1285097993", 
                 "email": "andrey.petrov@shazow.net"
@@ -28,17 +65,16 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/design/rules-of-thumb-for-novice-designers.md"
+            "file": "_everything/rules-of-thumb-for-novice-designers.md"
         }, 
         {
-            "url": "/idea/arbitrarily-structured-data-in-rdbms", 
+            "url": "/everything/arbitrarily-structured-data-in-rdbms", 
             "context": {
-                "time_updated": "1325289958", 
+                "time_updated": "1333165102", 
                 "name": "Andrey Petrov", 
                 "title": "Arbitrarily-Structured Data in Relational Databases", 
                 "tags": [
-                    "post", 
-                    "idea"
+                    "post"
                 ], 
                 "time_created": "1287615713", 
                 "email": "andrey.petrov@shazow.net"
@@ -48,38 +84,18 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md"
+            "file": "_everything/arbitrarily-structured-data-in-rdbms.md"
         }, 
         {
-            "url": "/research/password-management-utilities", 
+            "url": "/everything/password-management-utilities", 
             "context": {
-                "time_updated": "1308623663", 
+                "time_updated": "1333165102", 
                 "name": "Andrey Petrov", 
                 "title": "Password Management Utilities", 
                 "tags": [
-                    "post", 
-                    "research"
+                    "post"
                 ], 
                 "time_created": "1308623180", 
-                "email": "shazow@gmail.com"
-            }, 
-            "filters": [
-                "markdown", 
-                "post", 
-                "pygments"
-            ], 
-            "file": "_everything/research/password-management-utilities.md"
-        }, 
-        {
-            "url": "/tools/list-of-must-have-apps-on-osx", 
-            "context": {
-                "tags": [
-                    "post", 
-                    "tools"
-                ], 
-                "title": "List of must-have apps on OSX", 
-                "name": "Andrey Petrov", 
-                "time_created": "1325289995", 
                 "email": "andrey.petrov@shazow.net"
             }, 
             "filters": [
@@ -87,7 +103,7 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/tools/list-of-must-have-apps-on-osx.md"
+            "file": "_everything/password-management-utilities.md"
         }
     ], 
     "static": [
@@ -108,7 +124,7 @@
         "markdown": {
             "class": "composer.filters:Markdown", 
             "kwargs": {
-                "render_flags": 5376, 
+                "render_flags": 1088, 
                 "extensions": 28
             }
         }, 
