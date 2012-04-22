@@ -12,13 +12,20 @@ def git_metadata(work_dir, file):
     """
     Given a repo and a file within it, get the author, email, time created, and time updated.
     """
-    cmd = 'git --git-dir=%s/.git log --pretty="%%an\t%%ae\t%%at" -- %s' % (work_dir, file)
+    cmd = 'git --git-dir=%s/.git log --follow --pretty="%%an\t%%ae\t%%at" -- %s' % (work_dir, file)
 
-    try:
-        name, email, updated = commands.getoutput(cmd + ' | head -n1').split('\t')
-        _, _, created = commands.getoutput(cmd + ' | tail -n1').split('\t')
-    except ValueError:
+    history = commands.getoutput(cmd)
+    if not history:
         return {}
+
+    history = history.split('\n')
+
+    name, email, updated = history[0].split('\t')
+
+    if len(history) > 1:
+        _, _, created = history[-1].split('\t')
+    else:
+        created = updated
 
     r = {'name': name, 'email': email, 'time_created': created}
     if created != updated:
