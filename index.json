@@ -11,53 +11,15 @@
             "file": "_templates/index.html.mako"
         }, 
         {
-            "url": "/everything/TODO", 
+            "url": "/everything/arbitrarily-structured-data-in-rdbms", 
             "context": {
-                "time_updated": "1285193609", 
-                "name": "Andrey Petrov", 
-                "title": "Blog posts I need to port to this repository", 
-                "tags": [
-                    "post"
-                ], 
-                "time_created": "1285193547", 
-                "email": "andrey.petrov@shazow.net"
-            }, 
-            "filters": [
-                "markdown", 
-                "post", 
-                "pygments"
-            ], 
-            "file": "_everything/TODO.md"
-        }, 
-        {
-            "url": "/everything/design/rules-of-thumb-for-novice-designers", 
-            "context": {
-                "time_updated": "1320267893", 
-                "name": "Andrey Petrov", 
-                "title": "Rules of thumb for novice designers (like myself)", 
-                "tags": [
-                    "post"
-                ], 
-                "time_created": "1285097993", 
-                "email": "andrey.petrov@shazow.net"
-            }, 
-            "filters": [
-                "markdown", 
-                "post", 
-                "pygments"
-            ], 
-            "file": "_everything/design/rules-of-thumb-for-novice-designers.md"
-        }, 
-        {
-            "url": "/everything/idea/arbitrarily-structured-data-in-rdbms", 
-            "context": {
-                "time_updated": "1325289958", 
+                "time_updated": "1333169896", 
                 "name": "Andrey Petrov", 
                 "title": "Arbitrarily-Structured Data in Relational Databases", 
                 "tags": [
                     "post"
                 ], 
-                "time_created": "1287615713", 
+                "time_created": "1333165102", 
                 "email": "andrey.petrov@shazow.net"
             }, 
             "filters": [
@@ -65,18 +27,17 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/idea/arbitrarily-structured-data-in-rdbms.md"
+            "file": "_everything/arbitrarily-structured-data-in-rdbms.md"
         }, 
         {
-            "url": "/everything/negotiation/checklist-for-considering-job-offers", 
+            "url": "/everything/checklist-for-considering-job-offers", 
             "context": {
-                "time_updated": "1325295771", 
-                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
                 "title": "Considering job offers? A checklist in alphabetical order", 
-                "tags": [
-                    "post"
-                ], 
-                "time_created": "1325295508", 
+                "name": "Andrey Petrov", 
+                "time_created": "1333165102", 
                 "email": "andrey.petrov@shazow.net"
             }, 
             "filters": [
@@ -84,36 +45,17 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/negotiation/checklist-for-considering-job-offers.md"
+            "file": "_everything/checklist-for-considering-job-offers.md"
         }, 
         {
-            "url": "/everything/research/password-management-utilities", 
-            "context": {
-                "time_updated": "1308623663", 
-                "name": "Andrey Petrov", 
-                "title": "Password Management Utilities", 
-                "tags": [
-                    "post"
-                ], 
-                "time_created": "1308623180", 
-                "email": "shazow@gmail.com"
-            }, 
-            "filters": [
-                "markdown", 
-                "post", 
-                "pygments"
-            ], 
-            "file": "_everything/research/password-management-utilities.md"
-        }, 
-        {
-            "url": "/everything/tools/list-of-must-have-apps-on-osx", 
+            "url": "/everything/list-of-must-have-apps-on-osx", 
             "context": {
                 "tags": [
                     "post"
                 ], 
                 "title": "List of must-have apps on OSX", 
                 "name": "Andrey Petrov", 
-                "time_created": "1325289995", 
+                "time_created": "1333165102", 
                 "email": "andrey.petrov@shazow.net"
             }, 
             "filters": [
@@ -121,7 +63,43 @@
                 "post", 
                 "pygments"
             ], 
-            "file": "_everything/tools/list-of-must-have-apps-on-osx.md"
+            "file": "_everything/list-of-must-have-apps-on-osx.md"
+        }, 
+        {
+            "url": "/everything/password-management-utilities", 
+            "context": {
+                "tags": [
+                    "post"
+                ], 
+                "title": "Password Management Utilities", 
+                "name": "Andrey Petrov", 
+                "time_created": "1333165102", 
+                "email": "andrey.petrov@shazow.net"
+            }, 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "file": "_everything/password-management-utilities.md"
+        }, 
+        {
+            "url": "/everything/rules-of-thumb-for-novice-designers", 
+            "context": {
+                "tags": [
+                    "post"
+                ], 
+                "title": "Rules of thumb for novice designers (like myself)", 
+                "name": "Andrey Petrov", 
+                "time_created": "1333165102", 
+                "email": "andrey.petrov@shazow.net"
+            }, 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "file": "_everything/rules-of-thumb-for-novice-designers.md"
         }
     ], 
     "static": [
@@ -142,7 +120,7 @@
         "markdown": {
             "class": "composer.filters:Markdown", 
             "kwargs": {
-                "render_flags": 4352, 
+                "render_flags": 1088, 
                 "extensions": 28
             }
         }, 
