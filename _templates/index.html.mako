@@ -82,6 +82,8 @@
              alt="Fork me on GitHub" />
     </a>
 
+</div>
+
 <%block name="tail">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="/static/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
