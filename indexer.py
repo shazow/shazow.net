@@ -81,4 +81,4 @@ if __name__ == '__main__':
     import os
 
     index = ShazowIndex(os.path.dirname(__file__))
-    print json.dumps(index.to_dict(), indent=4)
+    print json.dumps(index.to_dict(), sort_keys=True, indent=4)
