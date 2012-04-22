@@ -26,6 +26,7 @@ def git_metadata(work_dir, file):
 
     return r
 
+
 def markdown_title(file):
     for line in open(file):
         if line.startswith('# '):
@@ -42,7 +43,7 @@ class ShazowIndex(Index):
         self.register_filter('mako', Mako, {'directories': ['_templates']})
         self.register_filter('markdown', Markdown, {
             'extensions': md.EXT_STRIKETHROUGH | md.EXT_FENCED_CODE | md.EXT_AUTOLINK,
-            'render_flags': md.HTML_GITHUB_BLOCKCODE | md.HTML_SMARTYPANTS | md.HTML_TOC,
+            'render_flags': md.HTML_SMARTYPANTS | md.HTML_TOC,
         })
 
     def _generate_static(self):
@@ -60,16 +61,15 @@ class ShazowIndex(Index):
             yield Route(url, file=file, filters=filters, context=context)
 
         # From my blog submodule
-        for file in self.walk('_everything', include_only=['_everything/*/*.md']):
-            url = strip_ends(file, '_everything/', '.md')
-            category = url.split('/', 1)[0]
+        for file in self.walk('_everything', include_only=['_everything/*.md'], exclude=['_everything/README.md']):
+            url = strip_ends(file, '_', '.md') # _everything/foo.md -> everything/foo
             url = self.absolute_url(url.replace('index', ''))
 
             filters = ['markdown', 'post', 'pygments']
 
             context = git_metadata('_everything', self.relative_path(file, '_everything'))
             context['title'] = markdown_title(self.absolute_path(file)) or 'Untitled'
-            context['tags'] = ['post', category]
+            context['tags'] = ['post']
 
             yield Route(url, file=file, filters=filters, context=context)
 

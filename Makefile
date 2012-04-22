@@ -7,7 +7,7 @@ build: index.json
 	composer build index.json
 
 serve: index.json
-	composer serve index.json
+	composer serve indexer:ShazowIndex
 
 deploy: clean build
 	rsync --archive --delete --compress -e ssh build/ shazow.net:shazow.net/composed/
