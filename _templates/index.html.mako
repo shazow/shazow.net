@@ -30,7 +30,7 @@
             <li><s><a href="http://socialgrapple.com/">SocialGrapple</a></s>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
             <li><a href="http://tweepsect.com/">Tweepsect</a>  &mdash; Intersect your Twitter social graph to uncover your stalkers.</li>
             <li><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
-            <li><a href="http://code.google.com/p/urllib3/">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
+            <li><a href="https://github.com/shazow/urllib3">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
         </ul>
     </div>
 
