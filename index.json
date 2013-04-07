@@ -15,8 +15,11 @@
         "markdown": {
             "class": "composer.filters:Markdown", 
             "kwargs": {
-                "extensions": 28, 
-                "render_flags": 1088
+                "extensions": [
+                    "extra", 
+                    "headerid", 
+                    "smartypants"
+                ]
             }
         }, 
         "post": {
@@ -85,6 +88,25 @@
                 "pygments"
             ], 
             "url": "/everything/checklist-for-considering-job-offers"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1361942641", 
+                "time_updated": "1363743082", 
+                "title": "Laser Eye Surgery"
+            }, 
+            "file": "_everything/laser-eyes.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/laser-eyes"
         }, 
         {
             "context": {

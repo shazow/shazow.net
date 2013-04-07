@@ -1,1 +1,5 @@
 composer
+mako
+markdown
+mdx_smartypants
+pygments

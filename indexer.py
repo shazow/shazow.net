@@ -5,8 +5,6 @@ import commands
 from composer.index import Index, Route, Static
 from composer.filters import MakoContainer, Mako, Markdown
 
-import misaka as md
-
 
 def git_metadata(work_dir, file):
     """
@@ -49,8 +47,7 @@ class ShazowIndex(Index):
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
         self.register_filter('mako', Mako, {'directories': ['_templates']})
         self.register_filter('markdown', Markdown, {
-            'extensions': md.EXT_STRIKETHROUGH | md.EXT_FENCED_CODE | md.EXT_AUTOLINK,
-            'render_flags': md.HTML_SMARTYPANTS | md.HTML_TOC,
+            'extensions': ['extra', 'headerid', 'smartypants'],
         })
 
     def _generate_static(self):
