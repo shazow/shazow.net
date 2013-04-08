@@ -9,8 +9,8 @@ build: index.json
 serve: index.json
 	composer serve indexer:ShazowIndex
 
-deploy: clean build
-	rsync --archive --delete --compress -e ssh build/ shazow.net:shazow.net/composed/
+deploy: pull
+	composer build indexer:ShazowIndex
 
 pull:
 	git submodule foreach --recursive git pull origin master
