@@ -47,7 +47,7 @@ class ShazowIndex(Index):
         self.register_filter('post', MakoContainer, {'directories': ['_templates'], 'template': 'post.mako'})
         self.register_filter('mako', Mako, {'directories': ['_templates']})
         self.register_filter('markdown', Markdown, {
-            'extensions': ['extra', 'headerid', 'smartypants'],
+            'extensions': ['extra', 'headerid', 'smartypants', 'del_ins'],
         })
 
     def _generate_static(self):

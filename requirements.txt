@@ -2,4 +2,5 @@ https://github.com/shazow/composer/tarball/master
 mako
 markdown
 mdx_smartypants
+mdx_del_ins
 pygments

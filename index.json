@@ -18,7 +18,8 @@
                 "extensions": [
                     "extra", 
                     "headerid", 
-                    "smartypants"
+                    "smartypants", 
+                    "del_ins"
                 ]
             }
         }, 
@@ -97,7 +98,7 @@
                     "post"
                 ], 
                 "time_created": "1361942641", 
-                "time_updated": "1363743082", 
+                "time_updated": "1365380177", 
                 "title": "Laser Eye Surgery"
             }, 
             "file": "_everything/laser-eyes.md", 
