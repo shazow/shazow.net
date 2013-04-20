@@ -72,7 +72,7 @@
 
     <div class="section more">
         <p>
-            You can learn more about me by reading <a href="http://bit.ly/shazow_resume">my résumé</a> or <a href="http://www.google.com/search?q=shazow">googling me</a>.
+            You can learn more about me by reading <a href="http://bit.ly/shazow_resume">my outdated résumé</a> or <a href="http://www.google.com/search?q=shazow">googling me</a>.
         </p>
     </div>
 
