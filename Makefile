@@ -23,6 +23,7 @@ deploy: requirements pull
 	composer build indexer:ShazowIndex
 
 pull:
+	git pull
 	git submodule foreach --recursive git pull origin master
 
 clean:
