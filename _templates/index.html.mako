@@ -27,7 +27,7 @@
             <li><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &mdash; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
             <li><a href="https://github.com/shazow/composer">Composer</a>  &mdash; Static site generator in Python powering this very site.</li>
             <li><a href="http://bit.ly/linerage-chrome">LineRage</a>  &mdash; Arcade-style game where you're a line and you try not to hit stuff.</li>
-            <li><s><a href="http://socialgrapple.com/">SocialGrapple</a></s>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
+            <li><s><a href="https://www.google.com/search?q=socialgrapple">SocialGrapple</a></s>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
             <li><a href="http://tweepsect.com/">Tweepsect</a>  &mdash; Intersect your Twitter social graph to uncover your stalkers.</li>
             <li><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
             <li><a href="https://github.com/shazow/urllib3">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
