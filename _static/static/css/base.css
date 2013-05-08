@@ -209,5 +209,10 @@ footer a {
 }
 
 .post hr {
-    margin-top: 3em;
+    background: #eee;
+    border: solid #eee;
+    border-width: 2px;
+    width: 80%;
+    height: 0;
+    margin: 1.5em auto 1.5em auto;
 }
