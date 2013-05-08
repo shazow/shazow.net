@@ -150,11 +150,13 @@ footer a {
 .post {
     width: 640px;
     line-height: 1.5em;
-
-    font-size: 14px;
-    font-family: 'Verdana', sans-serif;
-
+    word-spacing: 1px;
+    font-size: 16px;
+    font-family: 'OFL Sorts Mill Goudy TT', serif;
     color: #444;
+}
+.post strong {
+    color: #681100;
 }
 .post h1 {
     text-align: left;
