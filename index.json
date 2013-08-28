@@ -54,6 +54,16 @@
         }, 
         {
             "context": {
+                "title": "Andrey Petrov | shazow.net"
+            }, 
+            "file": "_templates/newsletter.html.mako", 
+            "filters": [
+                "mako"
+            ], 
+            "url": "/newsletter"
+        }, 
+        {
+            "context": {
                 "email": "andrey.petrov@shazow.net", 
                 "name": "Andrey Petrov", 
                 "tags": [
@@ -98,7 +108,7 @@
                     "post"
                 ], 
                 "time_created": "1361942641", 
-                "time_updated": "1365380177", 
+                "time_updated": "1367979053", 
                 "title": "Laser Eye Surgery"
             }, 
             "file": "_everything/laser-eyes.md", 
@@ -117,7 +127,7 @@
                     "post"
                 ], 
                 "time_created": "1325283235", 
-                "time_updated": "1333165102", 
+                "time_updated": "1365381589", 
                 "title": "List of must-have apps on OSX"
             }, 
             "file": "_everything/list-of-must-have-apps-on-osx.md", 
