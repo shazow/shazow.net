@@ -1,5 +1,9 @@
 <%inherit file="base.mako"/>
 
+<%block name="extra_head">
+<meta property="twitter:account_id" content="796601" />
+</%block>
+
 <h1><a href="/">Andrey Petrov</a></h1>
 
 <div class="container">
