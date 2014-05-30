@@ -221,3 +221,40 @@ footer a {
     padding-left: 1em;
     border-left: 1em solid #eee;
 }
+
+.tag::before {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    background: #eee;
+    color: #666;
+    display: inline-block;
+    width: 50px;
+    content: " ";
+    text-align: center;
+    margin-right: 0.5em;
+    vertical-align: text-top;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 18px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.tag.service::before {
+    content: "Service";
+    background: #ffba44;
+    color: #7d5b21;
+}
+
+.tag.code::before {
+    content: "Code";
+    background: #72c18f;
+    color: #385f46;
+}
+
+.tag.game::before {
+    content: "Game";
+    background: #c2a3d1;
+    color: #5f5066;
+}

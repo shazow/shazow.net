@@ -28,15 +28,15 @@
     <div class="section projects">
         <h2>You should try some things I've built recently like&hellip;</h2>
         <ul class="vertical">
-            <li><a href="http://briefmetrics.com/">Briefmetrics</a>  &mdash; Remove the pain of using Google Analytics with weekly email summaries.</li>
-            <li><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &mdash; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
-            <li><a href="https://github.com/shazow/composer">Composer</a>  &mdash; Static site generator in Python powering this very site.</li>
-            <li><a href="http://bit.ly/linerage-chrome">LineRage</a>  &mdash; Arcade-style game where you're a line and you try not to hit stuff.</li>
-            <li><s><a href="https://www.google.com/search?q=socialgrapple">SocialGrapple</a></s>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
-            <li><a href="http://tweepsect.com/">Tweepsect</a>  &mdash; Intersect your Twitter social graph to uncover your stalkers.</li>
-            <li><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
-            <li><a href="https://github.com/shazow/urllib3">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
-            <li><a href="http://wedomainsearch.com/">WeDomainSearch</a>  &mdash; Find available domains with friends.</li>
+            <li class="tag service"><a href="http://briefmetrics.com/">Briefmetrics</a>  &mdash; Remove the pain of using Google Analytics with weekly email summaries.</li>
+            <li class="tag service"><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &mdash; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
+            <li class="tag code"><a href="https://github.com/shazow/composer">Composer</a>  &mdash; Static site generator in Python powering this very site.</li>
+            <li class="tag game"><a href="http://bit.ly/linerage-chrome">LineRage</a>  &mdash; Arcade-style game where you're a line and you try not to hit stuff.</li>
+            <li class="tag service"><s><a href="https://www.google.com/search?q=socialgrapple">SocialGrapple</a></s>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
+            <li class="tag service"><a href="http://tweepsect.com/">Tweepsect</a>  &mdash; Intersect your Twitter social graph to uncover your stalkers.</li>
+            <li class="tag code"><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
+            <li class="tag code"><a href="https://github.com/shazow/urllib3">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
+            <li class="tag service"><a href="http://wedomainsearch.com/">WeDomainSearch</a>  &mdash; Find available domains with friends.</li>
         </ul>
     </div>
 
