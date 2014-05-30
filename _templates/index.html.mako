@@ -28,28 +28,31 @@
     <div class="section projects">
         <h2>You should try some things I've built recently like&hellip;</h2>
         <ul class="vertical">
-            <li class="tag service"><a href="http://briefmetrics.com/">Briefmetrics</a>  &mdash; Remove the pain of using Google Analytics with weekly email summaries.</li>
-            <li class="tag service"><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &mdash; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
-            <li class="tag code"><a href="https://github.com/shazow/composer">Composer</a>  &mdash; Static site generator in Python powering this very site.</li>
-            <li class="tag game"><a href="http://bit.ly/linerage-chrome">LineRage</a>  &mdash; Arcade-style game where you're a line and you try not to hit stuff.</li>
-            <li class="tag service"><s><a href="https://www.google.com/search?q=socialgrapple">SocialGrapple</a></s>  &mdash; Twitter analytics tool that tracks changes in your social graph.</li>
-            <li class="tag service"><a href="http://tweepsect.com/">Tweepsect</a>  &mdash; Intersect your Twitter social graph to uncover your stalkers.</li>
-            <li class="tag code"><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &mdash; Collection of highly reusable Python code.</li>
-            <li class="tag code"><a href="https://github.com/shazow/urllib3">Urllib3</a>  &mdash;  Python HTTP library with thread-safe connection pooling.</li>
-            <li class="tag service"><a href="http://wedomainsearch.com/">WeDomainSearch</a>  &mdash; Find available domains with friends.</li>
+            <li class="tag service"><a href="http://briefmetrics.com/">Briefmetrics</a>  &middot; Remove the pain of using Google Analytics with weekly email summaries.</li>
+            <li class="tag service"><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &middot; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
+            <li class="tag code"><a href="https://github.com/shazow/composer">Composer</a>  &middot; Static site generator in Python powering this very site.</li>
+            <li class="tag code"><a href="https://github.com/shazow/gameblocks.js">Gameblocks.js</a>  &middot; Toolkit for making games in JavaScript.</li>
+            <li class="tag game"><a href="http://bit.ly/linerage-chrome">LineRage</a>  &middot; Arcade-style game where you're a line and you try not to hit stuff.</li>
+            <li class="tag service"><s><a href="https://www.google.com/search?q=socialgrapple">SocialGrapple</a></s>  &middot; Twitter analytics tool that tracks changes in your social graph.</li>
+            <li class="tag service"><a href="http://tweepsect.com/">Tweepsect</a>  &middot; Intersect your Twitter social graph to uncover your stalkers.</li>
+            <li class="tag code"><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &middot; Collection of highly reusable Python code.</li>
+            <li class="tag code"><a href="https://github.com/shazow/urllib3">Urllib3</a>  &middot;  Python HTTP library with thread-safe connection pooling.</li>
+            <li class="tag service"><a href="http://wedomainsearch.com/">WeDomainSearch</a>  &middot; Find available domains with friends.</li>
         </ul>
     </div>
 
-    <div class="section likes">
+    <div class="section writing">
         <h2>I've written about&hellip;</h2>
         <ul class="vertical">
-        <%
-            posts = (r for r in index.routes if 'post' in (r.context or {}).get('tags', []))
-            posts = sorted(posts, key=lambda r: r.context.get('time_created'))
-        %>
-        % for post in posts:
-            <li><a href="${post.url}">${post.context['title']}</a></li>
-        % endfor
+            <%
+                posts = (r for r in index.routes if 'post' in (r.context or {}).get('tags', []))
+                posts = sorted(posts, key=lambda r: r.context.get('time_created'))
+            %>
+            % for post in posts:
+                <li><a href="${post.url}">${post.context['title']}</a></li>
+            % endfor
+            <li class="offsite medium"><a href="https://medium.com/open-source/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a">How to maintain a successful open source project</a></li>
+            <li class="offsite medium"><a href="https://medium.com/@shazow/what-is-your-fantasy-c88bed381f4d">What is your fantasy?</a></li>
         </ul>
     </div>
 
@@ -62,6 +65,7 @@
             <li>Chess</li>
             <li>Distributed Peer-to-peer</li>
             <li>Everything2</li>
+            <li>Golang</li>
             <li>JavaScript</li>
             <li>Linux</li>
             <li>Massively-multiplayer Games</li>
