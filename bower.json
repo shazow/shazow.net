@@ -1,0 +1,14 @@
+{
+  "name": "shazow.net",
+  "version": "0.0.0",
+  "authors": [
+    "Andrey Petrov <andrey.petrov@shazow.net>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "foundation": "zurb/bower-foundation#~5.2.3"
+  }
+}

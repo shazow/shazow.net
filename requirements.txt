@@ -4,3 +4,4 @@ markdown
 mdx_smartypants
 mdx_del_ins
 pygments
+werkzeug
