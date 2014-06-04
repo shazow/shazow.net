@@ -1,4 +1,14 @@
-@import "_reset.scss";
+@import "normalize";
+
+p {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+ul {
+    margin-top: 0.5em;
+    padding-left: 0;
+}
 
 ul.vertical, ul.horizontal {
     list-style: none;
@@ -49,7 +59,7 @@ h2 {
     font-style: normal;
     font-size: 26px;
     color: #000;
-    line-height: 1.5em;
+    margin: 1em 0 0 0;
 }
 
 a {
