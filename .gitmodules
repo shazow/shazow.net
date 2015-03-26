@@ -1,3 +1,6 @@
 [submodule "_everything"]
 	path = _everything
 	url = https://github.com/shazow/everything
+[submodule "external/primer"]
+	path = external/primer
+	url = https://github.com/primer/primer

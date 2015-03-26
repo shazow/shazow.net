@@ -1,7 +1,7 @@
 https://github.com/shazow/composer/tarball/master
-mako
-markdown
-mdx_smartypants
-mdx_del_ins
-pygments
-werkzeug
+Mako==1.0.1
+Markdown==2.4.1
+Pygments==2.0.2
+Werkzeug==0.10.4
+mdx-del-ins==1.0
+mdx-smartypants==1.5.1

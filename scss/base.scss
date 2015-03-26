@@ -1,4 +1,6 @@
-@import "normalize";
+@import "primer/normalize";
+@import "primer/variables";
+@import "primer/type";
 
 p {
     margin-bottom: 1em;
@@ -22,20 +24,6 @@ ul.horizontal > li {
 ul.horizontal > li:last-child {
     margin-right: 0px;
 }
-.rounded-5 {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.rounded-10 {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-.hidden {
-    display: none;
-}
-
 
 
 h1 {
@@ -94,8 +82,9 @@ footer a {
 }
 
 .container {
-    width: 920px;
+    max-width: 920px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 
 
@@ -122,7 +111,8 @@ footer a {
 }
 
 .post {
-    width: 640px;
+    max-width: 640px;
+    padding: 0 5px;
     line-height: 1.5em;
     word-spacing: 1px;
     font-size: 16px;
@@ -176,7 +166,6 @@ footer a {
 
 .post .credits {
     padding-top: 1em;
-    font-size: 0.8em;
 }
 .post .credits a {
     color: #999;

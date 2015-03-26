@@ -1,5 +1,9 @@
 {
     "filters": {
+        "jinja2": {
+            "class": "composer.filters:Jinja2", 
+            "kwargs": {}
+        }, 
         "mako": {
             "class": "composer.filters:Mako", 
             "kwargs": {
@@ -30,6 +34,10 @@
         }, 
         "pygments": {
             "class": "composer.filters:Pygments", 
+            "kwargs": {}
+        }, 
+        "rst": {
+            "class": "composer.filters:RestructuredText", 
             "kwargs": {}
         }
     }, 
