@@ -9,7 +9,7 @@
     <link href="/static/css/base.css?2" media="screen" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="/static/images/icon.png" />
 
-    <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:400,400italic&amp;v2' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:400,400italic&amp;v2' rel='stylesheet' type='text/css'>
     <%block name="extra_head" />
 </head>
 
