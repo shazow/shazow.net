@@ -1,7 +1,7 @@
 <%inherit file="base.mako"/>
 
 <div class="container hireme">
-    <h2>Hire Me</h2>
+    <h2>Let's work together</h2>
 
     <p>
         Hi, I'm Andrey, or <a href="https://shazow.net/">shazow</a> on the internet.
@@ -19,16 +19,16 @@
                 (Examples: <a href="https://github.com/shazow/urllib3">urllib3</a>, <a href="https://github.com/shazow/ssh-chat">ssh-chat</a>)
             </li>
             <li>
-                <strong>R&amp;D and prototyping</strong><br />
+                <strong>R&amp;D and Prototyping</strong><br />
                 Are you considering a risky unproven technology, but want a working proof of concept before committing resources? These are some of my favorite projects.
                 (Examples: <a href="https://github.com/shazow/go-selfcompile">go-selfcompile</a>, <a href="https://github.com/shazow/go-git">go-git</a>)
             </li>
             <li>
-                <strong>Stand-alone applications and services</strong><br />
+                <strong>Stand-Alone Applications and Services</strong><br />
                 Is there a pain point in your business that can be fixed by a one-off application or service? These kinds of tasks are perfect for outsourcing.
             </li>
             <li>
-                <strong>Infrastructure and deployment</strong> (docker, service discovery, instrumentation)
+                <strong>Infrastructure and Deployment</strong> (docker, service discovery, instrumentation)
             </li>
             <li>
                 <strong>Database Scalability</strong> (schema redesign, migration, query optimization, sharding)

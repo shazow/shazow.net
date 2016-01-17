@@ -38,11 +38,11 @@
             "context": {
                 "title": "Andrey Petrov | shazow.net"
             }, 
-            "file": "_templates/hireme.html.mako", 
+            "file": "_templates/hire.html.mako", 
             "filters": [
                 "mako"
             ], 
-            "url": "/hireme"
+            "url": "/hire"
         }, 
         {
             "context": {
