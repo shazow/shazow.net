@@ -1,0 +1,188 @@
+{
+    "filters": {
+        "mako": {
+            "class": "composer.filters:Mako", 
+            "kwargs": {
+                "directories": [
+                    "_templates"
+                ]
+            }
+        }, 
+        "markdown": {
+            "class": "composer.filters:Markdown", 
+            "kwargs": {
+                "extensions": [
+                    "extra", 
+                    "headerid", 
+                    "smartypants", 
+                    "del_ins"
+                ]
+            }
+        }, 
+        "post": {
+            "class": "composer.filters:MakoContainer", 
+            "kwargs": {
+                "directories": [
+                    "_templates"
+                ], 
+                "template": "post.mako"
+            }
+        }, 
+        "pygments": {
+            "class": "composer.filters:Pygments", 
+            "kwargs": {}
+        }
+    }, 
+    "routes": [
+        {
+            "context": {
+                "title": "Andrey Petrov | shazow.net"
+            }, 
+            "file": "_templates/hireme.html.mako", 
+            "filters": [
+                "mako"
+            ], 
+            "url": "/hireme"
+        }, 
+        {
+            "context": {
+                "title": "Andrey Petrov | shazow.net"
+            }, 
+            "file": "_templates/index.html.mako", 
+            "filters": [
+                "mako"
+            ], 
+            "url": "/"
+        }, 
+        {
+            "context": {
+                "title": "Andrey Petrov | shazow.net"
+            }, 
+            "file": "_templates/newsletter.html.mako", 
+            "filters": [
+                "mako"
+            ], 
+            "url": "/newsletter"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1287615713", 
+                "time_updated": "1333169896", 
+                "title": "Arbitrarily-Structured Data in Relational Databases"
+            }, 
+            "file": "_everything/arbitrarily-structured-data-in-rdbms.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/arbitrarily-structured-data-in-rdbms"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1325295508", 
+                "time_updated": "1333165102", 
+                "title": "Considering job offers? A checklist in alphabetical order"
+            }, 
+            "file": "_everything/checklist-for-considering-job-offers.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/checklist-for-considering-job-offers"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1361942641", 
+                "time_updated": "1367979053", 
+                "title": "Laser Eye Surgery"
+            }, 
+            "file": "_everything/laser-eyes.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/laser-eyes"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1325283235", 
+                "time_updated": "1365381589", 
+                "title": "List of must-have apps on OSX"
+            }, 
+            "file": "_everything/list-of-must-have-apps-on-osx.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/list-of-must-have-apps-on-osx"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1308623180", 
+                "time_updated": "1333165102", 
+                "title": "Password Management Utilities"
+            }, 
+            "file": "_everything/password-management-utilities.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/password-management-utilities"
+        }, 
+        {
+            "context": {
+                "email": "andrey.petrov@shazow.net", 
+                "name": "Andrey Petrov", 
+                "tags": [
+                    "post"
+                ], 
+                "time_created": "1285097993", 
+                "time_updated": "1333165102", 
+                "title": "Rules of thumb for novice designers (like myself)"
+            }, 
+            "file": "_everything/rules-of-thumb-for-novice-designers.md", 
+            "filters": [
+                "markdown", 
+                "post", 
+                "pygments"
+            ], 
+            "url": "/everything/rules-of-thumb-for-novice-designers"
+        }
+    ], 
+    "static": [
+        {
+            "file": "_static", 
+            "url": "/"
+        }
+    ]
+}
