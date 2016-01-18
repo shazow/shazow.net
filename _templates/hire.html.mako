@@ -4,13 +4,13 @@
     <h2>Let's work together</h2>
 
     <p>
-        Hi, I'm Andrey, or <a href="https://shazow.net/">shazow</a> on the internet.
+        Hi, I'm Andrey. (Or, <a href="https://shazow.net/">shazow</a> on <a href="https://www.youtube.com/watch?v=6WpMlwVwydo">the internet</a>.)
     </p>
     <p>
-        I've built dozens of open source projects, launched some startups, and occasionally work on a contract basis with technology companies.
+        I build successful open source projects, work on my own products, and occasionally work on a contract basis with tech companies.
     </p>
     <p>
-        Right now, <strong>I'm most excited about writing open source Go code.</strong> Can I help your company? (<a href="#help-with">Other things I can do</a>)
+        <strong>I'm excited about writing open source Go code.</strong> Can I help your company? (<a href="#help-with">Other things I can do</a>.)
     </p>
 
     <section id="help-with" class="hidden">
@@ -43,29 +43,6 @@
     </section>
 
     <section>
-        <h3>Reaching out</h3>
-
-        <p>
-            Your budget should be at least $5,000. Initial consultation is free, and I will turn down projects which are not a good fit. If we work together, I promise you'll be more than satisfied with the value and quality of work. <strong>Open source work gets a discount!</strong>
-        </p>
-
-        <p>
-            It's a good idea to take a look at <a href="https://github.com/shazow">my previous work</a> which will give you an idea of my areas of expertise.
-        </p>
-
-        <h4>Checklist</h3>
-        <ul>
-            <li>Budget</li>
-            <li>Timeline/Urgency</li>
-            <li>Technology stack</li>
-            <li>Problem</li>
-            <li>Proposed solutions (optional)</li>
-        </ul>
-
-        <p>When you're ready, shoot an email to <a href="mailto:andrey.petrov@shazow.net">andrey.petrov@shazow.net</a></p>
-    </section>
-
-    <section>
         <h3>I've worked with:</h3>
         <ul class="horizontal">
             <li><a href="https://sourcegraph.com/">Sourcegraph</a></li>
@@ -77,9 +54,37 @@
             <li><a href="https://www.pinterest.com/">Pinterest</a></li>
             <li><a href="https://tineye.com/">TinEye</a></li>
         </ul>
+    </section>
+
+    <section>
+        <h3>Reaching out</h3>
 
         <p>
-            More about me on <a href="https://shazow.net">shazow.net</a>.
+            I can only consider budgets starting at $5,000. Initial consultation is completely free. I have to turn down projects that aren’t a good fit for me and you—I’ll be upfront!
         </p>
+
+        <p>
+            It's a good idea to take a look at <a href="https://github.com/shazow">my previous work</a> which will give you an idea of my areas of expertise.
+        </p>
+
+        <h4>Checklist for reaching out (so I can get back to you quickly)</h3>
+        <ul>
+            <li>Budget</li>
+            <li>Timeline/Urgency</li>
+            <li>Technology stack</li>
+            <li>Problem</li>
+            <li>Proposed solutions (optional)</li>
+        </ul>
+
+        <p>Tell me how I can help you at <a href="mailto:andrey.petrov@shazow.net">andrey.petrov@shazow.net</a>.</p>
+    </section>
+
+    <section>
+        <h3>More about me</h3>
+        <ul>
+            <li><a href="https://shazow.net">shazow.net</a></li>
+            <li><a href="https://github.com/shazow">github.com/shazow</a></li>
+            <li><a href="https://twitter.com/shazow">twitter.com/shazow</a></li>
+        </ul>
     </section>
 </div>
