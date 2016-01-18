@@ -185,16 +185,19 @@ footer a {
     border-left: 1em solid #eee;
 }
 
+li.tag::before {
+    margin-left: -4rem;
+    margin-right: 0.5rem;
+}
+
 .tag::before {
     font-family: 'Lucida Grande', Arial, sans-serif;
     background: #eee;
     color: #666;
     display: inline-block;
-    width: 3rem;
+    width: 3.5rem;
     content: " ";
     text-align: center;
-    margin-left: -3.5rem;
-    margin-right: 0.5rem;
     vertical-align: text-top;
     font-size: 0.7em;
     font-style: normal;
@@ -221,6 +224,12 @@ footer a {
     content: "Game";
     background: #c2a3d1;
     color: #5f5066;
+}
+
+.tag.acquired::before {
+    content: "Acquired";
+    background: #ddd;
+    color: #999;
 }
 
 .offsite.medium::before {

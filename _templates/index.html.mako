@@ -28,33 +28,37 @@
     <div class="section projects">
         <h2>You should try some things I've built recently like&hellip;</h2>
         <ul class="vertical">
-            <li class="tag service"><a href="http://briefmetrics.com/">Briefmetrics</a>  &middot; Remove the pain of using Google Analytics with weekly email summaries.</li>
-            <li class="tag service"><a href="http://bit.ly/chrome-colorblendy">ColorBlendy</a>  &middot; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
-            <li class="tag code"><a href="https://github.com/shazow/composer">Composer</a>  &middot; Static site generator in Python powering this very site.</li>
-            <li class="tag code"><a href="https://github.com/shazow/gameblocks.js">Gameblocks.js</a>  &middot; Toolkit for making games in JavaScript.</li>
-            <li class="tag game"><a href="http://bit.ly/linerage-chrome">LineRage</a>  &middot; Arcade-style game where you're a line and you try not to hit stuff.</li>
-            <li class="tag service"><s><a href="https://www.google.com/search?q=socialgrapple">SocialGrapple</a></s>  &middot; Twitter analytics tool that tracks changes in your social graph.</li>
-            <li class="tag service"><a href="http://tweepsect.com/">Tweepsect</a>  &middot; Intersect your Twitter social graph to uncover your stalkers.</li>
-            <li class="tag code"><a href="https://github.com/shazow/unstdlib.py">Unstdlib.py</a>  &middot; Collection of highly reusable Python code.</li>
-            <li class="tag code"><a href="https://github.com/shazow/urllib3">Urllib3</a>  &middot;  Python HTTP library with thread-safe connection pooling.</li>
-            <li class="tag service"><a href="http://wedomainsearch.com/">WeDomainSearch</a>  &middot; Find available domains with friends.</li>
+            <li class="tag service"><a href="http://briefmetrics.com/">briefmetrics</a>  &middot; Remove the pain of using Google Analytics with weekly email summaries.</li>
+            <li class="tag service"><a href="http://bit.ly/chrome-colorblendy">colorblendy</a>  &middot; Color blending tool so you don't have to open Photoshop to overlay or multiply a couple of colours.</li>
+            <li class="tag code"><a href="https://github.com/shazow/composer">composer</a>  &middot; Static site generator in Python powering this very site.</li>
+            <li class="tag code"><a href="github.com/shazow/go-selfcompile">go-selfcompile</a>  &middot; Prototype for building self-recompiling Go binaries.</li>
+            <li class="tag code"><a href="https://github.com/shazow/gameblocks.js">gameblocks.js</a>  &middot; Toolkit for making games in JavaScript.</li>
+            <li class="tag game"><a href="http://bit.ly/linerage-chrome">linegage</a>  &middot; Arcade-style game where you're a line and you try not to hit stuff.</li>
+            <li class="tag code"><a href="https://github.com/shazow/ssh-chat">ssh-chat</a>  &middot; Chat over SSH.</li>
+            <li class="tag service"><s><a href="https://www.google.com/search?q=socialgrapple">socialgrapple</a></s>  &middot; Twitter analytics tool that tracks changes in your social graph. <span class="tag acquired"></span></li>
+            <li class="tag service"><a href="http://tweepsect.com/">tweepsect</a>  &middot; Intersect your Twitter social graph to uncover your stalkers.</li>
+            <li class="tag code"><a href="https://github.com/shazow/unstdlib.py">unstdlib.py</a>  &middot; Collection of highly reusable Python code.</li>
+            <li class="tag code"><a href="https://github.com/shazow/urllib3">urllib3</a>  &middot;  Python HTTP library with thread-safe connection pooling.</li>
+            <li class="tag service"><s><a href="http://wedomainsearch.com/">wedomainsearch</a></s>  &middot; Find available domains with friends. <span class="tag acquired"></li>
         </ul>
     </div>
 
     <div class="section writing">
         <h2>I've written about&hellip;</h2>
         <ul class="vertical">
+            <li class="offsite medium"><a href="https://medium.com/mobile-lifestyle/in-vr-would-a-rose-smell-sweeter-8d7e876bfa51">In VR, Would a Rose Smell Sweeter?</a></li>
+            <li class="offsite medium"><a href="https://medium.com/@shazow/how-i-design-json-api-responses-71900f00f2db">How I design JSON API responses</a></li>
+            <li class="offsite medium"><a href="https://medium.com/@shazow/ssh-how-does-it-even-9e43586e4ffc">Why aren’t we using SSH for everything?</a></li>
+            <li class="offsite medium"><a href="https://medium.com/@shazow/urllib3-stripe-and-open-source-grants-edb9c0e46e82">Urllib3, Stripe, and Open Source Grants</a></li>
+            <li class="offsite medium"><a href="https://medium.com/@shazow/what-is-your-fantasy-c88bed381f4d">What is your fantasy?</a></li>
+            <li class="offsite medium"><a href="https://medium.com/open-source/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a">How to maintain a successful open source project</a></li>
             <%
                 posts = (r for r in index.routes if 'post' in (r.context or {}).get('tags', []))
-                posts = sorted(posts, key=lambda r: r.context.get('time_created'))
+                posts = sorted(posts, key=lambda r: r.context.get('time_created'), reverse=True)
             %>
             % for post in posts:
                 <li><a href="${post.url}">${post.context['title']}</a></li>
             % endfor
-            <li class="offsite medium"><a href="https://medium.com/open-source/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a">How to maintain a successful open source project</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/what-is-your-fantasy-c88bed381f4d">What is your fantasy?</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/urllib3-stripe-and-open-source-grants-edb9c0e46e82">Urllib3, Stripe, and Open Source Grants</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/ssh-how-does-it-even-9e43586e4ffc">Why aren’t we using SSH for everything?</a></li>
         </ul>
     </div>
 
@@ -63,8 +67,8 @@
 
         <ul class="horizontal">
             <li>Apple Pie</li>
-            <li>Bitcoins</li>
             <li>Chess</li>
+            <li>Cryptocurrency</li>
             <li>Distributed Peer-to-peer</li>
             <li>Everything2</li>
             <li>Golang</li>
@@ -78,6 +82,7 @@
             <li>Science Fiction &amp; Futurism</li>
             <li>Social Psychology</li>
             <li>Stickfigures</li>
+            <li>Virtual Reality</li>
             <li>Web Technology</li>
         </ul>
     </div>
