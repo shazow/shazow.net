@@ -10,7 +10,7 @@
         I build successful open source projects, work on my own products, and occasionally work on a contract basis with tech companies.
     </p>
     <p>
-        <strong>I'm excited about writing open source Go code.</strong> Can I help your company? (<a href="#help-with">Other things I can do</a>.)
+        <strong>I'm excited about writing open source Go code.</strong> Can I help your company? <span>(<a href="#help-with" class="reveal">Other things I can do for you</a>.)</span>
     </p>
 
     <section id="help-with" class="hidden">
@@ -88,3 +88,18 @@
         </ul>
     </section>
 </div>
+
+<%block name="tail">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="/static/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+<script type="text/javascript">
+    $(function() {
+        $(".reveal").click(function() {
+            var href = $(this).attr('href');
+            if (href[0] != '#') return true;
+            var q = $(href).animate({opacity: "toggle"});
+            return q.length == 0; // false is succeeded
+        });
+    });
+</script>
+</%block>
