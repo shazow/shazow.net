@@ -33,7 +33,7 @@
             <li class="tag code"><a href="https://github.com/shazow/composer">composer</a>  &middot; Static site generator in Python powering this very site.</li>
             <li class="tag code"><a href="github.com/shazow/go-selfcompile">go-selfcompile</a>  &middot; Prototype for building self-recompiling Go binaries.</li>
             <li class="tag code"><a href="https://github.com/shazow/gameblocks.js">gameblocks.js</a>  &middot; Toolkit for making games in JavaScript.</li>
-            <li class="tag game"><a href="http://bit.ly/linerage-chrome">linegage</a>  &middot; Arcade-style game where you're a line and you try not to hit stuff.</li>
+            <li class="tag game"><a href="http://bit.ly/linerage-chrome">linerage</a>  &middot; Arcade-style game where you're a line and you try not to hit stuff.</li>
             <li class="tag code"><a href="https://github.com/shazow/ssh-chat">ssh-chat</a>  &middot; Chat over SSH.</li>
             <li class="tag service"><s><a href="https://www.google.com/search?q=socialgrapple">socialgrapple</a></s>  &middot; Twitter analytics tool that tracks changes in your social graph. <span class="tag acquired"></span></li>
             <li class="tag service"><a href="http://tweepsect.com/">tweepsect</a>  &middot; Intersect your Twitter social graph to uncover your stalkers.</li>
