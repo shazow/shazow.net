@@ -264,4 +264,11 @@ footer a {
     li {
         margin-bottom: 0.5em;
     }
+
+    .hidden {
+        display: none;
+        &:target {
+            display: block;
+        }
+    }
 }

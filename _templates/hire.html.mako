@@ -7,11 +7,14 @@
         Hi, I'm Andrey, or <a href="https://shazow.net/">shazow</a> on the internet.
     </p>
     <p>
-        I've built dozens of open source projects, launched some startups, and occasionally work on a contract basis with technology companies. Can I help you?
+        I've built dozens of open source projects, launched some startups, and occasionally work on a contract basis with technology companies.
+    </p>
+    <p>
+        Right now, <strong>I'm most excited about writing open source Go code.</strong> Can I help your company? (<a href="#help-with">Other things I can do</a>)
     </p>
 
-    <section>
-        <h3>Help with...</h3>
+    <section id="help-with" class="hidden">
+        <h3>Help with:</h3>
         <ul>
             <li>
                 <strong>Open Source</strong><br />
@@ -63,7 +66,7 @@
     </section>
 
     <section>
-        <h3>Some companies I've worked with...</h3>
+        <h3>I've worked with:</h3>
         <ul class="horizontal">
             <li><a href="https://sourcegraph.com/">Sourcegraph</a></li>
             <li><a href="https://gliderlabs.com/">Glider Labs</a></li>
