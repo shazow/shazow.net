@@ -47,6 +47,7 @@
         <h2>I've written about&hellip;</h2>
         <ul class="vertical">
             <li class="offsite heroku"><a href="https://blog.heroku.com/see_python_see_python_go_go_python_go">See Python, See Python Go, Go Python Go</a> (Also <a href="https://www.youtube.com/watch?v=CkDwb5koRTc">gave this talk at PyCon 2016</a>)</li>
+            <li class="offsite heroku"><a href="https://blog.heroku.com/neither-self-nor-this-receivers-in-go">Neither self nor this: Receivers in Go</a> (Also <a href="https://www.youtube.com/watch?v=CkDwb5koRTc">gave this talk at PyCon 2016</a>)</li>
             <li class="offsite medium"><a href="https://medium.com/mobile-lifestyle/in-vr-would-a-rose-smell-sweeter-8d7e876bfa51">In VR, Would a Rose Smell Sweeter?</a></li>
             <li class="offsite medium"><a href="https://medium.com/@shazow/how-i-design-json-api-responses-71900f00f2db">How I design JSON API responses</a></li>
             <li class="offsite medium"><a href="https://medium.com/@shazow/ssh-how-does-it-even-9e43586e4ffc">Why aren’t we using SSH for everything?</a></li>

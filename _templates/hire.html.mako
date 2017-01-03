@@ -24,7 +24,7 @@
             <li>
                 <strong>R&amp;D and Prototyping</strong><br />
                 Are you considering a risky unproven technology, but want a working proof of concept before committing resources? These are some of my favorite projects.
-                (Examples: <a href="https://github.com/shazow/go-selfcompile">go-selfcompile</a>, <a href="https://github.com/shazow/go-git">go-git</a>)
+                (Examples: <a href="https://github.com/shazow/go-selfcompile">go-selfcompile</a>, <a href="https://github.com/shazow/gohttplib">gohttplib</a>, <a href="https://github.com/shazow/go-git">go-git</a>)
             </li>
             <li>
                 <strong>Stand-Alone Applications and Services</strong><br />
@@ -49,6 +49,7 @@
             <li><a href="https://gliderlabs.com/">Glider Labs</a></li>
             <li><a href="https://mirror.co/">Mirror</a></li>
             <li><a href="https://www.runscope.com/">Runscope</a></li>
+            <li><a href="https://www.sequoiacap.com">Sequoia</a></li>
             <li><a href="https://google.com/">Google</a></li>
             <li><a href="https://docker.com/">Docker</a></li>
             <li><a href="https://www.pinterest.com/">Pinterest</a></li>
@@ -73,7 +74,7 @@
             <li>Timeline/Urgency</li>
             <li>Technology stack</li>
             <li>Problem</li>
-            <li>Proposed solutions (optional)</li>
+            <li>Any previous solutions</li>
         </ul>
 
         <p>Tell me how I can help you at <a href="mailto:andrey.petrov@shazow.net">andrey.petrov@shazow.net</a>.</p>
