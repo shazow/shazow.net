@@ -19,9 +19,10 @@
         <h2>I'm shazow on&hellip;</h2>
         <ul class="vertical">
             <li><a rel="me" href="https://github.com/shazow">Github</a> where I reinvent your wheels in less code.</li>
-            <li><a rel="me" href="https://www.google.com/profiles/shazow">Google+</a> where I keep refreshing to check for new features.</li>
+            <li><a rel="me" href="https://medium.com/@shazow">Medium</a> where I'm relearning to stop thinking in tweets.</li>
             <li><a rel="me" href="https://twitter.com/shazow">Twitter</a> where I try to be funny.</li>
             <li><a rel="me" href="https://facebook.com/shazow">Facebook</a> where I'm reminded about how old I am.</li>
+            <li><a rel="me" href="https://www.google.com/profiles/shazow">Google+</a> where I keep refreshing for new features.</li>
         </ul>
     </div>
 
