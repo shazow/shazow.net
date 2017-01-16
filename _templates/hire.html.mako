@@ -7,15 +7,19 @@
         Hi, I'm Andrey. (Or, <a href="https://shazow.net/">shazow</a> on <a href="https://www.youtube.com/watch?v=6WpMlwVwydo">the internet</a>.)
     </p>
     <p>
-        I build successful open source projects, work on my own products, and occasionally work on a contract basis with tech companies.
+        I build <a href="https://github.com/shazow">successful open source projects</a>, work on <a href="https://briefmetrics.com/">my own products</a>, and occasionally work on a contract basis with tech companies.
     </p>
     <p>
-        <strong>I'm excited about writing open source Go code.</strong> Can I help your company? <span>(<a href="#help-with" class="reveal">Other things I can do for you</a>.)</span>
+        How can I help your company? <span>(<a href="#help-with" class="reveal">Some things I can do for you</a>.)</span>
     </p>
 
     <section id="help-with" class="hidden">
         <h3>Help with:</h3>
         <ul>
+            <li>
+                <strong>Virtual Reality</strong><br />
+                I've been building prototypes using Unity and my HTC Vive, and I'd love to help build a larger product.
+            </li>
             <li>
                 <strong>Open Source</strong><br />
                 My open source projects have accepted contributions from hundreds of people. Utilize my experience to launch, structure, or revamp your company's open source efforts.
@@ -45,15 +49,16 @@
     <section>
         <h3>I've worked with:</h3>
         <ul class="horizontal">
-            <li><a href="https://sourcegraph.com/">Sourcegraph</a></li>
+            <li><a href="https://appcanary.com/">Appcanary</a></li>
+            <li><a href="https://docker.com/">Docker</a></li>
             <li><a href="https://gliderlabs.com/">Glider Labs</a></li>
+            <li><a href="https://google.com/">Google</a></li>
             <li><a href="https://mirror.co/">Mirror</a></li>
+            <li><a href="https://sourcegraph.com/">Sourcegraph</a></li>
+            <li><a href="https://tineye.com/">TinEye</a></li>
+            <li><a href="https://www.pinterest.com/">Pinterest</a></li>
             <li><a href="https://www.runscope.com/">Runscope</a></li>
             <li><a href="https://www.sequoiacap.com">Sequoia</a></li>
-            <li><a href="https://google.com/">Google</a></li>
-            <li><a href="https://docker.com/">Docker</a></li>
-            <li><a href="https://www.pinterest.com/">Pinterest</a></li>
-            <li><a href="https://tineye.com/">TinEye</a></li>
         </ul>
     </section>
 
