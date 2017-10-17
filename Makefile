@@ -1,3 +1,4 @@
+.PHONY: build
 build:
 	hugo
 
