@@ -32,7 +32,7 @@ dateform               = "Jan 2, 2006"
 dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
 description            = "A doodler and computerer. I like open source, room-scale virtual reality, linux, neovim, and p2p systems. YC alum and Xoogler. Cat person."
 email                  = "andrey.petrov@shazow.net"
-extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+extracssfiles          = []       # In your `static` directory, add/remove files as necessary.
 faviconfile            = "favicon.ico"
 github                 = "https://github.com/shazow"
 highlightjs            = true
@@ -45,4 +45,6 @@ highlightjslanguages = ["go"]                        # additional languages not 
 highlightjsStyle     = "darcula"
 
 #avatar                 = "images/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-gravatar             = "andrey.petrov@shazow.net"                # do not use in the same time as avatar
+gravatar            = "andrey.petrov@shazow.net"                # do not use in the same time as avatar
+
+disableKinds        = ["taxonomy","taxonomyTerm"]

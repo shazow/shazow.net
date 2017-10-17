@@ -1,21 +1,19 @@
-<section class="main post non-narrow zero-top-spacing">
-    <div class="container">
-        <div class="content">
-            <div class="front-matter">
-                <div class="title-container">
-                    <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
-                </div>
-                <div class="meta">
-                    {{ if and .Site.Params.dateformfull .Site.Params.dateform }}
-                    <div class="date" title='{{ .Date.Format .Site.Params.dateformfull }}'>{{ .Date.Format .Site.Params.dateform }}</div>
-                    {{ else }}
-                    <div class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>{{ .Date.Format "Jan 2, 2006" }}</div>
-                    {{ end }}
-                </div>
-
-            <div>
-                {{ .Content }}
-            </div>
+{{ define "body" }}
+<div class="back">&larr; <a href="/">Back to shazow.net</a></div>
+<section class="main post container">
+    <div class="front-matter">
+        <div class="title-container">
+            <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
+        </div>
+        <div class="meta">
+            {{ if and .Site.Params.dateformfull .Site.Params.dateform }}
+            <div class="date" title='{{ .Date.Format .Site.Params.dateformfull }}'>Published on {{ .Date.Format .Site.Params.dateform }}.</div>
+            {{ end }}
         </div>
     </div>
+    <div>
+        {{ .Content }}
+    </div>
 </section>
+<div class="back">&larr; <a href="/">Back to shazow.net</a></div>
+{{ end }}
