@@ -647,7 +647,7 @@ li.tag::before {
   margin-left: -2em;
   content: " ";
   vertical-align: text-bottom;
-  background: url("/static/images/offsite-medium.png") no-repeat right 0.5em top; }
+  background: url("/images/offsite-medium.png") no-repeat right 0.5em top; }
 
 .hireme {
   max-width: 620px;
