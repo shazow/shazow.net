@@ -239,6 +239,11 @@ li.tag::before {
     background: #ddd;
     color: #999;
 }
+.tag.new::before {
+    content: "Latest";
+    background: #5cc100;
+    color: rgba(255, 255, 255, 0.8);
+}
 
 .offsite.medium::before {
     display: inline-block;
