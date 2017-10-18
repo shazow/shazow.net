@@ -6,5 +6,5 @@ run:
 	hugo server
 
 deploy: build
-	git commit -a build/
+	git commit build/
 	git subtree push --prefix build origin gh-pages
