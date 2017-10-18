@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrey Petrov</title>
+    <link>https://shazow.net/</link>
+    <description>Recent content on Andrey Petrov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 05 Jul 2016 17:49:06 -0400</lastBuildDate>
+    
+	<atom:link href="https://shazow.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neither self nor this: Receivers in Go</title>
+      <link>https://shazow.net/everything/receivers-in-go/</link>
+      <pubDate>Tue, 05 Jul 2016 17:49:06 -0400</pubDate>
+      
+      <guid>https://shazow.net/everything/receivers-in-go/</guid>
+      <description>Neither self nor this: Receivers in Go When getting started with Go, there is a strong temptation to bring baggage from your previous language. It’s a heuristic which is usually helpful, but sometimes counter-productive and inevitably results in regret.
+Go does not have classes and objects, but it does have types that we can make many instances of. Further, we can attach methods to these types and they kind-of start looking like the classes we’re used to.</description>
+    </item>
+    
+    <item>
+      <title>Laser Eye Surgery</title>
+      <link>https://shazow.net/everything/laser-eyes/</link>
+      <pubDate>Tue, 26 Feb 2013 21:24:01 -0800</pubDate>
+      
+      <guid>https://shazow.net/everything/laser-eyes/</guid>
+      <description>Laser Eye Surgery &amp;ldquo;What was it like?&amp;rdquo; More than anything else, it was creepy.
+&amp;nbsp; &amp;hellip; But worth it.
+Bespectacled My first vision correction was prescribed in the midst of my high school years. I could see well enough to get around but with great effort and strain. By the time I got home from school, I had to take a long nap just to make it through the rest of the day.</description>
+    </item>
+    
+    <item>
+      <title>Considering job offers? A checklist in alphabetical order</title>
+      <link>https://shazow.net/everything/checklist-for-considering-job-offers/</link>
+      <pubDate>Fri, 30 Dec 2011 17:38:28 -0800</pubDate>
+      
+      <guid>https://shazow.net/everything/checklist-for-considering-job-offers/</guid>
+      <description>Considering job offers? A checklist in alphabetical order Every offer you get will include some details and omit others. To perform a proper comparison between multiple offers and reach a good decision, you&amp;rsquo;ll need all the details for all offers. After numerous back-and-forths with several companies, I composed a checklist ideal for anyone on the verge of deciding the next stage of their career.
+ Benefits: Medical, dental, vision. Yes, you&amp;rsquo;re young and healthy, but root canals are much more painful when you&amp;rsquo;re paying for them out of your pocket.</description>
+    </item>
+    
+    <item>
+      <title>List of must-have apps on OSX</title>
+      <link>https://shazow.net/everything/list-of-must-have-apps-on-osx/</link>
+      <pubDate>Fri, 30 Dec 2011 14:13:55 -0800</pubDate>
+      
+      <guid>https://shazow.net/everything/list-of-must-have-apps-on-osx/</guid>
+      <description>List of must-have apps on OSX Or, first things I install when I nest into a fresh Apple computing device:
+ Adium Chrome Firefox Clyppan Colloquy Dropbox Growl Homebrew Fink MacPorts MacVim (via Homebrew!) Notifyapp Google Notifier Pandoraboy Quicksilver Skype iTerm2 TotalTerminal Visor Transmission VLC Virtualbox XCode  (Based on my older post, New Macbook Pro, list of things I installed. What am I missing?)</description>
+    </item>
+    
+    <item>
+      <title>Password Management Utilities</title>
+      <link>https://shazow.net/everything/password-management-utilities/</link>
+      <pubDate>Mon, 20 Jun 2011 19:26:20 -0700</pubDate>
+      
+      <guid>https://shazow.net/everything/password-management-utilities/</guid>
+      <description>Password Management Utilities We live in a time when cleartext usernames and passwords are leaked on a daily basis. In the last couple of months my accounts got compromised on Gawker, Sony, and MtGox. I decided it&amp;rsquo;s time to start using the one-password-per-service technique. These are tools I found in my research.
+I&amp;rsquo;m currently using SuperGenPass, but considering writing my own version that uses customizeable multipass sha512, more symbol breadth in passwords, and some other improvements.</description>
+    </item>
+    
+    <item>
+      <title>Arbitrarily-Structured Data in Relational Databases</title>
+      <link>https://shazow.net/everything/arbitrarily-structured-data-in-rdbms/</link>
+      <pubDate>Wed, 20 Oct 2010 16:01:53 -0700</pubDate>
+      
+      <guid>https://shazow.net/everything/arbitrarily-structured-data-in-rdbms/</guid>
+      <description>Arbitrarily-Structured Data in Relational Databases This approach is similar to FriendFeed&amp;rsquo;s schemaless database framework. The key difference is in the data locality.
+The goal is not to build an effective schemaless database on top of a relational database, but rather to accomodate for rapidly-evolving relational schemas and reducing the difficult of migrating forward.
+Hypothesis In an evolving relational (SQL) database schema, we store two types of data: Data we will be querying against and data we will be displaying.</description>
+    </item>
+    
+    <item>
+      <title>Rules of thumb for novice designers (like myself)</title>
+      <link>https://shazow.net/everything/rules-of-thumb-for-novice-designers/</link>
+      <pubDate>Tue, 21 Sep 2010 15:39:53 -0400</pubDate>
+      
+      <guid>https://shazow.net/everything/rules-of-thumb-for-novice-designers/</guid>
+      <description>Rules of thumb for novice designers (like myself) My strategy as a novice designer is to keep track of some rules of thumb to reduce the probability of making bad mistakes from lack of experience. If I&amp;rsquo;m careful enough, then I can often get to a point where just a little polish from an experienced designer is what it takes to get it from the 80% to the 100% mark.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shazow.net/everything/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shazow.net/everything/readme/</guid>
+      <description> Everything Not Chronological This is a repository for my knowledge and thoughts about everything that is not time-sensitive.
+Blog posts I need to port to this repository  Protip for ambitious engineers looking for a cool job: Forget job boards, talk to angel investors. Considering offers? A checklist in alphabetical order Circadian Somersault: 28 hour days for 1 week Invention: Pass-through multi-car elevators Why I Love Linux, also Part 2 What it&amp;rsquo;s like to stutter Apartment Hunting: Tips, tricks, and strategy  Things I should write about more  Salary Negotiation  </description>
+    </item>
+    
+  </channel>
+</rss>
