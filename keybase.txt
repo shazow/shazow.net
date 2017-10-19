@@ -1,0 +1,156 @@
+==================================================================
+https://keybase.io/shazow
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://shazow.net
+  * I am shazow (https://keybase.io/shazow) on keybase.
+  * I have a public key with fingerprint 9FCE A980 CCFD 3C13 E11E  88A9 3506 87D1 7E81 FD68
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ee0113a6460d8ad3538c37a387804848bcf368ebcfaaca53c4d9d04717fdb41e0a",
+            "fingerprint": "9fcea980ccfd3c13e11e88a9350687d17e81fd68",
+            "host": "keybase.io",
+            "key_id": "350687d17e81fd68",
+            "kid": "0101ee0113a6460d8ad3538c37a387804848bcf368ebcfaaca53c4d9d04717fdb41e0a",
+            "uid": "0cfef3bacae68424de9bec5b7ff58600",
+            "username": "shazow"
+        },
+        "revoke": {
+            "sig_ids": [
+                "a506ece7075a8eff5c608b6f98221b701f22ffa7cf8481bc586facb9ace61a8a0f"
+            ]
+        },
+        "service": {
+            "hostname": "shazow.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1453866582,
+    "expire_in": 157680000,
+    "prev": "318a42bf9642411be0d96d020d3be0ce544a0528491da61309543d40c52be3b7",
+    "seqno": 23,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkmtMVEcUx5dncZUAqaIptOKlllIJnfueu7GIIcZoEzVqCZY1OPfeuXB57MLu
+srxqIwkpQsujGjAo0DQW01JaVEiQ4iKtdA2YGKlQRGMpTUCgqI1aIUi1c2n7oUk/
+dr6cmcn//M/vnJnaYD+T2YcPLB96v/SPDJ+rM7Ip+fOEtBJKtqtFlKWEysLLAWer
+2OlKy9JVykIBGtAYA5pmkcAJQIVIZXkWKqyIWChCwEEOyorGChCTgJCCeFbhVEkF
+nEiLmipzNAaIiqM03ZaOHbkO3eYitpKmYCRBoCiayio0i2kaQ4gklgcCFFVaxJDW
+VAGSxAy708ggcDJy4njdTu7IIW0Z7z/0/zN3/l92ioY1ViYyLECO4VQsyVjhZVHT
+eCgAYAid2GFDOZionRmo2F5AHY6jHNhtz8LGVJ16OkF2UpZUChForGARiDyCmDgo
+AoCyoEmQYWhZBLTGMJqGREUjkLSskAoaUmQJKVigEURAow4Sb1LPrSvL5saM/lU7
+3oZdhCnXYXfZFXs2uc9wuXKdFoPJVZRrCAvwOTntb480Wbep5IFIihs7nLrdRllo
+IlVcumFKc2R0gsBDJo7Chbm6A6fphoIXBQjIMgpht/EcNEQcI2uSQGZE0zIGqiSo
+gAEqS/YK5jkOAZ6BnESrSKBZIPEcq3JA4RkZs7JIGV3l2eyUhWEJKEo3GtLTbciV
+78DUYXOFb6S/ycdsCgzwNb6uybwi9J//vKI21PTxZMCZmzCy9pFnrMv0Ws0vS36R
+ldUHtu9iQxYyJ8xHkpNT9luTpnwLL3Abmh8s3ey5VrPoPdMfGzkZbDvemr8vRPb7
+9ey6kroWr10wmYc9vxdfme43ff2We/7ZrZM/N7/RdP3lTztLO7w/cAsFPeA4Ozsa
+feWSvjospTXg6J3+oYNT1grL82olsckzrtYX7oqNCQavTFRPn5qJi3pyd84SPGTP
+a1wckd1RM4mux50jH5TcTr94DcUsFuv+a4d8n/Ts/X7N4kC/JaGMfY9pA+fPDlyE
+o5UxRc0972za4he9KWxww97dY3ExT+l795OobfsjglclthR9U9XhOTm39XzQqw3e
+zg1VEWCHY/fmA4PtS4c6TuCvin982jkebu3q3bd550uJcmhV7PDbbHMjaCwrqMuc
+api9ZLLkRbbfWxkTcrl3aqy82zuh+iYwTVF3rBuLW2ZPDTy+2yD/dqO+aO32rK0v
+bgnPmrTFZ4evTJpxXe8a+64tuvzD2IdvShXRhaUdVnl9cs1Pn3zbFKj0rdbij406
+redCa2pv5XxxYdg09fxZ6etB7y60RrywzVzRN/ZRSNiRtsw6WNzfpc5b9qRszJmL
+iU8wpUz0HqtvD/KvvNq78GXbiSDp/uXuVZ9Fe3b61N4Y3lHQF7k+NdUzXXb0tHd8
+/nb36ZGHfjUPptf1H7Lqj0L2DBat+RM=
+=RotG
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shazow
+
+==================================================================
+==================================================================
+https://keybase.io/shazow
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://shazow.net
+  * I am shazow (https://keybase.io/shazow) on keybase.
+  * I have a public key with fingerprint 9FCE A980 CCFD 3C13 E11E  88A9 3506 87D1 7E81 FD68
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ee0113a6460d8ad3538c37a387804848bcf368ebcfaaca53c4d9d04717fdb41e0a",
+            "fingerprint": "9fcea980ccfd3c13e11e88a9350687d17e81fd68",
+            "host": "keybase.io",
+            "key_id": "350687d17e81fd68",
+            "kid": "0101ee0113a6460d8ad3538c37a387804848bcf368ebcfaaca53c4d9d04717fdb41e0a",
+            "uid": "0cfef3bacae68424de9bec5b7ff58600",
+            "username": "shazow"
+        },
+        "revoke": {
+            "sig_ids": [
+                "19be9ad193db6cf565f0a0924a688c98469fcc3c623d9607cbe112df3a9f41090f"
+            ]
+        },
+        "service": {
+            "hostname": "shazow.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1455838302,
+    "expire_in": 157680000,
+    "prev": "fb9f9f37008dd17ff9ab976e8abe67e72c79dbabb052fa5f0b2ee5eb6986e111",
+    "seqno": 24,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUn9MlHUYvzsPylsScy3CEcmbmLXjfN97f33fK0bCAJVKjXBE0e398X2P1zvu
+Pe89OBBwEpuAAkJbjLWBDWYxHEQpLg5EM8mAZRFD3FAGghai2Uwn7Ab2Pao/2vqz
+7z/Pvs8+z+f5PJ/nqV+3RmfS0+GVowfLl/P0I/OCbu937/AlmKBKxZitBHPC1QBd
+EtR8dqciYTYMJ3ACQpwgSJ6hGFwCvETSJBBJlicBC3AKUEAQZZIBEAWeF3maFCmJ
+k3CKJVhZEigC4jxmxmTF7YBej1dx+xAtJ4uQ5wAuirJEigQJCQICwHMkjTOAlQgW
+AkKWGIAK81QtVIHECbwGLYqKcuhjX5X3H/j/WXfBX3SiDGVSQDDIAMpKSZAToEgL
+rCzTgMHxEFCDXjefDxFay+MPqH6szIx5YaHqhCFXNcWBJGuY7T2MQLUcLxEcKQmM
+KNMMLeM8zlkpngFA5ADFIHtEUmSspMQxOCsKyB6rJJM8J1MEzuEylou4Ub9CRVwl
+D3n0r94WN/QhTR6v6lNF1YXyeT6fR7OFNPmKPSGgH34p2P/msAuKW0ILQiWF0Ksp
+qhuzEQgq+pQQKUHRNCABiVvNGCzyKF5oV0IImmUAjl6oESxEnLLAyZxMsjgOJLQU
+WeZ4gWMZCHgBMixkrSLLSQIvCDhtlXk0tmCFkIYCwwEGzUhgoan2u1XMZqWQUN4R
+GkhxuHlfgRdiZaZqQ4xRpzfpwsMModPVmdZG/nPPo01PL28Q+itiD2oPpgKRu86f
++eHhpo2zb7YoT+pW2vuPdf7YWj5W3TU1+k3FSFfarxnPVU6wLnX3oW+XUrRs1uQ+
+XGSYIvY2zq+8NNtfMF5XuD6t7dKVgaQL5Aux6dPbU7rNJeqS//ztnJMd1wZmrh+9
+cq/LHN043zJh7M1fP91pzvzYGx8bsHyQ+vOtdbf1ny9FTt591J2zpaQp6H5+eGEX
+J9otJ3orS3/KLMvKcg0xwbi320+ffTXR6cy9dUpMc4UnfHb3YYYr2Xj2Jv71hoZ9
+uqqoQ2FF73ctPEjprHm2NmXmi77RHcrrDR1VqVVRUYugy9FfWhxmbstOiqsxpBfH
+0HO4ca6u+0j86etbs3ressyJm13X4mJurKjieH1wd7Nh8dH9qcGXDX2D2SMaV+6Y
+NU6qm19LT5yr8zU6/cOqB36Sm0zvM20avtC3v8E/NDjwRKpp5lR1ec+OsJ5Bff1C
+5Ij18S81YQmDO0eTcmq2tN8oKA1eenz43h/dV8fm2e2Btib3TO2yzZhC11AzS0fj
+mox7Ft5I27YtY03zU4HxrZcvd37qj8iXoseCr/z2VXpndfCkpSXDsXZnYutEBDD9
+fi5hek9528WPLNjGgYrv6+c8/QzXeme8VqtIH3oxEKEXjxx3J3cEF88Ezt25qUVf
+PfHu8eSxIGN9xpT5YXOMqffi/fgDk91/Ag==
+=MuVC
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shazow
+
+==================================================================
