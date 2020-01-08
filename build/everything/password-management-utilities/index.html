@@ -9,6 +9,8 @@
     <link href="https://shazow.net/css/base.css?4" media="screen" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="https://shazow.net/images/icon.png" />
 
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed shazow.net" href="https://shazow.net/index.xml" />
+
     <link href='//fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:400,400italic&amp;v2' rel='stylesheet' type='text/css'>
     
 </head>
@@ -25,55 +27,32 @@
         </div>
         <div class="meta">
             
-            <div class="date" title='Mon Jun 20 2011 19:26:20 -0700'>Published on Jun 20, 2011.</div>
+            <div class="date" title='Mon Jun 20 2011 19:26:20 PDT'>Published on Jun 20, 2011.</div>
             
         </div>
     </div>
     <div>
-        
-
-<h1 id="password-management-utilities">Password Management Utilities</h1>
-
-<p>We live in a time when cleartext usernames and passwords are leaked on a daily basis. In the last couple of months my accounts got compromised on Gawker, Sony, and MtGox. I decided it&rsquo;s time to start using the one-password-per-service technique. These are tools I found in my research.</p>
-
-<p>I&rsquo;m currently using SuperGenPass, but considering writing my own version that uses customizeable multipass sha512, more symbol breadth in passwords, and some other improvements.</p>
-
+        <h1 id="password-management-utilities">Password Management Utilities</h1>
+<p>We live in a time when cleartext usernames and passwords are leaked on a daily basis. In the last couple of months my accounts got compromised on Gawker, Sony, and MtGox. I decided it's time to start using the one-password-per-service technique. These are tools I found in my research.</p>
+<p>I'm currently using SuperGenPass, but considering writing my own version that uses customizeable multipass sha512, more symbol breadth in passwords, and some other improvements.</p>
 <h2 id="derived-password-algorithm">Derived Password Algorithm</h2>
-
-<h3 id="pwgen-https-github-com-jdoda-pwgen"><a href="https://github.com/jdoda/pwgen">pwgen</a></h3>
-
-<p><a href="http://twitter.com/jondoda">@jondoda</a> wrote his own simple algorithm for deriving a per-site password based from a master password. I&rsquo;ve seen many variations of this, they&rsquo;re all very simple: Given a service name and a master password, concatenate them and run a hash function on it a bunch of times, then base64-encode the result and truncate to the desired length. Jon even wrote an Android version.</p>
-
-<h3 id="supergenpass-http-supergenpass-com"><a href="http://supergenpass.com/">SuperGenPass</a></h3>
-
-<p>Same idea as Jon&rsquo;s pwgen, but in a JavaScript bookmarklet! This particular implementation uses multipass md5 which is pretty weak but the rest of the implementation is impressive. You go to the login page, enter your username and master password, then hit the bookmarklet and it converts the master password into a site-specific derived password in-place. No data leaves the comfort of your browser for this. There is also a mobile version.</p>
-
+<h3 id="pwgenhttpsgithubcomjdodapwgen"><a href="https://github.com/jdoda/pwgen">pwgen</a></h3>
+<p><a href="http://twitter.com/jondoda">@jondoda</a> wrote his own simple algorithm for deriving a per-site password based from a master password. I've seen many variations of this, they're all very simple: Given a service name and a master password, concatenate them and run a hash function on it a bunch of times, then base64-encode the result and truncate to the desired length. Jon even wrote an Android version.</p>
+<h3 id="supergenpasshttpsupergenpasscom"><a href="http://supergenpass.com/">SuperGenPass</a></h3>
+<p>Same idea as Jon's pwgen, but in a JavaScript bookmarklet! This particular implementation uses multipass md5 which is pretty weak but the rest of the implementation is impressive. You go to the login page, enter your username and master password, then hit the bookmarklet and it converts the master password into a site-specific derived password in-place. No data leaves the comfort of your browser for this. There is also a mobile version.</p>
 <h2 id="proprietary">Proprietary</h2>
-
-<h3 id="1password-http-agilebits-com-products-1password"><a href="http://agilebits.com/products/1Password">1Password</a></h3>
-
-<p>1Password is the Lexus of password management tools. It costs $39.99 for an OSX and Windows desktop license and another $11.99 for a mobile app. It lives in one file encrypted by your master password, so it&rsquo;s portable and many people use Dropbox to sync it across devices. No Linux support. (Via <a href="http://twitter.com/wolever">@wolever</a>)</p>
-
-<h3 id="lastpass-https-lastpass-com"><a href="https://lastpass.com/">LastPass</a></h3>
-
+<h3 id="1passwordhttpagilebitscomproducts1password"><a href="http://agilebits.com/products/1Password">1Password</a></h3>
+<p>1Password is the Lexus of password management tools. It costs $39.99 for an OSX and Windows desktop license and another $11.99 for a mobile app. It lives in one file encrypted by your master password, so it's portable and many people use Dropbox to sync it across devices. No Linux support. (Via <a href="http://twitter.com/wolever">@wolever</a>)</p>
+<h3 id="lastpasshttpslastpasscom"><a href="https://lastpass.com/">LastPass</a></h3>
 <p>LastPass has a freemium pricing model. They support all desktop platforms (OSX, Linux, Windows), but mobile devices require their $12/yr Premium subscription which synchronizes your password database with their servers.</p>
-
 <h2 id="open-source">Open Source</h2>
-
-<h3 id="keepass-http-keepass-info"><a href="http://keepass.info/">KeePass</a></h3>
-
+<h3 id="keepasshttpkeepassinfo"><a href="http://keepass.info/">KeePass</a></h3>
 <p>Official client is Windows-based but has ports to all desktop platforms (Linux, OSX, mobile). Self-contained binary and database, portable. Actively developed, has a healthy plugin community with extensions for major browsers. (Via <a href="http://twitter.com/corbett_inc">@corbett_inc</a>)</p>
-
-<h3 id="password-gorilla-https-github-com-zdia-gorilla"><a href="https://github.com/zdia/gorilla">Password Gorilla</a></h3>
-
+<h3 id="password-gorillahttpsgithubcomzdiagorilla"><a href="https://github.com/zdia/gorilla">Password Gorilla</a></h3>
 <p>Very barebones, self contained binary, actively developed. (Via <a href="http://twitter.com/seanpiled">@seanpiled</a>)</p>
-
-<h3 id="pwsafe-http-passwordsafe-sourceforge-net"><a href="http://passwordsafe.sourceforge.net/">pwsafe</a></h3>
-
+<h3 id="pwsafehttppasswordsafesourceforgenet"><a href="http://passwordsafe.sourceforge.net/">pwsafe</a></h3>
 <p>Even more barebones, text-based, no browser integration. (Via <a href="http://twitter.com/jpetazzo">@jpetazzo</a>)</p>
-
-<h3 id="sflvault-https-projects-savoirfairelinux-com-projects-sflvault-wiki"><a href="https://projects.savoirfairelinux.com/projects/sflvault/wiki/">SFLvault</a></h3>
-
+<h3 id="sflvaulthttpsprojectssavoirfairelinuxcomprojectssflvaultwiki"><a href="https://projects.savoirfairelinux.com/projects/sflvault/wiki/">SFLvault</a></h3>
 <p>Somewhat unrelated but cool project, useful for sharing passwords between teams. (Via <a href="http://twitter.com/jpetazzo">@jpetazzo</a>)</p>
 
     </div>
