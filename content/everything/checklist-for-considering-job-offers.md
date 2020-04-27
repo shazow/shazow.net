@@ -5,7 +5,7 @@ date = "2011-12-30 17:38:28 -0800"
 
 # Considering job offers? A checklist in alphabetical order
 
-![Celebrating your job offer](http://shazow.net/images/blog/ballpit.jpg)
+![Celebrating your job offer](checklist-for-considering-job-offers.ballpit.jpg)
 
 Every offer you get will include some details and omit others. To perform a
 proper comparison between multiple offers and reach a good decision, you'll
