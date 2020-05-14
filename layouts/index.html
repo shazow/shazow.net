@@ -53,7 +53,7 @@
             <li class="offsite heroku"><a href="https://blog.heroku.com/neither-self-nor-this-receivers-in-go">Neither self nor this: Receivers in Go</a>
             {{ range (.Site.RegularPages.ByPublishDate).Reverse }}
             <li class="post-item">
-                <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>  ({{.Date.Format "2006"}})
+                <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a> ({{.Date.Format "2006"}})
             </li>
             {{ end }}
         </ul>
