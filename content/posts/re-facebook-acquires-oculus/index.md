@@ -9,27 +9,21 @@ description: ""
 subtitle: "A letter of concern"
 
 
-
-
 aliases:
     - "/re-facebook-acquires-oculus-f8589a747d11"
 
 ---
 
-## Re: Facebook acquires Oculus
 
-#### A letter of concernHello, John Carmack.
+## A letter of concern
 
-> [](https://twitter.com/ID_AA_Carmack/status/449594006217842688)
-[https://twitter.com/ID_AA_Carmack/status/449594006217842688](https://twitter.com/ID_AA_Carmack/status/449594006217842688)
+Hello, John Carmack.
 
+{{< tweet 449594006217842688 >}}
 
-> [](https://twitter.com/ID_AA_Carmack/status/449594072244568064)
-[https://twitter.com/ID_AA_Carmack/status/449594072244568064](https://twitter.com/ID_AA_Carmack/status/449594072244568064)
+{{< tweet 449594072244568064 >}}
 
-
-> [](https://twitter.com/ID_AA_Carmack/status/449594122936922112)
-[https://twitter.com/ID_AA_Carmack/status/449594122936922112](https://twitter.com/ID_AA_Carmack/status/449594122936922112)
+{{< tweet 449594122936922112 >}}
 
 
 
@@ -37,7 +31,7 @@ Thank you for being open to public discourse.
 
 I am a passionate believer in the importance and imminence of virtual reality’s effects on our society. I was devastated when I read the news about Facebook acquiring OculusVR, and this is why:
 
-#### Ecosystem
+## Ecosystem
 
 The Oculus Rift was more than a timely piece of clever technology—it was a powerful rallying cry to which hundreds of developers and manufacturers answered the call.
 
@@ -51,7 +45,7 @@ We all acknowledge that Oculus VR was a private company and had the right to do 
 
 I worry that this sacrifice was too big and will set our society back until the community recovers. It’s true that, with Facebook’s funds, Oculus VR could launch the consumer devices earlier, cheaper, and with better parts, but I worry it will land in a much less vibrant and healthy ecosystem than it otherwise could have.
 
-#### Acquisitions
+## Acquisitions
 
 Even with the best intentions from both sides, acquisitions never end quite the way the participants hope they will.
 
@@ -59,7 +53,8 @@ Consider this a concern from my personal experiences, as limited and biased as t
 
 Mark Zuckerberg may feel like he is making a benevolent investment in society by advancing the roadmap of the Oculus Rift today, but things change. What if Facebook’s stock plummets next year as advertising intent continues to elude the social network? What if a competing VR firm shows success in monetizing the product in less-than-user-friendly ways? What if the SVP who is allocated to oversee your division disagrees with your vision and the slow-yet-steady political pressure erodes your founding team’s ideals? What if Instagram gets merged into Facebook Photos, WhatsApp gets merged into Facebook Messages, and you’re next on the cutting block?
 
-#### Moving forward
+## Moving forward
+
 > What are the hazards? What should be done to guard against them? What are the tests for failure?
 
 I don’t know.

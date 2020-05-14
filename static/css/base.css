@@ -546,6 +546,10 @@ footer a {
   .post h4, .post h5 {
     font-size: 0.8em;
     font-weight: normal; }
+  .post ul {
+    margin: 0.5em 0 1em 0; }
+  .post li p {
+    margin: 0.5em 0 0.5em 0; }
 
 .post strong {
   color: inherit; }

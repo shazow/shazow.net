@@ -7,19 +7,13 @@ lastmod: 2020-05-14T12:26:52-04:00
 description: ""
 
 subtitle: "Finding the North Star for your career"
-
-
-
-
 aliases:
     - "/what-is-your-fantasy-c88bed381f4d"
 
 ---
 
-## What is your fantasy?
+## Finding the North Star for your career
 
-#### Finding the North Star for your career
-Dan Satterfield via Stellarium
 What do I _really_ want? I’ve been thinking about this for many years.
 
 Do I want to build a venture capital funded startup? A sustainable humble life-style business? An innovative independent game studio? A wildly-profitable consulting enterprise? Perhaps follow in the foot-steps of 37Signals, Github, Twitter, or Google?

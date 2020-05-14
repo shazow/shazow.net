@@ -10,17 +10,14 @@ subtitle: "Since urllib3 was created in 2008, we have gained several amazing mai
 tags:
  - Open Source
  - Python
-
-
-
+ - urllib3
 
 aliases:
     - "/open-sourcing-urllib3s-finances-e183740fcba7"
 
 ---
 
-> [](https://twitter.com/shazow/status/1074729655394074624)
-
+{{< tweet 1074729655394074624 >}}
 
 Since [urllib3](https://github.com/urllib3/urllib3) was created in 2008, we have gained several amazing maintainers and hundreds of contributors. Any time you do anything that touches HTTP in Python, you’re probably using urllib3 behind the scenes. It is the 2nd most downloaded third-party Python package, after pip.
 

@@ -27,16 +27,11 @@ In a few months, the first iteration of modern consumer virtual reality headsets
 
 I present three stories that use VR technology to push our crafts beyond what was possible. Each story is focused around an amazing short video that is very much worth watching.
 
-#### “This is not why _I_ became an actor.”
+## “This is not why _I_ became an actor.”
 
 On the set of The Hobbit, Sir Ian McKellen broke down in tears after hours of delivering his lines as Gandalf to a handful of photographs floating amidst a sea of green.
 
-
-
-
 ![image](/posts/in-vr-would-a-rose-smell-sweeter/images/1.jpeg#layoutTextWidth)
-
-
 
 In [an interview with Contact Music](http://www.contactmusic.com/ian-mckellen/news/ian-mckellen-broke-down-on-the-hobbit-set_3378939), he recalled:
 > In order to shoot the dwarves and a large Gandalf, we couldn’t be in the same set. All I had for company was 13 photographs of the dwarves on top of stands with little lights — whoever’s talking flashes up.> Pretending you’re with 13 other people when you’re on your own, it stretches your technical ability to the absolute limits.> I cried, actually. I cried. Then I said out loud, ‘This is not why I became an actor’. Unfortunately the microphone was on and the whole studio heard.
@@ -46,28 +41,18 @@ Today, we’re entering a different world. One where actors can be immersed in t
 Cloudhead Games is working with actor [Adrian Hough](http://www.imdb.com/name/nm0396406/) to [record the motion captured acting end-to-end for the first episode of The Gallery](http://www.thegallerygame.com/blog/storyinvr/), right inside the world itself as it’s being acted out:
 
 
-
-
-
-
 As Valve’s Lighthouse Tracking system becomes available later this year, trackable peripherals and body attachments will bring a world of consumer motion capture. Someday, it might even be the default for most VR experiences. You’ll raise your hand, wiggle your fingers, and take that precious swing to feel haptics sharply vibrate in your palm as you slap your friend across the continent. [The future is here](https://webcache.googleusercontent.com/search?q=cache:kbNowrMCkzIJ:bash.org/%3F4281+&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=us).
 
-#### “What is this amazing new world?”
+## “What is this amazing new world?”
 
 Glen Keane is an animator who worked at Disney for 38 years, he helped create many of the characters we all take for granted from our childhood.
 
 
 
-
-![image](/posts/in-vr-would-a-rose-smell-sweeter/images/2.jpeg#layoutTextWidth)
-
-Glenn Keane illustrations
-
+{{< figure src="/posts/in-vr-would-a-rose-smell-sweeter/images/2.jpeg" title="Glenn Keane illustrations" >}}
 
 
 In collaboration with the Future of StoryTelling Summit, Keane put on an HTC Vive headset and picked up the wireless controllers. He entered a new world:
-
-
 
 
 > When I draw in virtual reality, I draw all the characters in real life size. They are that size in my imagination.
@@ -76,7 +61,7 @@ This world is called [Tilt Brush](http://www.tiltbrush.com/), a VR painting appl
 
 For years we’ve been fed images of [architects](http://www.dezeen.com/2015/04/27/virtual-reality-architecture-more-powerful-cocaine-oculus-rift-ty-hedfan-olivier-demangel-ivr-nation/) and [surgeons](http://www.cnn.com/2016/01/07/health/google-cardboard-baby-saved/) using virtual or augmented reality to feel what it’s like to be _inside_ their building or patient. But what about us? What about our inner child unleashed inside a life-sized world of our own design, not just staring at it from the distant abstraction of a flat display.
 
-#### “Your crappy PC is the biggest barrier to [VR] adoption.”
+## “Your crappy PC is the biggest barrier to [VR] adoption.”
 
 Palmer Luckey, founder of now-Facebook’s Oculus RV, hosted a marathon of an [IAMA on /r/pcmasterrace](https://www.reddit.com/r/pcmasterrace/comments/40ea0x/i_am_palmer_luckey_founder_of_oculus_and_designer/) last week. One recurring topic was the recommended hardware requirements for running the Oculus Rift, specifically the “_NVIDIA GTX 970 / AMD 290 equivalent or greater” —_ a $350 investment just for the video card, or more if you’re shooting for above the bare minimum.
 

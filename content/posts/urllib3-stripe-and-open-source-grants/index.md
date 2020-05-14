@@ -18,15 +18,15 @@ aliases:
 
 ---
 
-## Urllib3, Stripe, and Open Source Grants
+### Helping the future come a little sooner
 
-#### Helping the future come a little soonerSix years ago, I built [a better Python http library](https://github.com/shazow/urllib3). It had then-novel things like connection pooling, thread-safety, multipart encoding, and more. Today, every Python user depends on it.
+Six years ago, I built [a better Python http library](https://github.com/shazow/urllib3). It had then-novel things like connection pooling, thread-safety, multipart encoding, and more. Today, every Python user depends on it.
 
 Maintaining something for six years on my own time is not easy, even with [a slew of coping strategies](https://medium.com/@shazow/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a). A few hours here and there, every week, and slowly it chugs along—largely thanks to contributors undertaking the bigger tasks that I can’t knock off in a quick afternoon.
 
 Last week completes my two week grant from [Stripe](https://stripe.com/) to work on urllib3 full time, and I’d like to declare that these weeks were a huge success.
 
-#### tl;dr:
+### tl;dr:
 
 *   $3,750 for two weeks of full time work at Stripe.
 *   51 files changed, 1809 insertions(+), 633 deletions(-).
@@ -35,7 +35,7 @@ Last week completes my two week grant from [Stripe](https://stripe.com/) to work
 *   ~6 months worth of progress in two weeks.
 *   Tech companies: More like this, please.
 
-### Stripe Open-Source Retreat
+## Stripe Open-Source Retreat
 
 In April, Stripe [announced the intent to sponsor a few open source projects](https://stripe.com/blog/stripe-open-source-retreat) for 3 months of full-time work at the office.
 
@@ -47,7 +47,7 @@ The rest of the experience was a dream. I arrived at Stripe and was basically tr
 
 Everyone treated me as a fellow Stripe. With new hires starting each week, I may as well have been.
 
-### Progress on urllib3
+## Progress on urllib3
 
 First few days were all about catching up on low-hanging fruit. Pull requests that have been thoroughly reviewed, easy little bugs or feature requests. I was closing numerous issues per day, and it felt great. Having a full day allocated to _just this_ was empowering, without the distraction of attention-starved pets at home or coffeeshop patrons eyeing my prime seat next to the outlet.
 
@@ -68,7 +68,7 @@ urllib3 commits since moving to Github
 
 
 
-### More like this
+## More like this
 
 Publishing and contributing to open source is going to continue happening regardless whether I’m getting paid for it or not, but it will be slow and unfocused. Which is fine, it’s how open source work has always worked. But it doesn’t need to be this way.
 
@@ -84,6 +84,6 @@ If your company uses Python and benefits from urllib3 (which powers Requests, pi
 
 If you’re looking for other projects to give a grant to, I would be happy to recommend some other great initiatives.
 
-### Thanks again
+## Thanks again
 
 A huge cloud-scale heartfelt thanks to [urllib3&#39;s many contributors](https://github.com/shazow/urllib3/blob/master/CONTRIBUTORS.txt) and to [Stripe](https://stripe.com/) for helping the future come a little sooner.

@@ -12,43 +12,56 @@ tags:
  - Programming
  - Python
 
-
-
-
 aliases:
     - "/code-boilerplate-is-it-always-bad-934827efcfc7"
 
 ---
 
-#### A case study between Python and Go.
+> A case study between Python and Go.
 
 In Go, a common complaint from newly-minted gophers who come from another language is the error handling pattern:
-`result, err := DoSomething()  
-if err != nil {  
-    return nil, err  
-}``another, err := SomethingElse(result)  
-if err != nil {  
-    return nil, err  
-}``// We can be a bit more terse if we don&#39;t need to save any  
-// variables outside of the if-scope:  
-if err := MoreWork(another); err != nil {  
-    return nil, err  
-}  
-...`
+
+```
+result, err := DoSomething()
+if err != nil {
+    return nil, err
+}
+```
+
+```
+another, err := SomethingElse(result)
+if err != nil {
+    return nil, err
+}
+```
+
+```
+// We can be a bit more terse if we don&#39;t need to save any
+// variables outside of the if-scope:
+if err := MoreWork(another); err != nil {
+    return nil, err
+}
+...
+```
+
 
 Any time we write similar-looking code over and over, that’s considered _boilerplate_.
 
 A key principle of programming that we all learn is [Don’t Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (DRY). In a way, that’s the entire point of programming: To automate a task that we keep repeating manually. Who wants to keep artisanally sorting text files each morning when we could have a program do it for us faster and more reliably? Similarly, why should we keep writing some code pattern over and over when we should be able to abstract it away into some terser syntax?
 
-### Proportional work
+## Proportional work
 
 After writing Python code for over a decade and becoming quite proficient at it, I’d take any opportunity to write terse code. It feels good to be clever and [more code means more bugs](https://www.mayerdan.com/ruby/2012/11/11/bugs-per-line-of-code-ratio), right?
 
 One thing I didn’t notice until I switched to writing Go as my primary language: The _proportionality of work_ done in Python code is hugely variable.
 
 **What do I mean by proportionality?** Consider these two lines:
-`a = some_variable + 42  
-b = sum((j if j % 2 else 0) for (j, k) in results if k)`
+
+```
+a = some_variable + 42
+b = sum((j if j % 2 else 0) for (j, k) in results if k)
+```
+
 
 The second line does _a lot_ more work than the first line. The first line is a simple integer addition, while the second line has a loop and a variable split and two conditional branches and an accumulator on a generator.
 
@@ -57,14 +70,18 @@ In Python (and many other languages), it’s very easy to unintentionally hide _
 In Go, I’ve found that this variability is much more diminished. A loop is always a loop, an error check is always an error check (rather than implicit exception propagation), a logic branch is always a branch.
 
 This is the most reasonably-terse way I could write the above in Go:
-`b := 0  
-for _, r := range results {  
-    j, k := r[0], r[1]  
-    if !k || j % 2 == 0 {  
-        continue  
-    }  
-    b += j  
-}`
+
+```
+b := 0
+for _, r := range results {
+    j, k := r[0], r[1]
+    if !k || j % 2 == 0 {
+        continue
+    }
+    b += j
+}
+```
+
 
 Is this good? I believe it is. I believe this code is more proportional to the complexity of the work that it’s doing. It’s also possible to write Python in a similar level of proportionality, why don’t I?
 
@@ -72,7 +89,7 @@ When reading proportional code, it’s easier to notice where the interesting bi
 
 We can continue to argue that it’s easier to _understand_ what the work is actually doing, but that’s not a point I want to make. Instead, I want to make a different point: It’s easier to tweak what the code is doing.
 
-### Opportunity for correction
+## Opportunity for correction
 
 After writing _a lot_ of code in Python, and writing a moderate amount of code in Go, I noticed an interesting phenomenon: I tweak code very differently in Go.
 
@@ -90,7 +107,7 @@ When a friend was reading through the [source code for ssh-chat](https://github.
 
 I realize now that disproportional code makes me unintentionally dance _around_ it like tiny black holes of complexity. Having _proportional_ boilerplate helps balance out the ease of modifying it with the amount of work that code is actually doing—whether it’s error handling or looping or whatever else.
 
-### Proportional code creates less complexity
+## Proportional code creates less complexity
 
 I am not claiming that more lines of proportional code is less buggy than fewer lines of disproportional code.
 

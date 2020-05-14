@@ -20,19 +20,13 @@ aliases:
 
 ---
 
-![image](/posts/how-to-maintain-a-successful-open-source-project/images/1.png#layoutTextWidth)
+![image](/posts/how-to-maintain-a-successful-open-source-project/images/1.png)
 
-Excerpt from README.rst
-
-
-
-## How to maintain a successful open source project
-
-#### Lessons learned from five years of maintaining one of the most-used Python libraries.
+### Lessons learned from five years of maintaining one of the most-used Python libraries.
 
 I’ve published dozens of open source projects over the years, mostly in Python and JavaScript. Few are old and stable, others are new and immature, some are wildly popular with a constant stream of contributors, but most linger until one day a trickle of users suddenly discover them. This is a guide on how to traverse these waters and foster your project into something you can be proud of.
 
-### Instructions
+## Instructions
 
 Every open source project needs three things: A summary of the project’s goal and approach, contribution instructions, and a license. Preferably up-front in [a README file](https://github.com/shazow/urllib3/blob/master/README.rst).
 
@@ -46,7 +40,7 @@ Then, include a _Contributing_ section which outlines how to get started with th
 
 Finally, every open source project needs to have a _License_. If there is no license, then that means it’s copyrighted by the author and other people need explicit permission to use it. I default to using MIT, but you can read [Jeff Atwood’s _Pick a License, Any License_](http://www.codinghorror.com/blog/2007/04/pick-a-license-any-license.html) post for a decent summary.
 
-### Attitude
+## Attitude
 
 It’s incredibly important to have a good attitude towards your users and contributors.
 
@@ -63,7 +57,7 @@ When you’re patient, polite with a user, and encourage them to contribute to t
 
 Maintaining the right attitude is possibly the hardest part of it—every maintainer has bad days—but civility, positivity, and progress is crucial. Not only to you and your project, but also to the community as a whole.
 
-### Marketing
+## Marketing
 
 You can write the most useful beautiful code in the world and be done with it, but your contribution to society can be disproportionally amplified by allowing people to reuse it _and_ making people aware of it.
 
@@ -89,11 +83,11 @@ Finally, maintain a thorough CHANGES log and merge that into your long descripti
 
 **Provide technical support for your audience.** Set up some [StackOverflow alert filters](http://stackexchange.com/filters/new), and maybe even [Google Alerts](http://www.google.com/alerts) for the odd random forum post. If you’re pushing your own software, it helps to add a disclaimer that you’re the author.
 
-**Consider partnerships.** Most code you write will not be completely standalone. Write a plugin for a framework that could use your tool and see if they’ll link to it in their README. Couple of years ago, after chatting with [Kenneth Reitz](http://kennethreitz.org/) on several occasions, we decided to join forces and have _urllib3_ become the core of the very popular _Requests_ library. At this point, _urllib3_ was already decently well-known, but far behind the incumbent _httplib2._ When Kenneth and I joined forces, both of our projects flourished beyond our expectations. It was important to establish clear roles and boundaries in our partnership, and it helped that our interactions grew into a strong friendship and mutual respect. As a bonus, we have healthy cross-pollination of contributors between the two projects. Everybody won.
+**Consider partnerships.** Most code you write will not be completely standalone. Write a plugin for a framework that could use your tool and see if they’ll link to it in their README. Couple of years ago, after chatting with Kenneth Reitz on several occasions, we decided to join forces and have _urllib3_ become the core of the very popular _Requests_ library. At this point, _urllib3_ was already decently well-known, but far behind the incumbent _httplib2._ When Kenneth and I joined forces, both of our projects flourished beyond our expectations. It was important to establish clear roles and boundaries in our partnership, and it helped that our interactions grew into a strong friendship and mutual respect. As a bonus, we have healthy cross-pollination of contributors between the two projects. Everybody won.
 
 **Give it time.** My more popular projects took at least a year to become known. This is the lazy version of marketing, but if you’ve done everything else in this article correctly, then _they will come._ Or if you’re impatient, then start hustling, attending meetups, writing blog posts, buying ads, and bribing the quasi-celebrities in your community to rave about you.
 
-### Community
+## Community
 
 It’s very hard to do everything alone, especially as more people come to expect things from you.
 
@@ -116,7 +110,7 @@ What’s better than unit tests? Automated unit tests! We use [Travis CI](https:
 
 **Maintain** [**a list of contributors**](https://github.com/shazow/urllib3/blob/master/CONTRIBUTORS.txt)**.** Remind and invite contributors to add themselves to the list, even if they just did something small. A few more bytes in the repository doesn’t cost you anything, and the pride they get from being recognized is priceless.
 
-### Have fun
+## Have fun
 
 Truth be told, it has been years since I’ve done HTTP-related things which needed _urllib3_. But I continue to maintain it because I like the community and I feel a lot of pride in the project.
 

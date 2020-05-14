@@ -13,11 +13,6 @@ tags:
  - Infosec
  - Safety
 
-image: "/posts/choosing-a-new-master-password/images/1.jpeg" 
-images:
- - "/posts/choosing-a-new-master-password/images/1.jpeg"
-
-
 aliases:
     - "/choosing-a-new-master-password-cdefe31dff3c"
 
@@ -25,36 +20,34 @@ aliases:
 
 I’ve been meaning to change and improve my master password for years. I _knew_ the steps but I really wanted someone to spell it out for me anyways, so I’ll spell out the concrete steps for you.
 
-
-
-
-![image](/posts/choosing-a-new-master-password/images/1.jpeg#layoutTextWidth)
-
-Photo by [Cristina Gottardi](https://unsplash.com/photos/maaWpQVgi00)
-
-
-
 Popular password managers work by maintaining an encrypted database of many secrets, protected by a combination of the _master password_ and access to the encrypted database file that is synchronized across your devices. Picking a strong master password is crucial in case one of your devices is stolen or the cloud storage that is hosting your password file is compromised.
 
-### 1. High-entropy memorable pass phrases
+## 1. High-entropy memorable pass phrases
 
-I recommend this generator:  
+I recommend this generator:
 [https://github.com/redacted/XKCD-password-generator](https://github.com/redacted/XKCD-password-generator)
 
-It’s written in Python, it has good defaults, and a sensible built-in word dictionary (65,355 words). You can install it using `pip install xkcdpass`.
+It’s written in Python, it has good defaults, and a sensible built-in word dictionary (65,355 words). You can install it using 
+```
+pip install xkcdpass
+```
 
 You can tweak the length and formula with various command-line flags. I recommend getting a whole bunch of passwords and visually picking one from the list.
-`$ xkcdpass --count=100  
-jewelweed cruzeiro scrawny preempt edgeways ceramist  
-vendor sacker someone elevator jeweled croaky  
-ammonia American bunk bed rhymer velleity drenched  
-linger largesse plain thoraces withered big deal  
-Rolland wheelie empanada repossess colic hosteler  
-....`
+
+```
+$ xkcdpass --count=100
+jewelweed cruzeiro scrawny preempt edgeways ceramist
+vendor sacker someone elevator jeweled croaky
+ammonia American bunk bed rhymer velleity drenched
+linger largesse plain thoraces withered big deal
+Rolland wheelie empanada repossess colic hosteler
+....
+```
+
 
 Make sure to pick from the list rather than making up your own, because humans are much worse at being random than we might intuitively think we are.
 
-### 2. Write it down
+## 2. Write it down
 
 Yes, you should write it down — **but make sure it’s written on something that can be reliably destroyed** and won’t be discovered before it’s destroyed. A piece of paper that you can mangle or burn will do the trick. Make sure to keep it safe until you’re ready to destroy it.
 
@@ -64,41 +57,53 @@ It’s okay to add randomness to your already-random password, but avoid removin
 
 If you’re not sure what to do, then just keep the passphrase as it came out from xkcdpass. It’s fine as it is and you don’t want to make it too hard to remember.
 
-### 3. Memorize and practice
+## 3. Memorize and practice
 
 Make a text file with a short message and encrypt it using your new password. I like to use [scrypt](https://www.tarsnap.com/scrypt.html) which is available in popular package managers:
-`$ brew install scrypt  # or apt-get install scrypt  
-$ echo &#34;I remembered my password&#34; &gt; pwtest.txt  
-$ scrypt enc pwtest.txt &gt; pwtest.enc  
-Please enter passphrase:  
-...  
-$ rm pwtest.txt  # Don&#39;t need this anymore`
+
+```
+$ brew install scrypt  # or apt-get install scrypt
+$ echo "I remembered my password" > pwtest.txt
+$ scrypt enc pwtest.txt > pwtest.enc
+Please enter passphrase:
+...
+$ rm pwtest.txt  # Don't need this anymore
+```
+
 
 Now that we have our encrypted test file, we can practice unlocking it until we memorize the password:
-`$ scrypt dec pwtest.enc  
-Please enter passphrase:  
-...  
-I remembered my password  
-$ scrypt dec pwtest.enc  
-Please enter passphrase:  
-...  
-I remembered my password  
-$ scrypt dec pwtest.enc  
-Please enter passphrase:  
-...  
-I remembered my password`
+
+```
+$ scrypt dec pwtest.enc
+Please enter passphrase:
+...
+I remembered my password
+$ scrypt dec pwtest.enc
+Please enter passphrase:
+...
+I remembered my password
+$ scrypt dec pwtest.enc
+Please enter passphrase:
+...
+I remembered my password
+```
+
 
 If you prefer to use GPG instead of scrypt:
-`$ echo &#34;I remembered my password&#34; &gt; pwtest.txt  
-$ gpg -c pwtest.txt  
-Enter passphrase:  
-...  
-$ gpg pwtest.txt.gpg  
-Enter passphrase:  
-...  
-I remembered my password`
 
-### 4. Adopt the new master password
+```
+$ echo "I remembered my password" > pwtest.txt
+$ gpg -c pwtest.txt
+Enter passphrase:
+...
+$ gpg pwtest.txt.gpg
+Enter passphrase:
+...
+I remembered my password
+```
+
+
+## 4. Adopt the new master password
 
 After a few days of practicing your new password, it’s time to adopt it: Destroy the paper you wrote it onto, change your password manager’s master password, and remember: **Never use your master password anywhere else.**
 
@@ -108,14 +113,22 @@ If you’re not using a password manager yet, I recommend [1Password](https://1p
 
 If you require something free and open source, then [KeePass](http://keepass.info/) is a decent option with workable clients on every platform.
 
-### Good security hygiene
+## Good security hygiene
 
 *   Use a strong randomly-generated passphrase as your master password.
-**Done, good work.**
+
+    **Done, good work.**
+
 *   Use a password manager.
-**Hopefully already done?**
+
+    **Hopefully already done?**
+
 *   Enable encryption for all of your devices and services.
-**Especially portable devices that you can lose, like phones and laptops.**
-*   Choose to use applications that come with good security defaults out of the box. **Not all security or encryption is made equal:** an application with bad security is like an account with a bad password. Sometimes bad security can be worse than no security if it manages to lull you into false expectations.
+
+    **Especially portable devices that you can lose, like phones and laptops.**
+
+*   Choose to use applications that come with good security defaults out of the box.
+
+    **Not all security or encryption is made equal:** an application with bad security is like an account with a bad password. Sometimes bad security can be worse than no security if it manages to lull you into false expectations.
 
 You won’t regret good security hygiene, especially as the cyber continues to intensify.
