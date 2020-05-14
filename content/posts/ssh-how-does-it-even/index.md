@@ -19,7 +19,7 @@ aliases:
 
 ---
 
-_SSH, how does it even?_
+> _SSH, how does it even?_
 
 
 A few weeks ago, I wrote [ssh-chat](https://github.com/shazow/ssh-chat).
@@ -27,25 +27,34 @@ A few weeks ago, I wrote [ssh-chat](https://github.com/shazow/ssh-chat).
 {{< tweet 543852069417787392 >}}
 
 The idea is simple: You open your terminal and type,
-`$ ssh chat.shazow.net`
+
+```
+$ ssh chat.shazow.net
+```
 
 Unlike many others, you might stop yourself before typing “ls” and notice — that’s no shell, it’s a chat room!
 
 While the little details sink in, it dawns on you that there is something extra-special going on in here.
 
-### SSH knows your username
+## SSH knows your username
 
 When you ssh into a server, your client shares several environment variables as inputs to the server, among them is the $USER variable. You can overwrite this, of course, by specifying the user you’re connecting as such:
-`$ ssh neo@chat.shazow.net`
+
+```
+$ ssh neo@chat.shazow.net
+```
 
 Well look at that, you’re the one. So special. What else can we mess with? By default, the server gets your $TERM variable too.
-`$ TERM=inator ssh chat.shazow.net`
+
+```
+$ TERM=inator ssh chat.shazow.net
+```
 
 If ssh-chat was smart, it would recognize that your custom terminal might not support colours and skip sending those extra formatting characters.
 
 You can even push your own environment variables with a _SendEnv_ option flag, but we won’t get into that.
 
-### SSH validates against your key pair
+## SSH validates against your key pair
 
 There are several supported authentication methods in SSH: _none_, _password, keyboard-interactive,_ and _publickey_. They each have interesting properties, but the last one is especially handy.
 
@@ -81,7 +90,7 @@ Once you accept a fingerprint, it will be added to your _~/.ssh/known_hosts_ whe
 
 A host you’ve connected to previously is advertising a different public key than it did before. If you can’t account for this change (maybe you launched a new VPS on the same IP address as before and it generated a fresh SSH key pair?) then it’s worth being worried. Try connecting to this host from another network, see if the problem persists — if not, then someone is hijacking your local connection rather than the server’s connection.
 
-### SSH supports multiplexing
+## SSH supports multiplexing
 
 When your client connects to a server, it opens a _channel_ where it requests a specific feature. There are many fun things your client can request like _pty-req_ (a pseudo-terminal), _exec_ (run command), or even _tcpip-forward_ (port forwarding). [There are many others](http://www.ietf.org/rfc/rfc4254.txt), and there is nothing stopping you from inventing your own type for a custom client/server implementation. Maybe we’ll see a _chat_ channel someday?
 
@@ -89,13 +98,13 @@ The best part is that you can do all of these things concurrently: Start port fo
 
 Once your pipeline is opened, you can send _more_ commands within it. When your client opens a _pty-req_, it sends event updates such as _window-change_ whenever your terminal size changes.
 
-### SSH is ubiquitous
+## SSH is ubiquitous
 
 “Is it mobile-friendly?” you may joke, but it is! Every platform you can imagine, there is an SSH client available, including iOS, Android, even Windows! OSX and every Linux distro ships with a client. There are even [browser extension SSH clients](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en).
 
 SSH is one of the most accessible secure protocols ever, second only to HTTPS of course.
 
-### SSH sounds awesome, and familiar…
+## SSH sounds awesome, and familiar…
 
 Let’s see what we have so far: Binary protocol, mandatory encryption, key pinning, multiplexing, compression (yes, it does that too).
 
@@ -105,7 +114,7 @@ Admittedly, SSH is missing some pieces. It’s lacking a notion of virtual hosts
 
 On the other hand, SSH _does_ have several cool features over HTTP/2 though, like built-in client authentication which removes the need for registration and remembering extra passwords.
 
-### More factlets to fill your stockings
+## More factlets to fill your stockings
 
 *   SSH server and client specification is fairly symmetric. Per the protocol, most of what the client can ask of a server, a server _could_ ask of the client. This includes things like run commands, but mainstream clients don’t implement this (as is recommended against in the specification).
 *   Every keystroke is sent over the TCP connection. This is why you might notice lag in your typing.
@@ -114,7 +123,7 @@ On the other hand, SSH _does_ have several cool features over HTTP/2 though, lik
 *   Since SSH supports port forwarding and a SOCKS proxy interface, you can build a VPN on top of it by using something like [sshuttle](https://github.com/apenwarr/sshuttle).
 *   SSH can authenticate using a certificate authority scheme, similar to x.509 certificates used in TLS. Also, many clients can verify server fingerprints against an [_SSHFP_ DNS](https://tools.ietf.org/html/rfc4255) entry.
 
-### Some provocative SSH ideas
+## Some provocative SSH ideas
 
 Chat over SSH was fun, but that’s just the tip of what we can come up with.
 
@@ -133,7 +142,10 @@ Or better yet, ZeroMQ-style sockets with proper security and encryption? Check o
 #### **RPC API**
 
 SSH’s built-in authentication and encryption makes it _really_ convenient for things like APIs. No complicated OAuth2 handshakes or HMACs and signatures.
-`ssh api.example.com multiply a=4 b=5`
+
+```
+ssh api.example.com multiply a=4 b=5
+```
 
 Someday we’ll have good libraries which make connecting over SSH just as easy as HTTP. At that point, your code will look exactly like today’s run-of-the-mill REST API, but use SSH underneath.
 
@@ -142,7 +154,10 @@ Either way, the days of _curl_ examples in API docs would be behind us.
 #### **File Server**
 
 If we have an RPC API, why not serve static files while we’re at it?
-`ssh static.example.com get /images/header.png`
+
+```
+ssh static.example.com get /images/header.png
+```
 
 Remember, SSH supports persistent connections just as well, so your browser could sit there connected to an SSH channel named _get_ for the host and send concurrent _get_ requests for assets. We could even implement ETAGs, and whatever else.
 
@@ -150,6 +165,6 @@ Remember, SSH supports persistent connections just as well, so your browser coul
 
 At this point, there’s no reason we couldn’t build a version of HTTP/1 or HTTP/2 on top of SSH. Let’s add a _header_ channel to specify things like _Host_ for virtual host support, throw in some _Cookie_ headers too. Want to add some method verbs? Why not, let’s make a bunch of channels like _post_ or maybe _http-post_ if we want to be polite.
 
-### Why aren’t we using SSH for everything?
+## Why aren’t we using SSH for everything?
 
 Great question.
