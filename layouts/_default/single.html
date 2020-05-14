@@ -3,6 +3,7 @@
 <section class="main post container">
     <div class="front-matter">
         <div class="title-container">
+            <h1>{{ .Title }}</h1>
             <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
         </div>
         <div class="meta">
@@ -17,3 +18,4 @@
 </section>
 <div class="back">&larr; <a href="/">Back to shazow.net</a></div>
 {{ end }}
+{{ define "title" }}{{ .Title }} | shazow.net{{ end }}
