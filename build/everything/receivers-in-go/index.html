@@ -27,7 +27,7 @@
         </div>
         <div class="meta">
             
-            <div class="date" title='Tue Jul 5 2016 17:49:06 -0400'>Published on Jul 5, 2016.</div>
+            <div class="date" title='Tue Jul 5 2016 17:49:06 EDT'>Published on Jul 5, 2016.</div>
             
         </div>
     </div>
@@ -45,100 +45,100 @@ and name them all the same (like <code>this</code> or <code>self</code>)? Or tre
 local variables by abbreviating the type (like <code>srv</code> to a <code>Server</code> type )? Or
 maybe something even more nuanced?</p>
 <p>And what are the consequences? How will our code suffer if we choose one
-approach over the other? Let's explore.</p>
+approach over the other? Let&rsquo;s explore.</p>
 <h2 id="quick-refresher-on-go-structs">Quick refresher on Go structs</h2>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">type</span> <span class="nx">Server</span> <span class="kd">struct</span> <span class="p">{</span>
     <span class="o">...</span>
 <span class="p">}</span>
 
-<span class="kd">func</span> <span class="p">(</span><span class="nx">srv</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Close</span><span class="p">(</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="p">(</span><span class="nx">srv</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Close</span><span class="p">()</span> <span class="kt">error</span> <span class="p">{</span>
     <span class="o">...</span>
 <span class="p">}</span>
 
-<span class="kd">func</span> <span class="p">(</span><span class="nx">srv</span> <span class="nx">Server</span><span class="p">)</span> <span class="nf">Name</span><span class="p">(</span><span class="p">)</span> <span class="kt">string</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="p">(</span><span class="nx">srv</span> <span class="nx">Server</span><span class="p">)</span> <span class="nf">Name</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </code></pre></div><p>Every time I start writing somekind of server, it starts out looking like this.<br>
-It's a type that holds information about our server, like a <code>net.Listener</code>
+It&rsquo;s a type that holds information about our server, like a <code>net.Listener</code>
 socket, and it has a <code>Close()</code> method that shuts down the server. Easy enough.</p>
 <p>The <em>receiver</em> of the <code>Close()</code> method is the <code>(srv *Server)</code> part. This says
 that inside of the <code>Close()</code> method declaration, the scope will have a <code>srv</code>
-variable that is a reference to the instance of the <code>Server</code> that it's being
+variable that is a reference to the instance of the <code>Server</code> that it&rsquo;s being
 called on.  That is:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">myServer</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">Server</span><span class="p">{</span><span class="p">}</span>
-<span class="nx">myServer</span><span class="p">.</span><span class="nf">Close</span><span class="p">(</span><span class="p">)</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">myServer</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">Server</span><span class="p">{}</span>
+<span class="nx">myServer</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
 </code></pre></div><p>In this case, the <code>srv</code> that is referenced inside of the <code>myServer.Close()</code> is
-effectively the same variable as <code>myServer</code>. They're both references to the same
+effectively the same variable as <code>myServer</code>. They&rsquo;re both references to the same
 <code>Server</code> instance.</p>
 <h3 id="facts-about-go-methods-and-receivers">Facts about Go methods and receivers</h3>
 <p>While we can call a method on a type instance and get the receiver implicitly,
 it can also be called explicitly:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">myServer</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">Server</span><span class="p">{</span><span class="p">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">myServer</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">Server</span><span class="p">{}</span>
 <span class="nx">Server</span><span class="p">.</span><span class="nf">Name</span><span class="p">(</span><span class="nx">myServer</span><span class="p">)</span> <span class="c1">// same as myServer.Name()
-</span><span class="c1"></span><span class="p">(</span><span class="o">*</span><span class="nx">Server</span><span class="p">)</span><span class="p">.</span><span class="nf">Close</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">myServer</span><span class="p">)</span> <span class="c1">// same as myServer.Close()
+</span><span class="c1"></span><span class="p">(</span><span class="o">*</span><span class="nx">Server</span><span class="p">).</span><span class="nf">Close</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">myServer</span><span class="p">)</span> <span class="c1">// same as myServer.Close()
 </span></code></pre></div><p>These functions can be passed around as references just like any other function,
 with the implicit receiver or without:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">withReceiver</span> <span class="o">:=</span> <span class="nx">myServer</span><span class="p">.</span><span class="nx">Name</span>
 <span class="nx">without</span> <span class="o">:=</span> <span class="nx">Server</span><span class="p">.</span><span class="nx">Name</span>
 </code></pre></div><p>Receivers can be passed by reference or passed by value.</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">byValue</span> <span class="nx">Server</span><span class="p">)</span> <span class="nf">Hello</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">byReference</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Bye</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">byValue</span> <span class="nx">Server</span><span class="p">)</span> <span class="nf">Hello</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="kd">func</span> <span class="p">(</span><span class="nx">byReference</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Bye</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 </code></pre></div><p>This is to illustrate that struct methods in Go are merely thin sugar over
 traditional C-style struct helper declarations. An equivalent C method might
 look like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">void</span> <span class="nf">server_close</span><span class="p">(</span><span class="n">server</span> <span class="o">*</span><span class="n">srv</span><span class="p">)</span> <span class="p">{</span> <span class="p">.</span><span class="p">.</span><span class="p">.</span> <span class="p">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">void</span> <span class="nf">server_close</span><span class="p">(</span><span class="n">server</span> <span class="o">*</span><span class="n">srv</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
 </code></pre></div><p>Go helps by namespacing the methods and implicitly passing the receiver when
 called on an instance, but otherwise there is very little magic going on.</p>
 <p>In other languages where <code>this</code> and <code>self</code> is a thing (Python, Ruby, JavaScript,
-and so on) it's a much more complicated situation. These are not vanilla local
+and so on) it&rsquo;s a much more complicated situation. These are not vanilla local
 variables wearing fancy pants. The thing we might expect <code>this</code> to represent
 inside of a method could actually represent something very different once
 inheritance or metaclasses had their way. In effect, it might not make any sense
 to give contextual names like <code>srv</code> rather than <code>self</code> in Python, but it
 definitely makes sense in Go.</p>
 <h2 id="naming-the-receiver">Naming the receiver</h2>
-<p>As we write idiomatic Go code, it's common to use the first letter or a short
+<p>As we write idiomatic Go code, it&rsquo;s common to use the first letter or a short
 abbreviation as the name of the receiver. If the name of the struct is <code>Server</code>,
-we'll usually see <code>s</code> or <code>srv</code> or even <code>server</code>. All of these are fine—short is
-convenient, but it's more about uniquely identifying the variable in a
+we&rsquo;ll usually see <code>s</code> or <code>srv</code> or even <code>server</code>. All of these are fine—short is
+convenient, but it&rsquo;s more about uniquely identifying the variable in a
 consistent way.</p>
 <p>Why not <code>self</code> or <code>this</code>? Coming from languages like Python, or Ruby, or
-JavaScript, it's tempting to do something like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">this</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Close</span><span class="p">(</span><span class="p">)</span> <span class="kt">error</span> <span class="p">{</span>
+JavaScript, it&rsquo;s tempting to do something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">this</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Close</span><span class="p">()</span> <span class="kt">error</span> <span class="p">{</span>
     <span class="o">...</span>
 <span class="p">}</span>
-</code></pre></div><p>That's one less decision to make every time we declare a struct. <em>All</em> of our
-methods could use the same receiver. Any time we see <code>this</code> in the code, we'll
-<em>know</em> that we're talking about the receiver, not some random local variable. It
+</code></pre></div><p>That&rsquo;s one less decision to make every time we declare a struct. <em>All</em> of our
+methods could use the same receiver. Any time we see <code>this</code> in the code, we&rsquo;ll
+<em>know</em> that we&rsquo;re talking about the receiver, not some random local variable. It
 will be GREAT!.. or will it?</p>
 <p>What if we refactor the code and <code>this</code> is no longer referring to the same thing
 as before? And are we giving up valuable semantic meaning?</p>
 <h3 id="reshaping-our-code">Reshaping our code</h3>
-<p>Eventually we'll need to refactor some of our code: Take a chunk of code that is
+<p>Eventually we&rsquo;ll need to refactor some of our code: Take a chunk of code that is
 already functional and put it in another context where it allows for more
 flexibility towards a higher-level goal.</p>
 <p>For example, consider moving pieces of code <em>between</em> levels abstractions or
 from higher levels of abstraction into a lower level. Imagine taking this
 snippet from a higher-level container like <code>Room</code> which holds groups of users in
 a server, and moving it up or down one level:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">this</span> <span class="o">*</span><span class="nx">Room</span><span class="p">)</span> <span class="nf">Announce</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">srv</span> <span class="o">:=</span> <span class="nx">this</span><span class="p">.</span><span class="nf">Server</span><span class="p">(</span><span class="p">)</span>
-    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">srv</span><span class="p">.</span><span class="nf">Clients</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">this</span> <span class="o">*</span><span class="nx">Room</span><span class="p">)</span> <span class="nf">Announce</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">srv</span> <span class="o">:=</span> <span class="nx">this</span><span class="p">.</span><span class="nf">Server</span><span class="p">()</span>
+    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">srv</span><span class="p">.</span><span class="nf">Clients</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">// Send announcement to all clients about a new room
-</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">srv</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">this</span><span class="p">)</span><span class="p">)</span>
+</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">srv</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">this</span><span class="p">))</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="c1">// Moved between...
 </span><span class="c1"></span>
 <span class="kd">func</span> <span class="p">(</span><span class="nx">this</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">AddRoom</span><span class="p">(</span><span class="nx">room</span> <span class="o">*</span><span class="nx">Room</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">this</span><span class="p">.</span><span class="nf">Clients</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">this</span><span class="p">.</span><span class="nf">Clients</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">// Send announcement to all clients about a new room
-</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">this</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">room</span><span class="p">)</span><span class="p">)</span>
+</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">this</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">room</span><span class="p">))</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div><p>When using <code>this</code>, there is confusion about whether we're referring to the
-server or the room as we're moving the code between.</p>
+</code></pre></div><p>When using <code>this</code>, there is confusion about whether we&rsquo;re referring to the
+server or the room as we&rsquo;re moving the code between.</p>
 <div class="highlight"><pre class="chroma"><code class="language-diff" data-lang="diff"><span class="gd">-       c.Send(this.RenderAnnouncement(room))
 </span><span class="gd"></span><span class="gi">+       c.Send(srv.RenderAnnouncement(this))
 </span></code></pre></div><p>Refactoring this kind of code produce some bugs that the compiler will hopefully
@@ -147,46 +147,46 @@ aside, having to edit all the little innards does make moving code around more
 tedious.</p>
 <p>Moving across levels of abstraction is a great example of when consistently
 well-named receivers make a huge difference:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">room</span> <span class="o">*</span><span class="nx">Room</span><span class="p">)</span> <span class="nf">Announce</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">srv</span> <span class="o">:=</span> <span class="nx">room</span><span class="p">.</span><span class="nf">Server</span><span class="p">(</span><span class="p">)</span>
-    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">srv</span><span class="p">.</span><span class="nf">Clients</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">room</span> <span class="o">*</span><span class="nx">Room</span><span class="p">)</span> <span class="nf">Announce</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">srv</span> <span class="o">:=</span> <span class="nx">room</span><span class="p">.</span><span class="nf">Server</span><span class="p">()</span>
+    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">srv</span><span class="p">.</span><span class="nf">Clients</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">// Send announcement to all clients about a new room
-</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">srv</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">room</span><span class="p">)</span><span class="p">)</span>
+</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">srv</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">room</span><span class="p">))</span>
     <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="c1">// Moved between...
 </span><span class="c1"></span>
 <span class="kd">func</span> <span class="p">(</span><span class="nx">srv</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">AddRoom</span><span class="p">(</span><span class="nx">room</span> <span class="o">*</span><span class="nx">Room</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">srv</span><span class="p">.</span><span class="nf">Clients</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">c</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">srv</span><span class="p">.</span><span class="nf">Clients</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">// Send announcement to all clients about a new room
-</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">srv</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">room</span><span class="p">)</span><span class="p">)</span>
+</span><span class="c1"></span>        <span class="nx">c</span><span class="p">.</span><span class="nf">Send</span><span class="p">(</span><span class="nx">srv</span><span class="p">.</span><span class="nf">RenderAnnouncement</span><span class="p">(</span><span class="nx">room</span><span class="p">))</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div><p>This is a great little pattern to keep everything working despite moving between
-layers of abstraction. Note how the inner code stays identical and all we're
+layers of abstraction. Note how the inner code stays identical and all we&rsquo;re
 doing is sometimes adding a little extra context outside of it.</p>
-<p>As projects mature, this kind of refactoring happens surprisingly often. We're
+<p>As projects mature, this kind of refactoring happens surprisingly often. We&rsquo;re
 talking about just one line in this example, but the same applies for larger
 chunks too.</p>
 <p>The suggested strategy for naming Go receivers is the same strategy for naming
-normal local variables. If they're named similarly, then these code blocks can
+normal local variables. If they&rsquo;re named similarly, then these code blocks can
 be moved wholesale between layers of abstraction with minimal hassle and helps
 us avoid careless bugs.</p>
-<p>By naming receivers as <code>this</code> or <code>self</code>, we're actually making receivers
+<p>By naming receivers as <code>this</code> or <code>self</code>, we&rsquo;re actually making receivers
 <em>special</em> in a way that is counter-productive. Imagine naming every local
 variable with the same name, all the time, regardless of what it represents? A
 scary thought.</p>
 <h2 id="advanced-naming-technique">Advanced naming technique</h2>
 <p>If we agree that contextually named receivers are meaningful, then maybe we can
 utilize this opportunity for an even greater advantage.</p>
-<p>What if we named our receivers based on the interface that they're implementing
-(if any)? Let's say we add <code>io.Writer</code> and <code>io.Reader</code> interfaces to our Server:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">w</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Write</span><span class="p">(</span><span class="nx">p</span> <span class="p">[</span><span class="p">]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<p>What if we named our receivers based on the interface that they&rsquo;re implementing
+(if any)? Let&rsquo;s say we add <code>io.Writer</code> and <code>io.Reader</code> interfaces to our Server:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="p">(</span><span class="nx">w</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Write</span><span class="p">(</span><span class="nx">p</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// Send p to all clients
 </span><span class="c1"></span><span class="p">}</span>
 
-<span class="kd">func</span> <span class="p">(</span><span class="nx">r</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Read</span><span class="p">(</span><span class="nx">p</span> <span class="p">[</span><span class="p">]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="p">(</span><span class="nx">r</span> <span class="o">*</span><span class="nx">Server</span><span class="p">)</span> <span class="nf">Read</span><span class="p">(</span><span class="nx">p</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// Receive data from all clients
 </span><span class="c1"></span><span class="p">}</span>
 </code></pre></div><p>Maybe we also want to add the <code>http.Handler</code> interface to provide a dashboard
@@ -207,7 +207,7 @@ naming the receiver in a corresponding way, it makes it easier to move the
 code inline without changing much.</p>
 </li>
 <li>
-<p>As we add interface-specific functionality, it's likely that we'll need to add
+<p>As we add interface-specific functionality, it&rsquo;s likely that we&rsquo;ll need to add
 more fields to our struct to manage various related state. The code can look
 more meaningful when a read buffer is being accessed from a <code>r</code> receiver to
 imply that its purpose is specifically for this functionality rather than it
@@ -217,9 +217,9 @@ being a more general buffer for the server as a whole.</p>
 <h2 id="name-of-the-receiver">Name of the Receiver</h2>
 <p>Carefully naming our receivers can have lots of tangible benefits, especially as
 our project grows and code gets moved around. It can make our inner method code
-much more readable without needing to be aware of which struct it's embedded
+much more readable without needing to be aware of which struct it&rsquo;s embedded
 into. It can even add an opportunity to indicate higher-level layout of our
-struct's interface implementation.</p>
+struct&rsquo;s interface implementation.</p>
 <p>Picking a fixed name for all receivers like <code>self</code> can have negative effects
 like mixing up context when code gets moved around. It removes a decision during
 writing, but the cost creeps up when we go back to read the code or refactor it.</p>
