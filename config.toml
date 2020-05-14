@@ -15,16 +15,10 @@ googleAnalytics     = "UA-407051-1"
 
 [permalinks]
 fixed = ":title"
-blog  = "everything/:slug"
-
-[[menu.main]]
-name                   = "Writing"
-weight                 = -120
-identifier             = "everything"
-url                    = "/everything"
+blog  = "posts/:slug"
 
 [params]
-latestpostscount       = 10                            # how many posts to display on the home page
+latestpostscount       = 100                            # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
 author                 = "Andrey Petrov"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
@@ -47,4 +41,3 @@ highlightjsStyle     = "darcula"
 #avatar                 = "images/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
 gravatar            = "andrey.petrov@shazow.net"                # do not use in the same time as avatar
 
-disableKinds        = ["taxonomy","taxonomyTerm"]
