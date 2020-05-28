@@ -5,3 +5,4 @@
 /everything/password-management-utilities          /posts/password-management-utilities
 /everything/receivers-in-go                        /posts/receivers-in-go
 /everything/rules-of-thumb-for-novice-designers    /posts/rules-of-thumb-for-novice-designers
+/everything/*  /posts/:splat
