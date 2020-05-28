@@ -3,8 +3,6 @@ title = "Laser Eye Surgery"
 date = "2013-02-26 21:24:01 -0800"
 +++
 
-# Laser Eye Surgery
-
 "What was it like?" More than anything else, it was creepy.
 
 ![On the way home](https://github.com/shazow/everything/raw/master/laser-eyes.0.jpg) &nbsp; ![Happy ending](https://github.com/shazow/everything/raw/master/laser-eyes.1.jpg)

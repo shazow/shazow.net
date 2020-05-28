@@ -3,8 +3,6 @@ title = "Rules of thumb for novice designers (like myself)"
 date = "2010-09-21 15:39:53 -0400"
 +++
 
-# Rules of thumb for novice designers (like myself)
-
 My strategy as a novice designer is to keep track of some rules of thumb to reduce the probability of making bad mistakes from lack of experience. If I'm careful enough, then I can often get to a point where just a little polish from an experienced designer is what it takes to get it from the 80% to the 100% mark.
 
 * Keep a **grid**, always align to the vertical columns, but also strive to align to the horizontal rows if possible. For web design, using a CSS framework will help with this. I like [Blueprint](http://www.blueprintcss.org/) but there are many others like [960](http://960.gs/) which is more to the point.

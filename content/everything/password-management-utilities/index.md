@@ -3,11 +3,12 @@ title = "Password Management Utilities"
 date = "2011-06-20 19:26:20 -0700"
 +++
 
-# Password Management Utilities
 
 We live in a time when cleartext usernames and passwords are leaked on a daily basis. In the last couple of months my accounts got compromised on Gawker, Sony, and MtGox. I decided it's time to start using the one-password-per-service technique. These are tools I found in my research.
 
-I'm currently using SuperGenPass, but considering writing my own version that uses customizeable multipass sha512, more symbol breadth in passwords, and some other improvements.
+~~I'm currently using SuperGenPass, but considering writing my own version that uses customizeable multipass sha512, more symbol breadth in passwords, and some other improvements.~~
+
+**Update:** I'm using [Bitwarden](https://bitwarden.com/) now, and you should too.
 
 
 ## Derived Password Algorithm
@@ -32,6 +33,10 @@ Same idea as Jon's pwgen, but in a JavaScript bookmarklet! This particular imple
 LastPass has a freemium pricing model. They support all desktop platforms (OSX, Linux, Windows), but mobile devices require their $12/yr Premium subscription which synchronizes your password database with their servers.
 
 ## Open Source
+
+### [Bitwarden](https://bitwarden.com/)
+
+It's just the best, hands down. Ignore the rest, use this. It has clients on every platform, with great features and usability rivaling the best proprietary competitors, and it's open source with an active third-party community.
 
 ### [KeePass](http://keepass.info/)
 Official client is Windows-based but has ports to all desktop platforms (Linux, OSX, mobile). Self-contained binary and database, portable. Actively developed, has a healthy plugin community with extensions for major browsers. (Via [@corbett_inc](http://twitter.com/corbett_inc))
