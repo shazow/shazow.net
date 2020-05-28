@@ -11,6 +11,8 @@ tags:
  - Golang
  - Programming
  - Python
+categories:
+ - Featured
 
 aliases:
     - "/code-boilerplate-is-it-always-bad-934827efcfc7"

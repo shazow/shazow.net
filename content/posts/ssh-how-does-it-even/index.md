@@ -13,6 +13,8 @@ images:
  - "/posts/ssh-how-does-it-even/images/1.png"
  - "/posts/ssh-how-does-it-even/images/2.png"
 
+categories:
+ - Featured
 
 aliases:
     - "/ssh-how-does-it-even-9e43586e4ffc"

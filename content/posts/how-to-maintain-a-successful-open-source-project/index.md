@@ -14,6 +14,8 @@ images:
  - "/posts/how-to-maintain-a-successful-open-source-project/images/2.png"
  - "/posts/how-to-maintain-a-successful-open-source-project/images/3.png"
 
+categories:
+- featured
 
 aliases:
     - "/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a"

@@ -12,15 +12,15 @@ tags:
  - Thinkpad
  - Computers
  - Linux
+categories:
+ - Featured
 
 image: "/posts/my-computer-is-my-home/images/1.png" 
 images:
  - "/posts/my-computer-is-my-home/images/1.png"
 
-
 aliases:
     - "/my-computer-is-my-home-5a587dcc1d76"
-
 ---
 
 ![image](/posts/my-computer-is-my-home/images/1.png#layoutTextWidth)

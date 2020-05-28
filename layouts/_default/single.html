@@ -2,10 +2,7 @@
 <div class="back">&larr; <a href="/">Back to shazow.net</a></div>
 <article class="main post container">
     <header class="front-matter">
-        <div class="title-container">
-            <h1>{{ .Title }}</h1>
-            <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
-        </div>
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
         <aside class="meta">
             {{ if and .Site.Params.dateformfull .Site.Params.dateform }}
             Published on <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format .Site.Params.dateform }}.</time>

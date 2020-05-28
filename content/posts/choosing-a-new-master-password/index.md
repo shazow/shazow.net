@@ -12,6 +12,8 @@ tags:
  - Passwords
  - Infosec
  - Safety
+categories:
+ - Featured
 
 aliases:
     - "/choosing-a-new-master-password-cdefe31dff3c"

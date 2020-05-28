@@ -26,7 +26,6 @@ dateform               = "Jan 2, 2006"
 dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
 description            = "A doodler and computerer. I like open source, room-scale virtual reality, linux, neovim, and p2p systems. YC alum and Xoogler. Cat person."
 email                  = "andrey.petrov@shazow.net"
-extracssfiles          = []       # In your `static` directory, add/remove files as necessary.
 faviconfile            = "favicon.ico"
 github                 = "https://github.com/shazow"
 highlightjs            = true
@@ -35,9 +34,12 @@ linkedin               = "https://linkedin.com/in/shazow"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
 twitter                = "https://twitter.com/shazow"
-highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
-highlightjsStyle     = "darcula"
+highlightjslanguages   = ["go"]                        # additional languages not included in the "common" set
+highlightjsStyle       = "darcula"
 
 #avatar                 = "images/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
 gravatar            = "andrey.petrov@shazow.net"                # do not use in the same time as avatar
 
+[taxonomies]
+categories = "categories"
+tag = "tags"

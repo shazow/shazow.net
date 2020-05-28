@@ -7,6 +7,10 @@ tags:
  - API
  - JSON
  - REST Api
+ - Programming
+
+categories:
+ - Featured
 
 aliases:
     - "/how-i-design-json-api-responses-71900f00f2db"
@@ -112,7 +116,7 @@ There are lots of complicated standards that have evolved, like [jsonapi.org](ht
 Some APIs include a pre-generated API request URLs, such as for pagination or querying sub-relationships. This never made any sense to me. To get to this response, my consumer code already needs to know how to compose the URL in the first place. Suddenly I’m supposed to switch from using my URL-building code to using pre-built URLs returned in the response? This leads to all kinds of bugs:
 
 1.  More branching in the code, toggling between my own URL-building logic and pre-built URL logic.
-2.  API response might be normalizing URLs in a way that is different than I intended. Or maybe I’m accessing an API through a proxy like [Runscope](https://www.runscope.com)? _“Ugh why is my first request working but the rest fail, WHY??!_ 😡🐚♨️_”_
+2.  API response might be normalizing URLs in a way that is different than I intended. Or maybe I’m accessing an API through a proxy like [Runscope](https://www.runscope.com)? _“Ugh why is my first request working but the rest fail, WHY??! 😡🐚♨️”_
 
 This also breaks if you’re trying to avoid coupling with HTTP as a transport, or if you need to multipart-encode a large request and url-encoded variables don’t get merged.
 

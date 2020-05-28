@@ -4,15 +4,13 @@ author: "Andrey Petrov"
 date: 2020-04-22T21:55:09.103Z
 lastmod: 2020-05-14T12:27:07-04:00
 
-description: ""
-
 subtitle: "What to expect when you’re expecting Sourdough"
 tags:
  - Sourdough
  - Baking
  - Quarantinelife
-
-
+categories:
+ - Featured
 
 
 aliases:
