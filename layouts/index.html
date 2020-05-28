@@ -49,18 +49,16 @@
     <div class="section writing">
         <h2>I've written about&hellip;</h2>
         <ul class="vertical">
-            <li class="offsite heroku"><a href="https://blog.heroku.com/see_python_see_python_go_go_python_go">See Python, See Python Go, Go Python Go</a> (also <a href="https://www.youtube.com/watch?v=CkDwb5koRTc">given as a talk at PyCon 2016</a>)</li>
-            <li class="offsite heroku"><a href="https://blog.heroku.com/neither-self-nor-this-receivers-in-go">Neither self nor this: Receivers in Go</a>
-            <li class="offsite medium"><a href="https://medium.com/mobile-lifestyle/in-vr-would-a-rose-smell-sweeter-8d7e876bfa51">In VR, Would a Rose Smell Sweeter?</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/how-i-design-json-api-responses-71900f00f2db">How I design JSON API responses</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/ssh-how-does-it-even-9e43586e4ffc">Why aren’t we using SSH for everything?</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/urllib3-stripe-and-open-source-grants-edb9c0e46e82">Urllib3, Stripe, and Open Source Grants</a></li>
-            <li class="offsite medium"><a href="https://medium.com/@shazow/what-is-your-fantasy-c88bed381f4d">What is your fantasy?</a></li>
-            <li class="offsite medium"><a href="https://medium.com/open-source/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a">How to maintain a successful open source project</a></li>
-            {{ range (where .Data.Pages.ByPublishDate "Section" "everything").Reverse }}
-            <li class="post-item">
-                <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+            {{ range .Site.Taxonomies.categories.featured }}
+                {{ if .Params.offsite }}
+            <li class="offsite">
+                <a href="{{ .Params.offsite }}"><span>{{ .Title }}</span></a> ({{.Date.Format "2006"}})
             </li>
+                {{ else }}
+            <li class="post-item">
+                <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a> ({{.Date.Format "2006"}})
+            </li>
+                {{ end }}
             {{ end }}
         </ul>
 

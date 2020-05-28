@@ -7,3 +7,6 @@ run:
 
 deploy:
 	git subtree push --prefix build origin gh-pages
+
+static/css/syntax.css:
+	hugo gen chromastyles --style=monokai > $@

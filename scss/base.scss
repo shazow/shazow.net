@@ -111,30 +111,38 @@ footer a {
 }
 
 .post {
-    max-width: 640px;
-    padding: 0 5px;
-    line-height: 1.5em;
-    word-spacing: 1px;
-    font-size: 16px;
-    font-family: 'OFL Sorts Mill Goudy TT', serif;
-    color: #444;
+    max-width: 680px;
+    padding: 0 1em;
+    line-height: 1.3em;
+    font-size: 21px;
+    font-family: 'PT Serif', Georgia, Cambria, Times, serif;
+    letter-spacing: -0.5px;
+    color: rgba(0, 0, 0, 0.85);
+    text-rendering: optimizelegibility;
+
+    h1, h2, h3, h4 {
+        color: rgba(0, 0, 0, 0.8);
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Arial, sans-serif;
+        line-height: 1.2em;
+        letter-spacing: -0.75px;
+        margin: 1em 0 0.5em 0;
+        text-align: left;
+    }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.4em; margin-top: 1.5em; }
+    h3 { font-size: 1.2em; margin-top: 1em; color: rgba(0, 0, 0, 0.6); }
+    h4, h5 { font-size: 0.8em; font-weight: normal;}
+
+    ul {
+        margin: 0.5em 0 1em 0;
+    }
+    li p {
+        margin: 0.5em 0 0.5em 0;
+    }
+
 }
 .post strong {
-    color: #681100;
-}
-.post h1 {
-    text-align: left;
-    font-size: 36px;
-    line-height: 1.2em;
-
-    color: #111;
-}
-.post h2, .post h3 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-.post h3 {
-    font-weight: bold;
+    color: inherit;
 }
 .post ol, .post ul {
     margin-top: 0.5em;
@@ -144,21 +152,22 @@ footer a {
     margin-bottom: 0.5em;
 }
 .post pre {
-    padding: 5px 10px;
+    font-size: inherit;
     margin-bottom: 1em;
+    padding: 1em;
+    background: #222;
+    color: rgba(255, 255, 255, 0.8);
+
+    code {
+        background: inherit;
+        padding: 0;
+        font-size: 0.8em;
+    }
 }
 .post code {
-    color: #417ba6;
+    background: #eee;
+    padding: 0.4em;
 }
-.post .highlight {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    font-size: 12px;
-    line-height: 1.5em;
-}
-
 .post img {
     text-align: center;
 }
@@ -186,6 +195,9 @@ footer a {
 
 .post .meta {
     font-style: italic;
+    margin-bottom: 1.5em;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .back {
