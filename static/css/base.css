@@ -524,7 +524,6 @@ footer a {
   line-height: 1.3em;
   font-size: 21px;
   font-family: 'PT Serif', Georgia, Cambria, Times, serif;
-  letter-spacing: -0.5px;
   color: rgba(0, 0, 0, 0.85);
   text-rendering: optimizelegibility; }
   .post h1, .post h2, .post h3, .post h4 {
