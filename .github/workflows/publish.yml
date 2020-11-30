@@ -21,4 +21,6 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           delete-branch: true
+          title: "publish: ${{ github.event.issue.title}}"
+          body: "Automagically sprouted for publishing: Closes #${{ github.event.issue.number }}"
           reviewers: ${{ github.repository_owner }}
