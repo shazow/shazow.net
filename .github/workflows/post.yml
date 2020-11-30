@@ -1,0 +1,27 @@
+name: Publish post from issue
+
+on:
+  issues:
+    types: ['labeled']
+
+jobs:
+  build:
+    if: ${{ github.event.label.name == 'publish' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate Post
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "TODO: Replace this with issue content" > content/posts/test-post.md
+          echo "Name: ${{ github.event.issue.name }}" >> content/posts/test-post.md
+          echo "Description: ${{ github.event.issue.description }}" >> content/posts/test-post.md
+          echo "$GITHUB_CONTEXT"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          delete-branch: true
+          reviewers: ${{ github.repository_owner }}
