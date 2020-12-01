@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+# Convert the top-level header into a frontmatter title and current date, and
+# download any non-local images and convert them into local images.
+#
+# Example:
+#   $ echo -e "#foo bar\nbaz" | ./frontmatterify
+#   +++
+#   title = "foo bar"
+#   date = "2020-11-30"
+#   +++
+#   baz
 
 # Find the frontmatter
 while read line; do
