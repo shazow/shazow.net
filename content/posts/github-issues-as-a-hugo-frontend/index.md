@@ -1,6 +1,7 @@
 +++
 title = "Using Github Issues as a Hugo frontend with Github Actions and Netlify"
 date = "2020-12-01"
+image = "100763300-fa3e7000-33c2-11eb-9172-206f58556ddd.png"
 +++
 
 I got into the habit of dumping quick blog post ideas into issues on my blog's repo. It's a convenient place to iterate on them and share with friends for feedback before actually publishing on my blog post.
