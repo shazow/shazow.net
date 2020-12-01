@@ -29,15 +29,3 @@ jobs:
 
             Closes #${{ github.event.issue.number }}
           reviewers: ${{ github.repository_owner }}
-
-      - name: 'Add Preview Link'
-        uses: actions/github-script@0.3.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Preview will be available at: https://deploy-preview-${{ steps.cpr.outputs.pull-request-number }}--shazow.netlify.app/posts/${{ github.event.issue.title }}/'
-            })
