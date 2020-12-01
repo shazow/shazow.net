@@ -33,4 +33,4 @@ jobs:
 
             Closes #${{ github.event.issue.number }}
           reviewers: ${{ github.repository_owner }}
-          commit-message: post: ${{ github.event.issue.title }}
+          commit-message: "post: ${{ github.event.issue.title }}"
