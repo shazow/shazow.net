@@ -3,7 +3,7 @@ title = "Using Github Issues as a Hugo frontend with Github Actions"
 date = "2020-12-01"
 +++
 
-TODO: Write the rest of the post
+TODO: Write the rest of the post!
 
 Testing images:
 
