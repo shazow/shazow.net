@@ -12,13 +12,14 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Generate Post
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          cat > "content/posts/${{ github.event.issue.title }}.md" << EOF
+          project_root="$PWD"
+          save_to="content/posts/${{ github.event.issue.title }}"
+          mkdir "$save_to"
+          cd "$save_to"
+          $project_root/frontmatterify > index.md << EOF
           ${{ github.event.issue.body }}
           EOF
-          echo $GITHUB_CONTEXT
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
