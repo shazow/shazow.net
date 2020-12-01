@@ -2,9 +2,9 @@
 
 # Find the frontmatter
 while read line; do
-    if [[ "$line" =~ ^#\ (.*)$ ]]; then # Title, emit our own frontmatter
+    if [[ "$line" =~ ^#\  ]]; then # Title, emit our own frontmatter
         echo "+++"
-        echo "title = \"${BASH_REMATCH[1]}\""
+        echo "title = \"$(echo -n ${line:2})\"" # echo to avoid printing EOL
         echo "date = \"$(date -I)\""
         echo "+++"
         break
