@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Debug State
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo $GITHUB_CONTEXT
 
       - name: Generate Post
         env:
@@ -22,10 +17,12 @@ jobs:
           POST_BODY: ${{ github.event.issue.body }}
         run: |
           preprocess_bin="$PWD/frontmatterify"
-          save_to="content/posts/${{ github.event.issue.title }}"
+          save_to="content/posts/$POST_TITLE"
           mkdir "$save_to"
           cd "$save_to"
-          echo -e $POST_BODY | $preprocess_bin > index.md
+          $preprocess_bin > index.md << EOF
+          $POST_BODY
+          EOF
           
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
