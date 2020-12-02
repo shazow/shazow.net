@@ -47,13 +47,18 @@ Once the source code is available, we want to generate the blog post from the is
 
 ```yaml
       - name: Generate Post
+        env:
+          POST_TITLE: ${{ github.event.issue.title }}
+          POST_BODY: ${{ github.event.issue.body }}
         run: |
-          cat > "content/posts/${{ github.event.issue.title }}.md" << EOF
-          ${{ github.event.issue.body }}
+          cat > "content/posts/${POST_TITLE}.md" << EOF
+          ${POST_BODY}
           EOF
 ```
 
 This shoves the body of the issue, which is already markdown, into a markdown file named based on the title of the issue. This is a good place to add frontmatter, or slugify the title, or whatever else your blog setup requires.
+
+Running the payload through environment variables helps with not needing to escape various characters like \`.
 
 And finally, we make the pull request using Peter Evan's create-pull-request action which makes this super easy:
 
