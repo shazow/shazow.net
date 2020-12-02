@@ -22,24 +22,61 @@ My [full workflow lives here](https://github.com/shazow/shazow.net/blob/master/.
 
 I decided to trigger the publishing process once an issue is labelled with 'publish', so let's start with that:
 
+```yaml
+name: Publish post from issue
 
+on:
+  issues:
+    types: ['labeled']
+
+jobs:
+  build:
+    if: ${{ github.event.label.name == 'publish' }}
+    runs-on: ubuntu-latest
+    steps:
+      ...
+```
 
 Next up we want to specify the steps, first thing is to check out the repository into the action's environment:
 
-
+```yaml
+      - uses: actions/checkout@v2
+```
 
 Once the source code is available, we want to generate the blog post from the issue metadata. Here is a very basic version of this, though I ended up doing more tweaking in the end:
 
-
+```yaml
+      - name: Generate Post
+        run: |
+          cat > "content/posts/${{ github.event.issue.title }}.md" << EOF
+          ${{ github.event.issue.body }}
+          EOF
+```
 
 This shoves the body of the issue, which is already markdown, into a markdown file named based on the title of the issue. This is a good place to add frontmatter, or slugify the title, or whatever else your blog setup requires.
 
 And finally, we make the pull request using Peter Evan's create-pull-request action which makes this super easy:
 
-
+```yaml
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+```
 
 This is the minimum of what we need, but we can specify all kinds of additional options here: like auto-deleting the branch, setting a custom title, body, and whatever else. Here's an example of what I'm doing:
 
+```yaml
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          delete-branch: true
+          title: "publish: ${{ github.event.issue.title}}"
+          body: |
+            Automagically sprouted for publishing.
+            Merging will publish to: https://shazow.net/posts/${{ github.event.issue.title }}
+            Closes #${{ github.event.issue.number }}
+          reviewers: ${{ github.repository_owner }}
+          commit-message: "post: ${{ github.event.issue.title }}"
+```
 
 
 ## Result
