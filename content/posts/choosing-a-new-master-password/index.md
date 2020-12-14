@@ -111,9 +111,9 @@ After a few days of practicing your new password, it’s time to adopt it: Destr
 
 The master password is there to keep your other passwords safe. It should never be used as a password for another account, even if it’s your bank or iCloud or whatever. **The master password is for your password manager**, and you must use your password manager to generate and save passwords for the rest of your accounts.
 
-If you’re not using a password manager yet, I recommend [1Password](https://1password.com/). It’s paid but very polished with native clients on most platforms.
+If you’re not using a password manager yet, I recommend [Bitwarden](https://bitwarden.com/). It's free, open source, has a great paid plan for families and teams, and works on all platforms.
 
-If you require something free and open source, then [KeePass](http://keepass.info/) is a decent option with workable clients on every platform.
+If you insist on something closed source and more expensive but with 5% more polish, [1Password](https://1password.com/) is also a good option.
 
 ## Good security hygiene
 
