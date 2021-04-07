@@ -32,7 +32,7 @@ ACID-compliant database transactions have been a thing since the 70s, but it's s
 
 Let's say we see two marketplaces which value apples differently. We can buy a bunch of apples from one, haul them over to the other market, sell them for a profit. That sounds great in theory, but by the time we arrange the purchase from one market, load them onto our cart, and haul them over to the other market, a few thousand high-frequency trading bots from Wall Street have moved the price of apples a million times and we're probably not going to make minimum wage on our effort.
 
-To make it worth our while, the difference has to be substantial and our capital has to be huge to capitalize on it enough to be worth our while. This is why arbitrage hedge funds are typically managing upwards of hundreds of millions of dollars in assets, and a single avid [WSB](http://reddit.com/r/wallstreetbets) reader wouldn't dare compete... Usually.
+To make it worth our while, the difference has to be substantial and our capital has to be huge to really take advantage of it. This is why arbitrage hedge funds are typically managing upwards of hundreds of millions of dollars in assets, and a single avid [WSB](http://reddit.com/r/wallstreetbets) reader wouldn't dare compete... Usually.
 
 Imagine we could pull out cash from our bank, buy apples, move apples, sell apples, and get cash back into our back account in a single atomic transaction. Either the whole thing succeeds, or none of it happens. It's _zero risk_ arbitrage (though there are fixed fees for the privilege).
 
@@ -42,7 +42,7 @@ But wait, what else can we do with atomic transactions?
 
 Imagine we could take out a loan for a million dollars, buy _a lot_ of apples, sell the apples, pay back the loan plus a fee, and keep the difference in a single atomic transaction. Either the whole thing succeeds, or none of it happens. It's _zero risk_ loans for _zero time_ (except we pay a fee to the liquidity pools who lock their capital that we loan from). This is called [flash loans](https://medium.com/monolith/understanding-defi-flash-loans-explained-1a5928a4a612).
 
-Now we can compete with wealthy hedge funds, as long as we can afford the flash loan fees (these vary, but roughly 0.0X% in fees).
+Now we can compete with wealthy hedge funds, as long as we can afford the modest flash loan fees (these vary, but roughly 0.0X% in fees) and transaction gas fees.
 
 There are other _even wilder_ possibilities with atomic transactions, like flash mints (instead of loan money, create money for zero time), but let's talk about zero time.
 
@@ -68,7 +68,7 @@ Today, you can let flash loan bots pay you to use your capital with zero economi
 - https://dydx.exchange/
 
 Today, you can pool your money into trading pairs and get fees from people who trade between them.
-**Note:** This category is affected by speculative valuations in the form of "impermanent loss": https://uniswap.org/docs/v2/advanced-topics/understanding-returns/
+**Note:** This category is affected by [speculative risk in the form of "impermanent loss"](https://uniswap.org/docs/v2/advanced-topics/understanding-returns/).
 - https://uniswap.org/
 - https://1inch.exchange/
 - https://loopring.io/
