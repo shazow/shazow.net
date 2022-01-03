@@ -26,7 +26,7 @@ This is not a comprehensive list, but it helps to discuss concrete properties th
 
 **We must be mindful that changing the _scale_ of one of these properties does not make a system entirely centralized or decentralized!** By changing the design of our system, we can add or remove points of centralization across specific dimensions.
 
-## Why is are these properties important?
+## Why are these properties important?
 We can acknowledge the obvious reasons: When we give disproportional power to specific individuals, it can lead to abuse of that power.
 
 But there is a more interesting property:
