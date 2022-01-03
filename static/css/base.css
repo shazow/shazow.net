@@ -521,7 +521,7 @@ footer a {
 .post {
   max-width: 680px;
   padding: 0 1em;
-  line-height: 1.5em;
+  line-height: 1.4em;
   font-size: 21px;
   font-family: 'PT Serif', Georgia, Cambria, Times, serif;
   color: rgba(0, 0, 0, 0.85);
@@ -603,6 +603,9 @@ footer a {
   margin-bottom: 1.5em;
   font-size: 0.8em;
   color: rgba(0, 0, 0, 0.6); }
+
+.post .footnotes {
+  font-size: 0.8em; }
 
 .back {
   margin: 10px;
