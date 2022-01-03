@@ -108,4 +108,6 @@ It is up to us to choose whether we allow more and more parts of our lives to be
 
 ---
 
+[_Appendix with additional notes and links_](https://github.com/shazow/shazow.net/issues/41#issuecomment-1000555663).
+
 _Thanks for feedback on early drafts to Benjamin, Ezzeri, Harper, Jenny, Max, Phill._
