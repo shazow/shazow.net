@@ -19,11 +19,11 @@ aliases:
 
 Hello, John Carmack.
 
-{{< tweet 449594006217842688 >}}
+{{< tweet ID_AA_Carmack 449594006217842688 >}}
 
-{{< tweet 449594072244568064 >}}
+{{< tweet ID_AA_Carmack 449594072244568064 >}}
 
-{{< tweet 449594122936922112 >}}
+{{< tweet ID_AA_Carmack 449594122936922112 >}}
 
 
 
