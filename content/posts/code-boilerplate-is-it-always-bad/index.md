@@ -38,7 +38,7 @@ if err != nil {
 ```
 
 ```
-// We can be a bit more terse if we don&#39;t need to save any
+// We can be a bit more terse if we don't need to save any
 // variables outside of the if-scope:
 if err := MoreWork(another); err != nil {
     return nil, err
