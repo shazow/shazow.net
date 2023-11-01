@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -659,7 +660,7 @@ li.tag::before {
   color: #5f5066; }
 
 .tag.failed::before {
-  content: "Failed";
+  content: "Died";
   background: #ddd;
   color: #999; }
 
@@ -672,6 +673,11 @@ li.tag::before {
   content: "Latest";
   background: #5cc100;
   color: rgba(255, 255, 255, 0.8); }
+
+.tag.prefer::after {
+  margin-left: 0.3em;
+  font-style: initial;
+  content: "⭐"; }
 
 .offsite.medium::before {
   display: inline-block;
