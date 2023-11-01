@@ -443,11 +443,23 @@ ul.horizontal {
   overflow: hidden; }
 
 ul.horizontal > li {
-  float: left;
-  margin-right: 10px; }
+  display: inline-block;
+  margin-right: 0.3em; }
 
 ul.horizontal > li:last-child {
   margin-right: 0px; }
+
+ul.horizontal.buttons li {
+  margin-bottom: 0.3em;
+  padding: 0.2em 0.5em;
+  background: rgba(200, 200, 200, 0.1);
+  line-height: 1;
+  border-radius: 5px; }
+  ul.horizontal.buttons li a {
+    vertical-align: text-bottom;
+    text-decoration: none; }
+  ul.horizontal.buttons li.prefer {
+    background: rgba(56, 118, 189, 0.1); }
 
 h1 {
   margin-top: 20px;
@@ -645,6 +657,11 @@ li.tag::before {
   content: "Game";
   background: #c2a3d1;
   color: #5f5066; }
+
+.tag.failed::before {
+  content: "Failed";
+  background: #ddd;
+  color: #999; }
 
 .tag.acquired::before {
   content: "Acquired";
