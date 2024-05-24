@@ -27,7 +27,7 @@ Traditionally, services we use have concrete security flows: Choose an email and
 
 The blockchain ecosystem flips this dynamic: The application does not need to care how the consumer secures their accounts. Every account can provide a cryptographic signature, and that's enough.
 
-With smart contract wallets like [Safe{Wallet}](safe.global), we can customize every aspect of our own security. We can add multiple devices, we can add spending limits, we can add various recovery schemes like [Social Recovery](https://safe.mirror.xyz/WxKSxD9J1bRI-SDOuDvAAIezwVrvWWkpuwuzcLDPSmk). This allows us to dramatically innovate on our security practices as an independent industry.
+With smart contract wallets like [Safe{Wallet}](https://safe.global/), we can customize every aspect of our own security. We can add multiple devices, we can add spending limits, we can add various recovery schemes like [Social Recovery](https://safe.mirror.xyz/WxKSxD9J1bRI-SDOuDvAAIezwVrvWWkpuwuzcLDPSmk). This allows us to dramatically innovate on our security practices as an independent industry.
 
 ### Programmable Identity
 Traditionally, we have identity cards issued by our local government, or domains managed by ICANN, or a profile managed by LinkedIn. These are all empowered intermediaries: They can choose to deny changes, or outright ban us from their systems. 
