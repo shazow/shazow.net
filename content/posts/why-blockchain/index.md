@@ -58,6 +58,9 @@ The question is not "why can't we build this without a blockchain?"
 
 The question is: **Why would we want to build things without a collectively owned programmable substrate?**
 
+---
+
+_Disclosure_: I work on projects in the Ethereum ecosystem and hold ETH.
 
 [^1]: There are many blockchains today with varying credibility and decentralization properties. Very few of them prioritize decentralization in the same way that Ethereum does, so that is my primary example for talking about what's possible.
 
