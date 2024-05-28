@@ -4,22 +4,24 @@
 #
 # Example:
 #   $ echo -e "#foo bar\nbaz" | ./frontmatterify
-#   +++
+#   ---
 #   title = "foo bar"
 #   date = "2020-11-30"
-#   +++
+#   ---
 #   baz
 
 # Find the frontmatter
 while read line; do
     if [[ "$line" =~ ^#([^#]{1}.*) ]]; then # Title, emit our own frontmatter
-        echo "+++"
-        echo "title = \"$(echo -n ${BASH_REMATCH[1]} | tr -d '\n\r')\"" # omg avoid printing EOL
-        echo "date = \"$(date -I)\""
-        echo "+++"
+        echo "---"
+        echo "title: \"$(echo -n ${BASH_REMATCH[1]} | tr -d '\n\r')\"" # omg avoid printing EOL
+        echo "date: $(date -I)"
+        echo "tags: []"
+        echo "categories: []"
+        echo "aliases: []"
         break
     elif [[ "$line" =~ ^[\-+]{3} ]]; then # Frontmatter, emit it verbatim
-        echo $line
+        echo "$line"
         break
     fi
 done
@@ -35,5 +37,5 @@ while read line; do
             line=${line//$url/$(basename "$url")}
         done
     fi
-    echo $line
+    echo "$line"
 done
