@@ -1,10 +1,10 @@
-+++
-title = "How does DeFi yield?"
-date = "2021-04-07"
-subtitle = "And how it's different from traditional finance"
-tags = ["Ethereum", "Finance"]
-categories = ["Featured"]
-+++
+---
+title: "How does DeFi yield?"
+date: "2021-04-07"
+subtitle: "And how it's different from traditional finance"
+tags: ["Ethereum", "Finance"]
+categories: ["Featured"]
+---
 
 [Decentralized Finance](https://en.wikipedia.org/wiki/Decentralized_finance) (DeFi) is a technology that exploded in popularity in 2020, taking place [almost entirely on the Ethereum network](https://defipulse.com/).
 

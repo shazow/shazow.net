@@ -1,7 +1,7 @@
-+++
-title = "Why Blockchain?"
-date = "2024-05-24"
-+++
+---
+title: "Why Blockchain?"
+date: "2024-05-24"
+---
 
 A blockchain like Ethereum[^1] provides a collectively owned programmable substrate, allowing us to build more decentralized "onchain" applications where the consumers have more agency over how things behave.
 

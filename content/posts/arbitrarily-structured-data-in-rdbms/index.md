@@ -1,7 +1,7 @@
-+++
-title = "Arbitrarily-Structured Data in Relational Databases"
-date = "2010-10-20 16:01:53 -0700"
-+++
+---
+title: "Arbitrarily-Structured Data in Relational Databases"
+date: 2010-10-20
+---
 
 This approach is similar to [FriendFeed's schemaless database framework](http://bret.appspot.com/entry/how-friendfeed-uses-mysql). The key difference is in the data locality.
 

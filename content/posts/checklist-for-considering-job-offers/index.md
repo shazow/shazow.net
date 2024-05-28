@@ -1,7 +1,7 @@
-+++
-title = "Considering job offers? A checklist in alphabetical order"
-date = "2011-12-30 17:38:28 -0800"
-+++
+---
+title: "Considering job offers? A checklist in alphabetical order"
+date: 2011-12-30
+---
 
 ![Celebrating your job offer](checklist-for-considering-job-offers.ballpit.jpg)
 

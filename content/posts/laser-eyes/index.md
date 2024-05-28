@@ -1,7 +1,7 @@
-+++
-title = "Laser Eye Surgery"
-date = "2013-02-26 21:24:01 -0800"
-+++
+---
+title: "Laser Eye Surgery"
+date: "2013-02-26 21:24:01 -0800"
+---
 
 "What was it like?" More than anything else, it was creepy.
 
