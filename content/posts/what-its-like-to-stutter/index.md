@@ -1,7 +1,7 @@
-+++
-title = "What it's like to stutter"
-date = "2007-10-06"
-+++
+---
+title: "What it's like to stutter"
+date: "2007-10-06"
+---
 
 ![image](drawing.png)
 

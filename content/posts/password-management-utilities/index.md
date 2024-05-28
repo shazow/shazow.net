@@ -1,7 +1,8 @@
-+++
-title = "Password Management Utilities"
-date = "2011-06-20 19:26:20 -0700"
-+++
+---
+title: "Password Management Utilities"
+date: "2011-06-20 19:26:20 -0700"
+lastmod: 2024-05-28
+---
 
 
 We live in a time when cleartext usernames and passwords are leaked on a daily basis. In the last couple of months my accounts got compromised on Gawker, Sony, and MtGox. I decided it's time to start using the one-password-per-service technique. These are tools I found in my research.
@@ -29,8 +30,8 @@ Same idea as Jon's pwgen, but in a JavaScript bookmarklet! This particular imple
 
 1Password is the Lexus of password management tools. It costs $39.99 for an OSX and Windows desktop license and another $11.99 for a mobile app. It lives in one file encrypted by your master password, so it's portable and many people use Dropbox to sync it across devices. No Linux support. (Via [@wolever](http://twitter.com/wolever))
 
-### [LastPass](https://lastpass.com/)
-LastPass has a freemium pricing model. They support all desktop platforms (OSX, Linux, Windows), but mobile devices require their $12/yr Premium subscription which synchronizes your password database with their servers.
+### LastPass
+LastPass has been sold to private equity and [leaked their customer data on multiple occasions](https://www.google.com/search?q=lastpass+leak). Many of their users have reported evidence that their vaults have been decrypted by third parties. Do not use LastPass.
 
 ## Open Source
 
