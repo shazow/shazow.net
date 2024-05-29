@@ -26,7 +26,7 @@ aliases:
 
 A few weeks ago, I wrote [ssh-chat](https://github.com/shazow/ssh-chat).
 
-{{< tweet shazow 543852069417787392 >}}
+{{< tweet user="shazow" id="543852069417787392" >}}
 
 The idea is simple: You open your terminal and type,
 
@@ -135,7 +135,7 @@ Someday, you’ll be able to ssh into _mud.shazow.net_ and you’ll get a little
 
 #### **Distributed Hash Table (DHT)**
 
-This gets technical but the possibilities are striking… {{< tweet shazow 549348566972370944 >}}
+This gets technical but the possibilities are striking… {{< tweet user="shazow" id="549348566972370944" >}}
 
 #### **Programmatic Data Streams**
 
