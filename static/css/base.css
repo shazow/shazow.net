@@ -437,6 +437,9 @@ ul {
   margin-top: 0.5em;
   padding-left: 0; }
 
+sup a {
+  text-decoration: none; }
+
 ul.vertical, ul.horizontal {
   list-style: none; }
 
@@ -532,7 +535,7 @@ footer a {
   text-align: center; }
 
 .post {
-  max-width: 680px;
+  max-width: 740px;
   padding: 0 1em;
   line-height: 1.4em;
   font-size: 21px;
@@ -553,8 +556,9 @@ footer a {
     margin-top: 1.5em; }
   .post h3 {
     font-size: 1.2em;
-    margin-top: 1em;
-    color: rgba(0, 0, 0, 0.6); }
+    margin-top: 1.25em;
+    font-weight: normal;
+    letter-spacing: 0.5px; }
   .post h4, .post h5 {
     font-size: 0.8em;
     font-weight: normal; }
@@ -603,7 +607,7 @@ footer a {
   background: #eee;
   border: solid #eee;
   border-width: 2px;
-  width: 80%;
+  width: 35%;
   height: 0;
   margin: 1.5em auto 1.5em auto; }
 
@@ -618,6 +622,7 @@ footer a {
   color: rgba(0, 0, 0, 0.6); }
 
 .post .footnotes {
+  margin-top: 2em;
   font-size: 0.8em; }
 
 .back {

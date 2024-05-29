@@ -1,5 +1,5 @@
 .PHONY: build
-build:
+build: css
 	hugo
 
 run:
@@ -7,6 +7,9 @@ run:
 
 deploy:
 	git subtree push --prefix build origin gh-pages
+
+css:
+	make -C ./scss
 
 static/css/syntax.css:
 	hugo gen chromastyles --style=monokai > $@
