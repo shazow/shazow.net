@@ -19,3 +19,7 @@
 {{ define "extra_head" }}
     <link href="/css/syntax.css" media="screen" rel="stylesheet" type="text/css" />
 {{ end }}
+{{ define "tail" }}
+    {{ $js := resources.Get "js/post.js" | fingerprint }}
+    <script type="text/javascript" src="{{ $js.Permalink }}" defer></script>
+{{ end }}

@@ -625,6 +625,25 @@ footer a {
   margin-top: 2em;
   font-size: 0.8em; }
 
+.post .sidenotes {
+  display: none; }
+
+@media (min-width: 1150px) {
+  .post .sidenotes {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -200px;
+    width: 180px;
+    padding-right: 20px;
+    font-size: 0.7em;
+    line-height: 1.1; }
+    .post .sidenotes li {
+      position: relative;
+      margin-top: -0.5em;
+      padding-bottom: 0.5em; } }
+
 .back {
   margin: 10px;
   font-size: 1rem; }
