@@ -632,15 +632,13 @@ footer a {
 .post .sidenotes {
   display: none; }
 
-@media (min-width: 1150px) {
+@media (min-width: 1200px) {
   .post .sidenotes {
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
-    margin-left: -200px;
-    width: 180px;
-    padding-right: 20px;
+    right: 20px;
+    width: 200px;
     font-size: 0.7em;
     line-height: 1.1; }
     .post .sidenotes li {
