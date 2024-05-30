@@ -1,0 +1,4 @@
+<div class="notice {{ .Get "class" | lower }}">
+    <strong>{{ .Get "title" }}</strong>
+    <p>{{ string .Inner | markdownify }}</p>
+</div>

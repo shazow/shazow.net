@@ -58,7 +58,9 @@ The question is: **Why would we want to build things without a collectively owne
 
 ---
 
-_Disclosure: I work on projects in the Ethereum ecosystem and hold ETH._
+{{< notice title="Disclosure" class="note" >}}
+I work on projects in the Ethereum ecosystem and hold ETH.
+{{< /notice >}}
 
 [^1]: There are many blockchains today with varying credibility and decentralization properties. Very few of them prioritize decentralization in the same way that Ethereum does, so that is my primary example for talking about what's possible.
 
