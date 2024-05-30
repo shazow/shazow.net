@@ -625,6 +625,9 @@ footer a {
 .post .footnotes {
   margin-top: 2em;
   font-size: 0.8em; }
+  .post .footnotes li:target {
+    background: rgba(255, 255, 100, 0.2);
+    padding: 0 0.5em; }
 
 .post .sidenotes {
   display: none; }
@@ -641,7 +644,7 @@ footer a {
     font-size: 0.7em;
     line-height: 1.1; }
     .post .sidenotes li {
-      position: relative;
+      position: absolute;
       margin-top: -0.5em;
       padding-bottom: 0.5em; } }
 

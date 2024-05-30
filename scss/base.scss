@@ -225,6 +225,11 @@ footer a {
 .post .footnotes {
     margin-top: 2em;
     font-size: 0.8em;
+
+    li:target {
+        background: rgba(255, 255, 100, 0.2);
+        padding: 0 0.5em;
+    }
 }
 
 .post .sidenotes {
@@ -244,7 +249,7 @@ footer a {
         line-height: 1.1;
 
         li {
-            position: relative;
+            position: absolute;
             margin-top: -0.5em;
             padding-bottom: 0.5em;
         }
