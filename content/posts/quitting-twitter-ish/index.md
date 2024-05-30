@@ -13,9 +13,6 @@ tags:
  - Personal
  - Mental Health
 
-
-
-
 aliases:
     - "/quitting-twitter-ish-a37be25fef0d"
 
@@ -23,7 +20,7 @@ aliases:
 
 #### It has been over two months and I feel better.
 
-{{< tweet shazow 34501532 >}}
+{{< tweet user="shazow" id="34501532" >}}
 
 My first tweet.
 
@@ -32,7 +29,7 @@ I haven’t tweeted in over two months.
 
 This is very unusual for me. I’ve been an avid tweeter since 2007. Writing tweets has become a part of my identity to the point where most my bios mention that I’m a tweet ghostwriter—composing and editing tweets for friends is one of my favourite things to do.
 
-{{< tweet shazow 437668894916890624 >}}
+{{< tweet user="shazow" id="437668894916890624" >}}
 
 My most popular tweet.
 
