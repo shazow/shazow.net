@@ -610,7 +610,7 @@ footer a {
   border-width: 2px;
   width: 35%;
   height: 0;
-  margin: 1.5em auto 1.5em auto; }
+  margin: 2.5em auto 2.5em auto; }
 
 .post blockquote {
   padding-left: 1em;
@@ -646,6 +646,22 @@ footer a {
       position: absolute;
       margin-top: -0.5em;
       padding-bottom: 0.5em; } }
+
+.notice {
+  font-family: sans-serif;
+  margin: 2em;
+  border: 2px solid #ccc;
+  background: #eee;
+  font-size: 0.7em;
+  color: #444; }
+  .notice strong {
+    display: block;
+    background: #ddd;
+    padding: 0 0.5em;
+    letter-spacing: 0.5px; }
+  .notice p {
+    margin: 0.5em;
+    line-height: 1.2; }
 
 .back {
   margin: 10px;
