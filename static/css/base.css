@@ -632,6 +632,12 @@ footer a {
 .post .sidenotes {
   display: none; }
 
+.posts {
+  margin: auto;
+  max-width: 40em; }
+  .posts li {
+    margin-bottom: 0.3rem; }
+
 @media (min-width: 1200px) {
   .post .sidenotes {
     display: block;

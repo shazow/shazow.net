@@ -46,7 +46,6 @@ ul.horizontal.buttons li {
     }
 }
 
-
 h1 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -234,6 +233,15 @@ footer a {
 
 .post .sidenotes {
     display: none;
+}
+
+.posts {
+    margin: auto;
+    max-width: 40em;
+
+    li {
+      margin-bottom: 0.3rem;
+    }
 }
 
 @media (min-width: 1200px) {

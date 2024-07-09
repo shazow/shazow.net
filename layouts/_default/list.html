@@ -7,11 +7,13 @@
 
         {{.Content}}
     </article>
-    <ul>
+    <ul class="posts">
     {{ range .Pages }}
+        {{ if .Date }}
         <li>
             <a href="{{.Permalink}}">{{.Title}}</a> ({{.Date.Format "2006"}})
         </li>
+        {{ end }}
     {{ end }}
     </ul>
 </main>
