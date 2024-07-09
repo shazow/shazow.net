@@ -1,9 +1,10 @@
 ---
 title: "Trustless"
-date: 2024-07-09
+date: 2023-11-07
 tags: []
 categories: []
 aliases: []
+---
 
 > "There are no such thing as zero trust assumptions."
 
