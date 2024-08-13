@@ -19,6 +19,7 @@ while read line; do
         echo "tags: []"
         echo "categories: []"
         echo "aliases: []"
+        echo "---"
         break
     elif [[ "$line" =~ ^[\-+]{3} ]]; then # Frontmatter, emit it verbatim
         echo "$line"
