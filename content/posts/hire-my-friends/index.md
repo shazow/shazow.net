@@ -2,8 +2,9 @@
 title: "Hire my friends"
 date: 2024-08-13
 tags: []
-categories: []
+categories: ["Featured"]
 aliases: []
+---
 
 Some of my friends are looking for new work, I've either worked with them directly or have seen their work and can vouch for them. Names not included if they're currently employed. Reach out by email, x, or farcaster if you want an intro!
 
