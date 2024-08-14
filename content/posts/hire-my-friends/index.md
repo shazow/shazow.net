@@ -22,6 +22,6 @@ Some of my friends are looking for new work, I've either worked with them direct
     - Likes: Full time remote work or willing to relocate, backend and infrastructure, learning new programming languages, enjoys Python/Rust/Zig/Racket. Operates a Steam Achievements leaderboard service for his friends. 
     - Dislikes: ... generally fairly amenable? Happy to do whatever needs to be done, super useful on any team.
 
-- [Ryan Feeley](https://ryanfeeley.com/) is a staff *user experience and product designer* based in Toronto, ON 🇨🇦
+- [Ryan Feeley](https://ryanfeeley.com/) is a staff **user experience and product designer** based in Toronto, ON 🇨🇦
     - Likes: Deep understanding of new kinds of products and their industry, working directly with engineers on pragmatic designs.
     - Dislikes: Sloppy hifi audio setups 🤪
