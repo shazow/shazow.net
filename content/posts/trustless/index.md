@@ -1,8 +1,8 @@
 ---
 title: "Trustless"
 date: 2023-11-07
-tags: []
-categories: []
+tags: ["Decentralization", "Trust"]
+categories: ["Featured"]
 aliases: []
 ---
 
