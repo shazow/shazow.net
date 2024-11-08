@@ -2,7 +2,7 @@
 title: "1231"
 date: 2024-11-08
 tags: []
-categories: []
+categories: ["Featured"]
 aliases: []
 ---
 
