@@ -2,7 +2,7 @@
 title: "Conditioning"
 date: 2025-01-20
 tags: []
-categories: []
+categories: ["Featured"]
 aliases: []
 ---
 
