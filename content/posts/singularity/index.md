@@ -2,7 +2,7 @@
 title: "Singularity"
 date: 2025-01-21
 tags: []
-categories: []
+categories: ["Featured"]
 aliases: []
 ---
 
