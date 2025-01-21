@@ -1,9 +1,9 @@
 ---
-title: "Singularity"
+title: "Post-Growth"
 date: 2025-01-21
 tags: []
 categories: ["Featured"]
-aliases: []
+aliases: [ "/singularity" ]
 ---
 
 Imagine thousands of years in the future, when humanity is dispersed across the stars. We are fully actualized and have reached the final leafs of the universe's tech tree. We are happy and in control of our destiny.
