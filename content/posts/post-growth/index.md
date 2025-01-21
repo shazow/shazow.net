@@ -28,7 +28,7 @@ Will there be one?
 
 ---
 
-For a long time, we have been in an _Age of Growth_ as a society. Growth has been our own metric for success that we have optimized obsessively, sometimes to toxic extremes.
+For a long time, we have been in an _Age of Growth_ as a society. Growth has been our main metric for success that we optimized obsessively, sometimes to toxic extremes.
 
 Can we imagine what it would take for us to transcend into a post-growth society?
 
