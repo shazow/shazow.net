@@ -3,7 +3,7 @@ title: "How does DeFi yield?"
 date: "2021-04-07"
 subtitle: "And how it's different from traditional finance"
 tags: ["Ethereum", "Finance"]
-categories: ["Featured"]
+categories: []
 ---
 
 [Decentralized Finance](https://en.wikipedia.org/wiki/Decentralized_finance) (DeFi) is a technology that exploded in popularity in 2020, taking place [almost entirely on the Ethereum network](https://defipulse.com/).
@@ -61,34 +61,10 @@ In fact, [DeFi exploits are some of the most fascinating users of flash loans](h
 
 That's the big difference with traditional finance: Even after eons of custodial trust violations, from the very first primate to borrow a tool and not return it as promised, we are still struggling with the same fundamental shortcomings. Meanwhile, DeFi on Ethereum has only been alive for a couple of years, and there is a very achievable end point of stability and safety.
 
-## All about that yield
-
-Imagine anyone in the world could have access to a stable currency denomination with non-trivial interest yield?
-
-Today, you can let flash loan bots pay you to use your capital with zero economic risk of not getting your money back:
-- https://compound.finance/
-- https://aave.com/
-- https://dydx.exchange/
-
-Today, you can pool your money into trading pairs and get fees from people who trade between them.
-**Note:** This category is affected by [speculative risk in the form of "impermanent loss"](https://uniswap.org/docs/v2/advanced-topics/understanding-returns/).
-- https://uniswap.org/
-- https://1inch.exchange/
-- https://loopring.io/
-
-Today, you can use a collective roboadvisor contract that will automatically rebalance your collective funds into the best performing pools in the most fee-efficient way:
-- https://yearn.finance/
-
-There is an evergrowing ecosystem of all of these, I just linked the ones I'm personally familiar with. For more: https://defipulse.com/
-
-The best part? Many of these yields exist completely outside of a world of inflation, inefficiency, speculation/risk, or violation of trust.
-
-In many cases, money is simply earning fees for being made available in a safe way.
-
 
 ## FAQs
 
-> Is this investment advice? 😳🖐️🦋
+> Is this investment advice? 😳🫴🦋
 
 No.
 
@@ -108,7 +84,7 @@ That's not impossible! But keep in mind, flash loans is just one of a multitude 
 
 > How much yield could I get right now? Asking for a friend...
 
-Depends on your risk tolerance and how hands-on you want to be. Many of these rates vary wildly from week to week: https://defirate.com/
+Depends on your risk tolerance and how hands-on you want to be. Many of these rates vary wildly from week to wee.
 
 
 > What are flash loan bots _actually_ doing?
