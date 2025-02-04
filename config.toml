@@ -11,7 +11,7 @@ title               = "Andrey Petrov"
 pygmentsuseclasses  = true
 #disqusshortname     = "shazow.net" # Comment out to disable Disqus.
 pluralizelisttitles = false
-googleAnalytics     = "UA-407051-1"
+#googleAnalytics     = "UA-407051-1"
 
 [permalinks]
 fixed = ":title"
