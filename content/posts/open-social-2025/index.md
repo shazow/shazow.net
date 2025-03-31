@@ -141,7 +141,7 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
    🚨 This one is also tricky. I suspect there is not yet enough momentum if the founders decided to wind down. I ask myself if I would care if a megacorp acquired the team along with the most popular app but committed to maintaining the same design properties... I'm not sure! More independent/open source, and economically motivated apps platforming large audiences would make me feel more confident that moderation won't get abused.
 
 ## Takeaway
-## Economic balance matters
+### Economic balance matters
 If it's far too costly to bootstrap infrastructure in a black swan event (censorship, evil billionaire, physical infrastructure failure, whatever) then the efficacy of a robust protocol is lost.
 
 For a given player, the balance is between the cost of correcting a failure and value that is gained from recovering. If a network has a thriving economy and it is comparatively inexpensive to operate it, then we can be more assured that it will persevere.
@@ -153,7 +153,7 @@ A few blogs federating ActivityPub remain perfectly robust from capture, but a m
 
 Similarly, Farcaster seems almost sustainable at today's scale, but will it be off-balance like Bluesky if it grows to tens of millions of users?
 
-## Interdependence matters
+### Interdependence matters
 We can't expect a single dominant player to resist exercising powers like threats of censorship, even if the underlying protocol is resistant. If one player is platforming 99% of the network, there is nothing stopping them from abandoning the underlying protocol altogether and just replacing it with a private database instead. We must have a multi-polar plurality of interdependent players to protect us from the effects of capture.
 
 ## What's next?
