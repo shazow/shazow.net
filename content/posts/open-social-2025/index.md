@@ -67,7 +67,7 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
    
    The default onboarding with a `*.bsky.social` identity is controlled by Bluesky and can be taken away, but the protocol facilitates using my own domain for my identity, so I can be `shazow.net` instead of `shazow.bsky.socialf` and that can't be taken away by Bluesky **BUT** it can be taken away by ICANN and my registrar.
    
-   Note that this namespace is mostly cosmetic, the actual protocol interactions are mapped to a long-lived public key (managed by the PLC) and the "human readable" identity is simply an alias to it which can be changed without losing the interaction integrity.
+   Note that this namespace is mostly cosmetic, the actual protocol interactions are mapped to a long-lived public key (a [DID, managed by the PLC](https://docs.bsky.app/docs/advanced-guides/resolving-identities) and the "human readable" identity is simply an alias to it which can be changed without losing the interaction integrity.
    
    Overall, if my handle is taken away, then someone else will show up as me on Bluesky and I will need to register another handle, but I will not lose any of my social graph.
    
