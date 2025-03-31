@@ -67,9 +67,9 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
    
    The default onboarding with a `*.bsky.social` identity is controlled by Bluesky and can be taken away, but the protocol facilitates using my own domain for my identity, so I can be `shazow.net` instead of `shazow.bsky.socialf` and that can't be taken away by Bluesky **BUT** it can be taken away by ICANN and my registrar.
    
-   Note that this namespace is mostly cosmetic, the actual protocol interactions are mapped to a long-lived public key (a [DID, managed by the PLC](https://docs.bsky.app/docs/advanced-guides/resolving-identities) and the "human readable" identity is simply an alias to it which can be changed without losing the interaction integrity.
-   
-   Overall, if my handle is taken away, then someone else will show up as me on Bluesky and I will need to register another handle, but I will not lose any of my social graph.
+   Note that this namespace is mostly cosmetic, the actual protocol interactions are mapped to a long-lived public key (a [DID, managed by the PLC](https://docs.bsky.app/docs/advanced-guides/resolving-identities)) and the "human readable" identity is simply an alias to it which can be changed without losing the interaction integrity. This mapping is currently stored in a verifiable but centralized database ([PLC Directory](https://plc.directory/)) which can misbehave by preventing updates and limit access to the ledger logs.[^5]
+
+   Overall, if my handle is taken away, then someone else will show up as me on Bluesky and I will need to register another handle, but I will not lose any of my social graph. If the PLC Directory disappears, I could lose my ability to write to my account.
    
 2. **Can my audience be taken away?**
 
@@ -110,7 +110,9 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
 
    💚 No.
    
-   While the default onboarding flow uses a custodied zidentity similar to Bluesky (Farcaster ID), anyone can set [an ENS identity](https://unchainedcrypto.com/ethereum-name-service-ens/) which is fully self-custodied and can't be taken away even, not even by ICANN. So instead of `shazow.farcaster` I am `shazow.eth`. This also allows for arbitrary programmable collectively owned namespaces, since the ENS can be owned and managed by any smart contract.
+   While the default onboarding flow uses a custodied identity similar to Bluesky (Farcaster ID), anyone can set [an ENS identity](https://unchainedcrypto.com/ethereum-name-service-ens/) which is fully self-custodied and can't be taken away even, not even by ICANN. So instead of `shazow.farcaster` I am `shazow.eth`. This also allows for arbitrary programmable collectively owned namespaces, since the ENS can be owned and managed by any smart contract.
+   
+   Additionally, Farcaster's key management is onchain in a smart contract *by default*, so every user has full control over their permissions in a censorship-resistant way[^6]. There are several supported signing formats, including passkeys. There is also optional social recovery available, by default it allows Warpcast to help recover my account if I lose access to all my signers (passkey, mobile app, etc) but I can change that.
    
 2. **Can my audience be taken away?**
 
@@ -172,3 +174,6 @@ _Thanks to [Boris](https://bmann.ca/), [Boscolo](https://boscolo.co/), and [Leew
 
 [^4]: One of my favourite parts about Bluesky's architecture design is that it's very layered with conceptually optional optimizations. At the very bottom sits the Personal Data Server which is itself enough to bootstrap a basic social network from other such people. Above it are the relays, which aggregate many PDS into a composite firehose. Above the relays is the AppView, which creates the timelines that are served to the app's end users. Right now the PDS implementation is coupled with the signing key, but conceptually they could be separate.
 
+[^5]: If the PLC Directory disappears today, this would be quite catastrophic if a replica of the ledger's logs is not available. This is the authoritative source for who is allowed to update what, and without it the cryptographic permission system is broken. Another great usecase for an onchain smart contract, which would also help with update censorship and limiting access to the latest verifiable state.
+
+[^6]: Censorship-resistance here means that I can't be stopped from submitting an update to my settings, and no one can be prevented from accessing the latest verified state of my settings.
