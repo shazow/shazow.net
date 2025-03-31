@@ -56,9 +56,9 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
 5. **Is there something the maintainer can do that would prompt me to abandon the service/protocol altogether?**
    💚 I don't think so.
    
-   There is a huge ecosystem with diverse implementations by varieties of people. There are already apps built on ActivityPub/Mastodon that span every conceivable ideology, including TruthSocial that is owned by the president of the United States. I don't think any of them can say or do much which would severely change my perspective on ActivityPub or Mastodon as a technology.
+   There is a huge ecosystem with diverse implementations by varieties of people. There are already apps built on ActivityPub/Mastodon that span every conceivable ideology, including TruthSocial that is owned by the president of the United States and Threads owned by Meta. I don't think any of them can say or do much which would severely change my perspective on ActivityPub or Mastodon as a technology.
    
-   I found at least 80 independent instances with over 10,000 users and 10 with over 100,000 users. Protocol challenges aside, this level of instance diversity is very impressive.
+   I found at least 80 independent Mastodon instances with over 10,000 users and 10 with over 100,000 users. Protocol challenges aside, this level of instance diversity is very impressive.
 
 ## ATProto/Bluesky
 [Bluesky](https://bsky.app/) (and the ATProto protocol it's built on) has many optional provisions for improving the sovereignty of users, such as managing signing keys with the _Public Ledger of Credentials_ ([PLC](https://web.plc.directory/))[^3] and running my own _Personal Data Server_ ([PDS](https://docs.bsky.app/docs/advanced-guides/federation-architecture))[^4] that can serve as a source of truth for my data. While this is not the default, and it's unrealistic for everyone to self-host a PDS, the protocol *is* designed for a world where everyone has ownership over their signing key and it does support alternate identity schemes in the future (potentially even fully sovereign and programmable onchain signatures).
