@@ -89,7 +89,7 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
    
    I can extend ATProto with my own "lexicons" and create whole parallel functionality within the same infrastructure.
    
-   In fact, there are already many interesting use cases being used, like: [WhiteWind](https://whtwnd.com/) for blogging, [Smoke Signal](https://smokesignal.events/) for coordinating events, [Flashes App](https://bsky.app/profile/flashes.blue) for photo sharing, and [many other experiments](https://github.com/fishttp/awesome-bluesky).That said, I suspect some of this will change in the future as more griefing and other attacks on the protocol are explored.
+   In fact, there are already many interesting use cases being used, like: [WhiteWind](https://whtwnd.com/) for blogging, [Smoke Signal](https://smokesignal.events/) for coordinating events, [Flashes App](https://bsky.app/profile/flashes.blue) for photo sharing, and [many other experiments](https://github.com/fishttp/awesome-bluesky). That said, I suspect some of this will change in the future as more griefing and other attacks on the protocol are explored.
    
 4. **What happens when the most popular app or instance becomes malicious?**
 
@@ -143,13 +143,22 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
    🚨 This one is also tricky. I suspect there is not yet enough momentum if the founders decided to wind down. I ask myself if I would care if a megacorp acquired the team along with the most popular app but committed to maintaining the same design properties... I'm not sure! More independent/open source, and economically motivated apps platforming large audiences would make me feel more confident that moderation won't get abused.
 
 ## Takeaway
+## Economic balance matters
+If it's far too costly to bootstrap infrastructure in a black swan event (censorship, evil billionaire, physical infrastructure failure, whatever) then the efficacy of a robust protocol is lost.
 
-**Scale matters:** Some protocols have desirable properties when the network is small, but lose them at scale: A few blogs federating ActivityPub remain perfectly robust from capture, but a million user Mastodon instance is a juicy point of failure. Even smaller instances are brittle and risky: perhaps the sysadmin gets burned out and wants to do something else or a security update isn't installed quickly enough.
+For a given player, the balance is between the cost of correcting a failure and value that is gained from recovering. If a network has a thriving economy and it is comparatively inexpensive to operate it, then we can be more assured that it will persevere.
 
-**Interdependence matters:** We can't expect a single dominant player to resist exercising powers like threats of censorship, even if the underlying protocol is resistant. If one player is platforming 99% of the network, there is nothing stopping them from abandoning the underlying protocol altogether and just replacing it with a private database instead. We must have a multi-polar plurality of interdependent players to protect us from the effects of capture.
+### Scale matters
+Some protocols have desirable properties when the network is small, but lose them at scale:
 
-**Economic balance matters:** If it's far too costly to bootstrap infrastructure in a black swan event (censorship, evil billionaire, physical infrastructure failure, whatever) then the efficacy of a robust protocol is lost. For a given player, the balance is between the cost of correcting a failure and value that is gained from recovering. If a network has a thriving economy and it is comparatively inexpensive to operate it, then we can be more assured that it will persevere.
+A few blogs federating ActivityPub remain perfectly robust from capture, but a million user Mastodon instance is a juicy point of failure. Even smaller instances are brittle and risky: perhaps the sysadmin gets burned out and wants to do something else or a security update isn't installed quickly enough.
 
+Similarly, Farcaster seems almost sustainable at today's scale, but will it be off-balance like Bluesky if it grows to tens of millions of users?
+
+## Interdependence matters
+We can't expect a single dominant player to resist exercising powers like threats of censorship, even if the underlying protocol is resistant. If one player is platforming 99% of the network, there is nothing stopping them from abandoning the underlying protocol altogether and just replacing it with a private database instead. We must have a multi-polar plurality of interdependent players to protect us from the effects of capture.
+
+## What's next?
 I'd like to see each protocol describe what their ideal evolution and adoption looks like a year from today. If everything about the current roadmap goes right and all the relevant partners enthusiastically join forces, what does the world look like for this protocol in 2026?
 
 ---
