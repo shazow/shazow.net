@@ -6,8 +6,6 @@ categories: ["Featured"]
 aliases: []
 ---
 
-# How can open social protocols fail us in 2025
-
 Let's compare the possible failure modes of various open social protocols:
 - ActivityPub/Mastodon
 - ATProto/Bluesky
