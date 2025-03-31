@@ -59,7 +59,7 @@ With that in mind, I will primarily focus on the shared-hosted Mastodon-compatib
    There is a huge ecosystem with diverse implementations by varieties of people. There are already apps built on ActivityPub that span every conceivable ideology, including TruthSocial that is owned by the president of the United States. I don't think any of them can say or do much which would severely change my perspective on ActivityPub or Mastodon as a technology.
 
 ## ATProto/Bluesky
-[Bluesky](https://bsky.app/) (and the ATProto protocol it's built on) has many optional provisions for improving the sovereignty of users, such as managing signing keys with the [PLC](https://web.plc.directory/)[^3] and running my own [PDS](https://docs.bsky.app/docs/advanced-guides/federation-architecture)[^4] that can serve as a source of truth for my data. While this is not the default, and it's unrealistic for everyone to self-host a PDS, the protocol *is* designed for a world where everyone has ownership over their signing key and it does support alternate identity schemes in the future (potentially even fully sovereign and programmable onchain signatures).
+[Bluesky](https://bsky.app/) (and the ATProto protocol it's built on) has many optional provisions for improving the sovereignty of users, such as managing signing keys with the _Public Ledger of Credentials_ ([PLC](https://web.plc.directory/))[^3] and running my own _Personal Data Server_ ([PDS](https://docs.bsky.app/docs/advanced-guides/federation-architecture))[^4] that can serve as a source of truth for my data. While this is not the default, and it's unrealistic for everyone to self-host a PDS, the protocol *is* designed for a world where everyone has ownership over their signing key and it does support alternate identity schemes in the future (potentially even fully sovereign and programmable onchain signatures).
 
 1. **Can my identity be taken away?**
 
@@ -161,7 +161,7 @@ I'd like to see each protocol describe what their ideal evolution and adoption l
 
 ---
 
-Thanks to [Boris](https://bmann.ca/), [Boscolo](https://boscolo.co/), and [Leeward](https://warpcast.com/leewardbound) for reviewing early drafts of this post.
+_Thanks to [Boris](https://bmann.ca/), [Boscolo](https://boscolo.co/), and [Leeward](https://warpcast.com/leewardbound) for reviewing early drafts of this post._
 
 
 [^1]: [The Mastodon fediverse has around 9.5M registered and almost 1M monthly active users across 8700 instances](https://mastodon-analytics.com/). The number of single-user instances out there must be a rounding error over the total number of users across Mastodon. I was only able to find a few dozen instances with 3 or fewer users.
