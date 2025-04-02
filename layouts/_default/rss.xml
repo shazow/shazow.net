@@ -1,3 +1,7 @@
+{{/*
+  Base template borrowed from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml
+  Added <content:encoded> support.
+*/}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
