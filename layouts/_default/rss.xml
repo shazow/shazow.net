@@ -56,7 +56,7 @@
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | transform.XMLEscape | safeHTML }}{{ printf "<p><a href=%q>Continue reading...</a></p>" .Permalink | html }}</description>
+      <description>{{ .Summary | transform.XMLEscape | safeHTML }}{{ printf "<p>...</p>" | html }}</description>
       {{- with .Content }}
       <content:encoded>{{ `<![CDATA[` | safeHTML }}
       {{ . | safeHTML }}
