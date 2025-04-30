@@ -43,7 +43,7 @@ After finding some of the pieces pointing to Vernon Schryver and Paul Ciszek, I 
 
 We later reattributed Napoleon's quote to [Hanlon's Razor](https://en.wikipedia.org/wiki/Hanlon%27s_razor).
 
-Coming back full circle with Grey's anecdote who correctly attributed the mashup to Hanlon and Clarke, I'm going to take this opportunity to further rebrand of Vernon's quote as the Hanlon-Clarke Corollary.
+Coming back full circle with Grey's anecdote who correctly attributed the mashup to Hanlon and Clarke, I'm going to take this opportunity to further rebrand Vernon's quote as the Hanlon-Clarke Corollary.
 
 Until we can find better corroboration of Grey's anecdote (please reach out if you have a lead!), I say we attribute this quote mashup to Vernon Schryver.
 
