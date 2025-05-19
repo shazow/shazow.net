@@ -2,7 +2,7 @@
 title: "Hanlon-Clarke Corollary"
 date: 2025-04-30
 tags: []
-categories: []
+categories: ["Featured"]
 aliases: []
 ---
 
