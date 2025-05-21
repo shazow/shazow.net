@@ -16,10 +16,13 @@
 <div class="back">&larr; <a href="/">Back to shazow.net</a></div>
 {{ end }}
 {{ define "title" }}{{ .Title }} | shazow.net{{ end }}
-{{ define "extra_head" }}
+{{ define "extra_head" -}}
     <link href="/css/syntax.css" media="screen" rel="stylesheet" type="text/css" />
+    {{ if .Params.canonical -}}
+    <link rel="canonical" href="{{ .Params.canonical }}" />
+    {{ end }}
 {{ end }}
-{{ define "tail" }}
+{{ define "tail" -}}
     {{ $js := resources.Get "js/post.js" | fingerprint }}
     <script type="text/javascript" src="{{ $js.Permalink }}" defer></script>
 {{ end }}

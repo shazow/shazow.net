@@ -13,15 +13,14 @@
 
     <link href='//fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:400,400italic&amp;v2' rel='stylesheet' type='text/css'>
     {{ block "extra_head" . }}{{ end }}
-
     <meta name="twitter:site" content="@shazow">
     <meta name="twitter:creator" content="@shazow">
-    {{ if .IsPage }}
+    {{ if .IsPage -}}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{ .Title }}" />
     <meta name="twitter:description" content="{{ .Summary }}" />
     {{ if .Params.image }}<meta name="twitter:image" content="{{ .Permalink }}{{ .Params.image }}" />{{ end }}
-    {{ else }}
+    {{ else -}}
     <meta name="twitter:title" content="{{ .Site.Title }}" />
     <meta name="twitter:description" content="{{ .Description }}" />
     {{ end }}
