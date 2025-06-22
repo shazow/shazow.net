@@ -2,7 +2,6 @@
 title = "urllib3 Origin Story"
 date = "2025-05-21"
 categories = ["featured"]
-canonical = "https://opensource.org/maintainers/shazow"
 +++
 
 {{< notice title="Syndicated" class="note" >}}
