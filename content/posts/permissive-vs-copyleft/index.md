@@ -16,7 +16,7 @@ Right?
 
 Wrong.
 
-In this post, I break down all the ways copyleft licenses fail to achieve their state goals, and explain why permissive licenses succeed where copyleft fails.
+In this post, I break down all the ways copyleft licenses fail to achieve their stated goals, and explain why permissive licenses succeed where copyleft fails.
 
 ## Background
 
