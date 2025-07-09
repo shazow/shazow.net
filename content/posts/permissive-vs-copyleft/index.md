@@ -85,11 +85,11 @@ On the other hand, I've personally witnessed _many_ cases where a business would
 
 Why rewrite the code? Because it's **wildly easier** to rewrite code after the design boundaries have been established.
 
-If you have a mature codebase that your team spent a person-year building, ask them: "Given everything we've learned, how long would it take for us to rewrite this in a different language?" The answer to this is often around x10 faster. Much of the time spent building the first version is finding and avoiding all of the "wrong decisions", iterating with user feedback, reframing features to make more holistic sense, testing them, polishing them, arguing over button colours, etc.[^9]
+If you have a mature codebase that your team spent a person-year building, ask them: "Given everything we've learned, how long would it take for us to rewrite this in a different language?" The answer to this is often around 10× faster. Much of the time spent building the first version is finding and avoiding all of the "wrong decisions", iterating with user feedback, reframing features to make more holistic sense, testing them, polishing them, arguing over button colours, etc.[^9]
 
 Second, consider the "replacement value" of the project (from the previous section). If we only need 20% of the functionality, we don't need to rewrite 100% of the code.
 
-If you spent 52 weeks building 100% of the functionality and supporting infrastructure, and I just need 20% of it that I can rewrite x10 faster... that's just a couple weeks of work![^2]
+If you spent 52 weeks building 100% of the functionality and supporting infrastructure, and I just need 20% of it that I can rewrite 10× faster... that's just a couple weeks of work![^2]
 
 Why would a business pay for an existential liability that when they could just have a half-decent programmer do an in-house rewrite of the relevant component in two weeks?
 
@@ -201,7 +201,7 @@ Let's continue to find more [Schelling points](https://en.wikipedia.org/wiki/Foc
 
 [^1]: There were several cases where businesses "accidentally" used copyleft code and were later forced to relicense parts of their proprietary code to comply retroactively, but this was a mistake insofar that they would not have made this choice if they knew of the impending outcome. For example: [Linksys](https://en.wikipedia.org/wiki/Free_Software_Foundation,_Inc._v._Cisco_Systems,_Inc.)
 
-[^2]: Yes these numbers are made up and sound a little wild, but they're closer to the truth in the vast majority of cases than is comfortable to admit. There are of course examples of copyleft projects like the Linux kernel which contain tens of thousands of person-years of effort, such that even a x100 improvement is still very costly--perhaps this was a lesson that Google Fuchsia learned.
+[^2]: Yes these numbers are made up and sound a little wild, but they're closer to the truth in the vast majority of cases than is comfortable to admit. There are of course examples of copyleft projects like the Linux kernel which contain tens of thousands of person-years of effort, such that even a 100× improvement is still very costly--perhaps this was a lesson that Google Fuchsia learned.
 
 [^3]: The special right of the copyright holder is made even more dangerous when a project requires an IP assignment agreement (also known as a Contributor License Agreement). These agreements assign all the copyright to a single owner (often the maintainer or a holding entity), so that they can unilaterally relicense the work without requiring individual consent from every contributor.
 
@@ -219,5 +219,5 @@ Let's continue to find more [Schelling points](https://en.wikipedia.org/wiki/Foc
 
 [^8]: Example: When Amazon AWS rewrote their MongoDB (AGPL) service as DocumentDB (internal/proprietary). Discussed more below in [Copyleft fails to prevent corporate capture](#copyleft-fails-to-prevent-corporate-capture).
 
-[^9]: It was x10 faster before AI-assisted tooling, who knows how much faster it will be in the future! It's certainly not getting slower. Again, AWS DocumentDB was created as a replacement for MongoDB in just 2.5 months, and this was in 2019.
+[^9]: It was 10× faster before AI-assisted tooling, who knows how much faster it will be in the future! It's certainly not getting slower. Again, AWS DocumentDB was created as a replacement for MongoDB in just 2.5 months, and this was in 2019.
 
