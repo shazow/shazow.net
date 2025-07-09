@@ -1,8 +1,8 @@
 ---
 title: "Permissive vs Copyleft Open Source"
 date: 2025-07-09
-tags: []
-categories: []
+tags: ["Open Source"]
+categories: ["Featured"]
 aliases: []
 ---
 
@@ -17,6 +17,7 @@ Right?
 Wrong.
 
 In this post, I will break down the ways that copyleft fails to achieve its stated goals while permissive licenses succeed at moving the needle in the right direction despite what some popular narratives may have us believe.
+
 ## Background
 
 (Skip this if you already know the difference between permissive and copyleft licenses.)
@@ -46,6 +47,7 @@ This means as an author of some copyleft code, I have special rights that my use
 Permissive licenses don't have this asymmetry by virtue of giving everyone the right to use the code for proprietary purposes.
 
 Okay, why is this important?
+
 ## Custom-licensed copyleft code is a liability
 
 Some projects choose copyleft licenses as a way to convince businesses to pay for a custom license.
@@ -75,7 +77,7 @@ The stated goal of copyleft is to create more copyleft source code, but in pract
 When a business finds a dependency that they'd like to use, but notice that it's copyleft-licensed, the business has three choices:
 1. Open source and relicense all internal code that would be impacted by integrating this dependency.[^7]
 2. Rewrite the dependency inhouse. (Or find another permissively licensed substitute, if such exists.)
-3. Request a custom license from the copyright holders, see: [[#Custom-licensed copyleft code is a liability]]. (This is also logistically difficult if the project has many contributors without a consolidated copyright holder, as each contributor would need to consent.)
+3. Request a custom license from the copyright holders, see: [Custom-licensed copyleft code is a liability](#custom-licensed-copyleft-code-is-a-liability). (This is also logistically difficult if the project has many contributors without a consolidated copyright holder, as each contributor would need to consent.)
 
 I've been working as an open source maintainer and contributor 20+ years and not a single time in my life have I seen a business willingly[^1] make public and relicense their internal code to comply with a dependency they were considering using. Not once!
 
@@ -164,7 +166,7 @@ I get this question a lot, and my general answer is: They already do, just not e
 
 When we imagine businesses contributing to open source, we imagine them sending money to maintainers of dependencies they use. While this does happen, it's very rare.
 
-What's less rare is businesses increasingly choose to release parts of their code as open source code, and contribute improvements to other projects. While this doesn't help overburdened maintainers, this is otherwise a good thing!
+What's less rare is businesses increasingly choose to release parts of their code as open source code, and contribute improvements to other projects. While this doesn't help overburdened maintainers, it is otherwise a good thing!
 
 I believe the lowest hanging fruit is to encourage businesses to get _more_ involved with creating and maintaining open source code by empowering their employees to do so.
 
@@ -188,7 +190,7 @@ This wasn't always true: In the 90s, copyleft was king. Businesses were very ske
 >
 > A: Yeah. It's good competition. It will force us to be innovative. It will force us to justify the prices and value that we deliver. And that's only healthy. The only thing we have a problem with is when the government funds open-source work. Government funding should be for work that is available to everybody. **Open source is not available to commercial companies. The way the license is written, if you use any open-source software, you have to make the rest of your software open source. If the government wants to put something in the public domain, it should. Linux is not in the public domain. Linux is a cancer that attaches itself in an intellectual property sense to everything it touches. That's the way that the license works.**
 
-Of course this was a misinformed and naive view, but the seed of the concern was real as discussed in the [[#Custom-licensed copyleft code is a liability]] section.
+Of course this was a misinformed and naive view, but the seed of the concern was real as discussed in the [Custom-licensed copyleft code is a liability](#custom-licensed-copyleft-code-is-a-liability) section.
 
 In 2025, the landscape is very different. Businesses have found a mutually-aligned interest with permissive open source, and the ecosystem has exploded thanks to that.
 
@@ -196,7 +198,6 @@ Is this the best we can do? I hope not!
 
 Let's continue to find more [Schelling points](https://en.wikipedia.org/wiki/Focal_point_(game_theory)) of collaboration and aligned interests, so that the public can benefit from a larger portion of private effort.
 
----
 
 [^1]: There were several cases where businesses "accidentally" used copyleft code and were later forced to relicense parts of their proprietary code to comply retroactively, but this was a mistake insofar that they would not have made this choice if they knew of the impending outcome. For example: [Linksys](https://en.wikipedia.org/wiki/Free_Software_Foundation,_Inc._v._Cisco_Systems,_Inc.)
 
@@ -204,7 +205,7 @@ Let's continue to find more [Schelling points](https://en.wikipedia.org/wiki/Foc
 
 [^3]: The special right of the copyright holder is made even more dangerous when a project requires an IP assignment agreement (also known as a Contributor License Agreement). These agreements assign all the copyright to a single owner (often the maintainer or a holding entity), so that they can unilaterally relicense the work without requiring individual consent from every contributor.
 
-OSS licenses were designed to leverage the logistic hurdle of requiring consent of all contributors.
+    OSS licenses were designed to leverage the logistic hurdle of requiring consent of all contributors.
 
 [^4]: The Open Source Initiative maintains [The Open Source Definition](https://opensource.org/osd) and [the sets of licenses which comply with it](https://opensource.org/licenses).
 
@@ -214,9 +215,9 @@ OSS licenses were designed to leverage the logistic hurdle of requiring consent 
 
 [^7]: I cannot understate how expensive it is to take a private legacy codebase and make it public. When a codebase is private, every choice is made with that context: Secrets are littered in the commit history, assumptions are hardcoded, proprietary business details are exposed.
 
-When I advise businesses about open sourcing, I always tell them: It's astronomically cheaper to open source on day 0 than at any point in the future. The longer you wait, the more expensive it gets. All of those micro-decisions under the wrong add up, sometimes to the point where it's cheaper to just rewrite the whole thing in public from scratch.
+    The longer we wait, the more expensive it gets. All of those micro-decisions add up, sometimes to the point where it's cheaper to just rewrite the whole thing in public from scratch.
 
-[^8]: For example: When Amazon AWS rewrote their MongoDB (AGPL) service as DocumentDB (internal/proprietary). Discussed more below in [[#Copyleft fails to prevent corporate capture]].
+[^8]: Example: When Amazon AWS rewrote their MongoDB (AGPL) service as DocumentDB (internal/proprietary). Discussed more below in [Copyleft fails to prevent corporate capture](#copyleft-fails-to-prevent-corporate-capture).
 
 [^9]: It was x10 faster before AI-assisted tooling, who knows how much faster it will be in the future! It's certainly not getting slower. Again, AWS DocumentDB was created as a replacement for MongoDB in just 2.5 months, and this was in 2019.
 
