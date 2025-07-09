@@ -235,6 +235,17 @@ footer a {
     display: none;
 }
 
+.post a.header-anchor {
+    position: absolute;
+    margin-left: -0.8em;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
 .posts {
     margin: auto;
     max-width: 40em;

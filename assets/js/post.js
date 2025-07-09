@@ -1,12 +1,21 @@
 (function() {
-    // Add sidenotes to each post
     document.querySelectorAll("article.post").forEach((post) => {
+        // Add anchor link to headers
+        post.querySelectorAll('h2[id], h3[id], h4[id]').forEach((header) => {
+            const anchor = document.createElement('a');
+            anchor.className = 'header-anchor';
+            anchor.href = '#' + header.id;
+            anchor.innerHTML = '#';
+            header.prepend(anchor);
+        });
+
+        // Add sidenotes to each post
         const sidenotes = document.createElement("ol");
         sidenotes.className = "sidenotes"
         post.appendChild(sidenotes);
 
         let lastOffset = 0;
-        document.querySelectorAll(".footnotes li").forEach((footnote) => {
+        post.querySelectorAll(".footnotes li").forEach((footnote) => {
             // <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a>
             const backref = footnote.getElementsByClassName('footnote-backref')[0].getAttribute("href");
 
