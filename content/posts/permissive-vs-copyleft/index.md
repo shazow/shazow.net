@@ -119,7 +119,7 @@ I am an independent open source developer who is passionate about permissively l
 
 ## Copyleft nuances and complexity
 
-I can write Python that has a GPL dependency without relicensing my project to match, but I can't write Go that has a GPL dependency without relicensing. Why?
+I can write Python that has a copyleft GPL dependency without relicensing my project to match, but I can't write Go that has a GPL dependency without relicensing. Why?
 
 Python is interpreted and the code is linked dynamically, whereas Go produces a statically linked binary so the copyleft "infects" the rest of the code.
 
@@ -127,7 +127,7 @@ Does anyone actually understand these implications and how they vary across lang
 
 But wait, what if I split out the GPL dependency into a dynamically linked c-shared object? Oh, that's totally fine.
 
-What about LGPL? What about MPL? What about AGPL?
+What about other copyleft licenses like LGPL? MPL? AGPL?
 
 What if I wrap an AGPL dependency in a network-isolated container which batch-processes input from a proprietary component in my system? That's totally fine.
 
@@ -144,21 +144,21 @@ Permissively licensed code is a better fit under the "both non-excludable and no
 ## Copyleft fails to prevent corporate capture
 A common complaint is that Amazon AWS exploits open source by profiting from it without sufficiently contributing back, and that the only solution is strong copyleft like AGPL.
 
-Until 2018, MongoDB was AGPL licensed, and Amazon AWS happily provided a hosted service for MongoDB. MongoDB didn't like that Amazon was profiting from their work, so on October 2018, MongoDB changed their license to a commercial source-available license called SSPL--specifically to exclude Amazon being able to use it this way. By January 2019, just 2.5 months later, Amazon built and released a **proprietary** API-compatible version called DocumentDB.
+Until 2018, MongoDB was copyleft AGPL licensed, and Amazon AWS happily provided a hosted service for MongoDB. MongoDB didn't like that Amazon was profiting from their work, so on October 2018, MongoDB changed their license to a commercial source-available license called SSPL--specifically to exclude Amazon being able to use it this way. By January 2019, just 2.5 months later, Amazon built and released a **proprietary** API-compatible version called DocumentDB.
 
 MongoDB was being developed since 2009, for 9 years. Did it take Amazon 9 years to rewrite the "replacement value" of their service? No, it took 2.5 months.
 
 Did AGPL save MongoDB? No.
 
-**Did AGPL create more open source code?** No, Amazon did a proprietary internal full rewrite and never published the code as open source.
+**Did copyleft AGPL create more open source code?** No, Amazon did a proprietary internal full rewrite and never published the code as open source.
 
 Did relicensing to an even more restrictive license force Amazon to give MongoDB more money? No.
 
-This has happened again and again. Elasticsearch relicensed from permissive Apache-2.0 to commercial SSPL in 2021, which resulted in the previous Apache-2.0 version being forked and maintained as OpenSearch. Amazon contributed code to the permissively licensed version, but Elasticsearch did not succeed at extracting more money from Amazon by using a more restrictive license. In 2024, Elasticsearch changed their mind and [relicensed to AGPL](https://www.elastic.co/blog/elasticsearch-is-open-source-again), but AWS continues to use and contribute to OpenSearch.
+This has happened again and again. Elasticsearch relicensed from permissive Apache-2.0 to commercial SSPL in 2021, which resulted in the previous Apache-2.0 version being forked and maintained as OpenSearch. Amazon contributed code to the permissively licensed version, but Elasticsearch did not succeed at extracting more money from Amazon by using a more restrictive license. In 2024, Elasticsearch changed their mind and [relicensed to copyleft AGPL](https://www.elastic.co/blog/elasticsearch-is-open-source-again), but AWS continues to use and contribute to OpenSearch.
 
-**Did Apache-2.0 create more open source code? YES!** Unlike the AGPL example, Amazon forked the permissively-licensed project and continued to maintain it in public, allowing everyone else to benefit too.
+**Did permissive Apache-2.0 create more open source code? YES!** Unlike the copyleft AGPL example, Amazon forked the permissively-licensed project and continued to maintain it in public, allowing everyone else to benefit too.
 
-In 2024, Redis (permissively licensed under BSD) relicensed to a Source Available license, same story: Redis failed to extract more money from customers, instead a permissive community fork continued under Valkey. In 2025, Redis changed their mind and [relicensed to AGPL](https://redis.io/blog/agplv3/)! What happened? It's still early, but so far Valkey (BSD) continues to thrive, Redis continues to stagnate.
+In 2024, Redis (permissively licensed under BSD) relicensed to a Source Available license, same story: Redis failed to extract more money from customers, instead a permissive community fork continued under Valkey. In 2025, Redis changed their mind and [relicensed to copyleft AGPL](https://redis.io/blog/agplv3/)! What happened? It's still early, but so far Valkey (BSD) continues to thrive, Redis continues to stagnate.
 
 ## How do we make businesses contribute to open source?
 
