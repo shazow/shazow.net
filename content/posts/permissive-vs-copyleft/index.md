@@ -107,7 +107,7 @@ By default, businesses tend to contribute more to permissive open source code in
 
 ## Copyleft reduces the contributor pool
 
-Most software businesses outright ban their employees from touching strong copyleft licenses like AGPL. For example, [Google's document on allowable licenses for third party dependencies](https://opensource.google/documentation/reference/thirdparty/licenses#banned).
+Most software businesses outright ban their employees from touching strong copyleft licenses like AGPL. For example, [Google's document on allowable licenses for third party dependencies](https://opensource.google/documentation/reference/thirdparty/licenses#banned).[^10]
 
 Some proponents of copyleft claim that this is a feature, not a bug: Why should we benefit businesses at all, when we could only benefit individuals?
 
@@ -221,3 +221,4 @@ Let's continue to find more [Schelling points](https://en.wikipedia.org/wiki/Foc
 
 [^9]: It was 10× faster before AI-assisted tooling, who knows how much faster it will be in the future! It's certainly not getting slower. Again, AWS DocumentDB was created as a replacement for MongoDB in just 2.5 months, and this was in 2019.
 
+[^10]: Apple's App Store prohibits apps which include copyleft licensed code [due to EULA contention pointed out by the FSF](https://www.fsf.org/blogs/licensing/more-about-the-app-store-gpl-enforcement). This restricts potential contributors who are building mobile apps.
