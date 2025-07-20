@@ -65,14 +65,16 @@ Recall that with permissive licenses, we all have the same rights: If a maintain
 With copyleft and a custom license, I don't have the protection of retaining my rights if something goes awry. If my business model or infrastructure architecture is incompatible with the copyleft nature of the dependency, then my entire business is at risk.
 
 Now imagine how much worse this could be at scale: Naively, it seems like a great idea "if all dependencies were copyleft and we automated licensing them" then these liabilities would compound exponentially.
+
 ## Code is not a whole
 
 There is a common assumption from copyleft-licensed projects that the consumer will use the project as a whole. This is incorrect on two fronts:
 1. It's very common for programmers to get stuck on a problem, see how another project solves it, and adopt their solution if the license permits. In many cases, this can be as small as a 20 line function that has a clever optimization. This is how much progress is made in software, rather than always reinventing the wheel poorly.
 2. When a consumer uses a project wholesale, they're not depending on 100% of the code in the repository. For example, I may only be using 20% of the features a project implements, and I may never run the unit tests, or validate the formal verification, or access the modding interfaces, etc. **This is important because it represents the "replacement value" of a project to the consumer**, which we'll discuss next.
-## Copyleft licenses create more duplicated effort
 
-The stated goal of copyleft is to create more copyleft source code, but in practice it does the opposite: Copyleft creates more proprietary code.
+## Relicense or rewrite?
+
+The stated goal of copyleft is to create more copyleft source code, but in practice it does the opposite: **Copyleft creates more proprietary code.**
 
 When a business finds a dependency that they'd like to use, but notice that it's copyleft-licensed, the business has three choices:
 1. Open source and relicense all internal code that would be impacted by integrating this dependency.[^7]
@@ -83,7 +85,7 @@ I've been working as an open source maintainer and contributor 20+ years and not
 
 On the other hand, I've personally witnessed _many_ cases where a business would do a clean room rewrite of copyleft-encumbered code to avoid touching it. In fact, I've done work like this myself on several occasions and have been lucky to convince my employers to allow me to do it under a permissive MIT license. By default, rewrites stay locked up in an internal repository that no one else gets to benefit from.[^8]
 
-Why rewrite the code? Because it's **wildly easier** to rewrite code after the design boundaries have been established.
+Why rewrite the code? **Because it's wildly easier to rewrite code after the design boundaries have been established.**
 
 If you have a mature codebase that your team spent a person-year building, ask them: "Given everything we've learned, how long would it take for us to rewrite this in a different language?" The answer to this is often around 10× faster. Much of the time spent building the first version is finding and avoiding all of the "wrong decisions", iterating with user feedback, reframing features to make more holistic sense, testing them, polishing them, arguing over button colours, etc.[^9]
 
@@ -123,13 +125,15 @@ I can write Python that has a copyleft GPL dependency without relicensing my pro
 
 Python is interpreted and the code is linked dynamically, whereas Go produces a statically linked binary so the copyleft "infects" the rest of the code.
 
+Unless, of course, if I want to ship my Python program as a py2exe bundle with a GPL dependency, then that changes everything.
+
 Does anyone actually understand these implications and how they vary across languages? Of course not!
 
-But wait, what if I split out the GPL dependency into a dynamically linked c-shared object? Oh, that's totally fine.
+But wait, what if I split out the GPL dependency into a shared library that is dynamically linked? Oh, that's fine. Unless you ask the FSF, who disagrees with almost everyone else.
 
 What about other copyleft licenses like LGPL? MPL? AGPL?
 
-What if I wrap an AGPL dependency in a network-isolated container which batch-processes input from a proprietary component in my system? That's totally fine.
+What if I wrap an AGPL dependency in a network-isolated container which batch-processes input from a proprietary component in my system? That's fine.
 
 Did we really improve anything or are we just asking people to create complex infrastructure and deployment workarounds?
 
@@ -137,11 +141,13 @@ I liked this quote from [David Chisnall on lobste.rs](https://lobste.rs/s/ezfkac
 > [...] And this is reason #3742648 why I don’t contribute to AGPL things: They place a compliance burden on good-faith actors that are trivial to bypass for bad-faith actors.
 
 ## Permissive licenses create public goods
+
 While copyleft licenses have several exclusionary clauses (e.g. can't use this code if you're statically linking against other code that has a different license), permissive licenses do not. Copyleft licenses give special rights to the author, permissive licenses do not. Strong copyleft licenses are practically banned from large subsets of consumers and contributors (we'll debate if this is justifiable), permissive licenses are not.
 
 Permissively licensed code is a better fit under the "both non-excludable and non-rivalrous" definition of public goods.
 
 ## Copyleft fails to prevent corporate capture
+
 A common complaint is that Amazon AWS exploits open source by profiting from it without sufficiently contributing back, and that the only solution is strong copyleft like AGPL.
 
 Until 2018, MongoDB was copyleft AGPL licensed, and Amazon AWS happily provided a hosted service for MongoDB. MongoDB didn't like that Amazon was profiting from their work, so on October 2018, MongoDB changed their license to a commercial source-available license called SSPL--specifically to exclude Amazon being able to use it this way. By January 2019, just 2.5 months later, Amazon built and released a **proprietary** API-compatible version called DocumentDB.
