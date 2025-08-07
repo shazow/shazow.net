@@ -132,6 +132,7 @@ footer a {
 }
 
 .post {
+    position: relative;
     max-width: 740px;
     padding: 0 1em;
     line-height: 1.4em;
@@ -260,8 +261,9 @@ footer a {
         display: block;
         position: absolute;
         top: 0;
-        right: 20px;
-        width: 200px;
+        left: 100%;
+        margin-left: 2em;
+        max-width: 200px;
 
         color: rgb(56, 118, 179);
         font-size: 0.7em;
