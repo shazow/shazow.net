@@ -29,5 +29,24 @@
             sidenote.style.top = top + "px";
             lastOffset = top + sidenote.getBoundingClientRect().height;
         });
+
+        const updateSidenotesWidth = () => {
+            if (window.innerWidth < 1200) {
+                sidenotes.style.width = '';
+                return;
+            }
+            const rect = sidenotes.getBoundingClientRect();
+            // If the sidenotes aren't visible, the rect will be empty.
+            if (rect.width === 0 && rect.height === 0) {
+                return;
+            }
+            const width = window.innerWidth - rect.left - 20;
+            if (width > 0) {
+                sidenotes.style.width = width + "px";
+            }
+        };
+
+        setTimeout(updateSidenotesWidth, 0);
+        window.addEventListener('resize', updateSidenotesWidth);
     })
 })()
