@@ -1,11 +1,14 @@
 ---
-title: "Trustless"
+title: Trustless
 date: 2023-11-07
-tags: ["Decentralization", "Trust"]
-categories: ["Featured"]
+tags:
+- Decentralization
+- Philosophy
+- Technology
+categories:
+- Featured
 aliases: []
 ---
-
 > "There are no such thing as zero trust assumptions."
 
 _Trustless_ is a confusing word: We don't use it in common speech; it means "not trust worthy" in the dictionary; decentralized technologies sometimes use it as "not needing to trust"; and the uninitiated might interpret it to mean that it's advocating for less trust?

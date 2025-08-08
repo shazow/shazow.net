@@ -1,28 +1,23 @@
 ---
-title: "My computer is my home"
-author: "Andrey Petrov"
-date: 2018-03-08T16:34:36.044Z
-lastmod: 2020-05-14T12:27:00-04:00
-
-description: ""
-
-subtitle: "I spent fifty hours setting up my new computer, and I feel a mixture of shame and pride about it."
+title: My computer is my home
+author: Andrey Petrov
+date: 2018-03-08 16:34:36.044000+00:00
+lastmod: 2020-05-14 12:27:00-04:00
+description: ''
+subtitle: I spent fifty hours setting up my new computer, and I feel a mixture of
+  shame and pride about it.
 tags:
- - Apple
- - Thinkpad
- - Computers
- - Linux
+- Apple
+- Personal
+- Technology
 categories:
- - Featured
-
-image: "/posts/my-computer-is-my-home/images/1.png" 
+- Featured
+image: /posts/my-computer-is-my-home/images/1.png
 images:
- - "/posts/my-computer-is-my-home/images/1.png"
-
+- /posts/my-computer-is-my-home/images/1.png
 aliases:
-    - "/my-computer-is-my-home-5a587dcc1d76"
+- /my-computer-is-my-home-5a587dcc1d76
 ---
-
 ![image](/posts/my-computer-is-my-home/images/1.png#layoutTextWidth)
 
 

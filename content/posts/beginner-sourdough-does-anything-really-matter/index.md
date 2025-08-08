@@ -1,23 +1,14 @@
 ---
-title: "Beginner Sourdough: Does anything really matter?"
-author: "Andrey Petrov"
-date: 2020-04-22T21:55:09.103Z
-lastmod: 2020-05-14T12:27:07-04:00
-
-subtitle: "What to expect when you’re expecting Sourdough"
-tags:
- - Sourdough
- - Baking
- - Quarantinelife
+title: 'Beginner Sourdough: Does anything really matter?'
+author: Andrey Petrov
+date: 2020-04-22 21:55:09.103000+00:00
+lastmod: 2020-05-14 12:27:07-04:00
+subtitle: What to expect when you’re expecting Sourdough
 categories:
- - Featured
-
-
+- Featured
 aliases:
-    - "/beginner-sourdough-does-anything-really-matter-d7cfcbed86ef"
-
+- /beginner-sourdough-does-anything-really-matter-d7cfcbed86ef
 ---
-
 There are bazillions of sourdough recipes in the wild, foaming with traffic from eager bakers trapped in quarantine, ready for their sourdough starter baby with a punny name to graduate into a tube of sustenance and distraction during dark times.
 
 Sourdough recipes are more involved than regular bread recipes, that’s for sure. There are many steps, and bakers can’t seem to agree on many of them. That’s no accident, a great sourdough bake needs to be adjusted to our kitchen and our starter.

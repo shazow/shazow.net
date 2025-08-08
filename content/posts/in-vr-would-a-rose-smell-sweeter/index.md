@@ -1,28 +1,22 @@
 ---
-title: "In VR, Would a Rose Smell Sweeter?"
-author: "Andrey Petrov"
-date: 2016-01-14T20:40:50.879Z
-lastmod: 2020-05-14T12:26:55-04:00
-
-description: ""
-
-subtitle: "In a few months, the first iteration of modern consumer virtual reality headsets are going to start shipping. A lot is rapidly changing and…"
+title: In VR, Would a Rose Smell Sweeter?
+author: Andrey Petrov
+date: 2016-01-14 20:40:50.879000+00:00
+lastmod: 2020-05-14 12:26:55-04:00
+description: ''
+subtitle: In a few months, the first iteration of modern consumer virtual reality
+  headsets are going to start shipping. A lot is rapidly changing and…
 tags:
- - Virtual Reality
- - Oculus Rift
- - Htc Vive
-
-image: "/posts/in-vr-would-a-rose-smell-sweeter/images/1.jpeg" 
+- Technology
+- VR
+- Virtual Reality
+image: /posts/in-vr-would-a-rose-smell-sweeter/images/1.jpeg
 images:
- - "/posts/in-vr-would-a-rose-smell-sweeter/images/1.jpeg"
- - "/posts/in-vr-would-a-rose-smell-sweeter/images/2.jpeg"
-
-
+- /posts/in-vr-would-a-rose-smell-sweeter/images/1.jpeg
+- /posts/in-vr-would-a-rose-smell-sweeter/images/2.jpeg
 aliases:
-    - "/in-vr-would-a-rose-smell-sweeter-8d7e876bfa51"
-
+- /in-vr-would-a-rose-smell-sweeter-8d7e876bfa51
 ---
-
 In a few months, the first iteration of modern consumer virtual reality headsets are going to start shipping. A lot is rapidly changing and new applications are being discovered every week.
 
 I present three stories that use VR technology to push our crafts beyond what was possible. Each story is focused around an amazing short video that is very much worth watching.

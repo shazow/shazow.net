@@ -1,11 +1,13 @@
 ---
-title: "Hanlon-Clarke Corollary"
+title: Hanlon-Clarke Corollary
 date: 2025-04-30
-tags: []
-categories: ["Featured"]
+tags:
+- History
+- Philosophy
+categories:
+- Featured
 aliases: []
 ---
-
 I went into a deep research hole trying to discover the origin of the quote:
 
 > "Any sufficiently advanced incompetence is indistinguishable from malice."

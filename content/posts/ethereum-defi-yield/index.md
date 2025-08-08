@@ -1,11 +1,12 @@
 ---
-title: "How does DeFi yield?"
-date: "2021-04-07"
-subtitle: "And how it's different from traditional finance"
-tags: ["Ethereum", "Finance"]
+title: How does DeFi yield?
+date: '2021-04-07'
+subtitle: And how it's different from traditional finance
+tags:
+- Blockchain
+- Ethereum
 categories: []
 ---
-
 [Decentralized Finance](https://en.wikipedia.org/wiki/Decentralized_finance) (DeFi) is a technology that exploded in popularity in 2020, taking place [almost entirely on the Ethereum network](https://defipulse.com/).
 
 There are many things about it that are outright fascinating: Algorithmic stablecoins, automated market makers, flash loans, flash _mints!_ Every month there is a wild new invention that changes the landscape, often increasingly difficult to understand which is both frustrating and intimidating.

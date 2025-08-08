@@ -1,11 +1,13 @@
 ---
-title: "Permissive vs Copyleft Open Source"
+title: Permissive vs Copyleft Open Source
 date: 2025-07-09
-tags: ["Open Source"]
-categories: ["Featured"]
+tags:
+- Open Source
+- Philosophy
+categories:
+- Featured
 aliases: []
 ---
-
 The premise of copyleft licenses is attractive: Create more open source!
 
 With permissive licenses, someone can take the code and make proprietary modifications to it and sell it to other people without releasing the modifications. We want people to publish their improvements, right?

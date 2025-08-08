@@ -1,11 +1,14 @@
 ---
-title: "Post-Growth"
+title: Post-Growth
 date: 2025-01-21
-tags: []
-categories: ["Featured"]
-aliases: [ "/singularity" ]
+tags:
+- Philosophy
+- Society
+categories:
+- Featured
+aliases:
+- /singularity
 ---
-
 Imagine thousands of years in the future, when humanity is dispersed across the stars. We are fully actualized and have reached the final leafs of the universe's tech tree. We are happy and in control of our destiny.
 
 Are the trillions of us spanning many solar systems?

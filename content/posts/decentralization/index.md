@@ -1,11 +1,16 @@
 ---
-title: "Decentralization"
+title: Decentralization
 date: 2021-12-27
-subtitle: "Peer-to-peer, trustless, permissionless, non-custodial, credibly-neutral... What do we mean by these words?"
-tags: ["Decentralization", "Open Source"]
-categories: ["Featured"]
+subtitle: Peer-to-peer, trustless, permissionless, non-custodial, credibly-neutral...
+  What do we mean by these words?
+tags:
+- Decentralization
+- Open Source
+- Philosophy
+- Technology
+categories:
+- Featured
 ---
-
 As technological advancements march on, we're having a lot of very important conversations about what we want out of the platforms we use day to day. We often talk about "decentralization" since it carries so much meaning, but it's also easy to talk past each other because we may be thinking about different components of decentralization in different contexts.
 
 If we have two systems where one is more trustless and the second is more permissionless, can we say that one is decentralized but the other is not? Can we even say that one is _more_ decentralized than the other? Or does each simply have different points of centralization across different dimensions?
