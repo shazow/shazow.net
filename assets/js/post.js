@@ -36,10 +36,6 @@
                 return;
             }
             const rect = sidenotes.getBoundingClientRect();
-            // If the sidenotes aren't visible, the rect will be empty.
-            if (rect.width === 0 && rect.height === 0) {
-                return;
-            }
             const width = window.innerWidth - rect.left - 20;
             if (width > 0) {
                 sidenotes.style.width = width + "px";
