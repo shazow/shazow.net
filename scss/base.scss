@@ -285,6 +285,25 @@ footer a {
     }
 }
 
+.related-posts {
+    margin-top: 3em;
+    font-size: 1.2rem;
+
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 1em;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    li {
+        margin-bottom: 0.5em;
+    }
+}
+
 .notice {
     font-family: sans-serif;
 
