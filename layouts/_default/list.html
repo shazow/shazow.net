@@ -8,13 +8,30 @@
         {{.Content}}
     </article>
     <ul class="posts">
-    {{ range .Pages }}
-        {{ if .Date }}
-        <li>
-            <a href="{{.Permalink}}">{{.Title}}</a> ({{.Date.Format "2006"}})
-        </li>
+    {{ range .Pages.GroupByDate "2006" }}
+        <h2>{{ .Key }}</h2>
+        <ul>
+        {{ range .Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{.Title}}</a>
+                {{ if in .Params.categories "featured" }}
+                <span>★</span>
+                {{ end }}
+            </li>
         {{ end }}
+        </ul>
     {{ end }}
     </ul>
+
+    <div class="tags">
+      <h2>Tags</h2>
+      <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <li>
+            <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> ({{ $taxonomy.Count }})
+          </li>
+        {{ end }}
+      </ul>
+    </div>
 </main>
 {{ end }}

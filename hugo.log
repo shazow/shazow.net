@@ -1,0 +1,22 @@
+Watching for changes in /app/{assets,content,layouts,static}
+Watching for config changes in /app/config.toml
+Start building sites …
+hugo v0.123.7+extended linux/amd64 BuildDate=2025-07-18T03:41:49Z VendorInfo=ubuntu:0.123.7-1ubuntu0.3
+
+
+                   | EN
+-------------------+------
+  Pages            | 118
+  Paginator pages  |   0
+  Non-page files   |  21
+  Static files     |  12
+  Processed images |   0
+  Aliases          |  15
+  Cleaned          |   0
+
+Built in 415 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
