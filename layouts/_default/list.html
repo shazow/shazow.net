@@ -9,6 +9,7 @@
     </article>
     <ul class="posts">
     {{ range .Pages.GroupByDate "2006" }}
+        {{ if ne .Key "0001" }}
         <h2>{{ .Key }}</h2>
         <ul>
         {{ range .Pages }}
@@ -20,6 +21,7 @@
             </li>
         {{ end }}
         </ul>
+        {{ end }}
     {{ end }}
     </ul>
 
