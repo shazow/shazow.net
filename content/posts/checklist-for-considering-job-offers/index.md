@@ -1,8 +1,9 @@
 ---
-title: "Considering job offers? A checklist in alphabetical order"
+title: Considering job offers? A checklist in alphabetical order
 date: 2011-12-30
+tags:
+- Career
 ---
-
 ![Celebrating your job offer](checklist-for-considering-job-offers.ballpit.jpg)
 
 Every offer you get will include some details and omit others. To perform a

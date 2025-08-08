@@ -1,8 +1,11 @@
 ---
-title: "What it's like to stutter"
-date: "2007-10-06"
+title: What it's like to stutter
+date: '2007-10-06'
+tags:
+- Health
+- Mental Health
+- Personal
 ---
-
 ![image](drawing.png)
 
 Drawing without using reference is one of my favourite hobbies. Struggling to pull an image out of the depths of my mind, like a fierce fish fighting for freedom. Reeling and reeling, until the moment when the fish bursts out of the still surface of the water, when the splash from the water blankets me as a sign of impending success. The rod sways unbalanced from the weight of the catch. The line could snap now, so I'm careful as pull it in and release it onto the paper. I look at the art of my creation as something new, something I haven't seen before... but the image feels familiar. I conjured this from my mind.

@@ -1,8 +1,10 @@
 ---
-title: "Arbitrarily-Structured Data in Relational Databases"
+title: Arbitrarily-Structured Data in Relational Databases
 date: 2010-10-20
+tags:
+- JSON
+- Software Design
 ---
-
 This approach is similar to [FriendFeed's schemaless database framework](http://bret.appspot.com/entry/how-friendfeed-uses-mysql). The key difference is in the data locality.
 
 The goal is *not* to build an effective schemaless database on top of a relational database, but rather to accomodate for rapidly-evolving relational schemas and reducing the difficult of migrating forward.

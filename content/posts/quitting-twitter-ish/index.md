@@ -1,23 +1,18 @@
 ---
-title: "Quitting Twitter… ish."
-author: "Andrey Petrov"
-date: 2017-05-05T01:10:26.379Z
-lastmod: 2020-05-14T12:26:58-04:00
-
-description: ""
-
-subtitle: "It has been over two months and I feel better."
+title: Quitting Twitter… ish.
+author: Andrey Petrov
+date: 2017-05-05 01:10:26.379000+00:00
+lastmod: 2020-05-14 12:26:58-04:00
+description: ''
+subtitle: It has been over two months and I feel better.
 tags:
- - Social Media
- - Twitter
- - Personal
- - Mental Health
-
+- Mental Health
+- Personal
+- Social Media
+- Technology
 aliases:
-    - "/quitting-twitter-ish-a37be25fef0d"
-
+- /quitting-twitter-ish-a37be25fef0d
 ---
-
 #### It has been over two months and I feel better.
 
 {{< tweet user="shazow" id="34501532" >}}

@@ -1,17 +1,16 @@
 ---
-title: "What is your fantasy?"
-author: "Andrey Petrov"
-date: 2014-03-05T01:34:09.445Z
-lastmod: 2020-05-14T12:26:52-04:00
-
-description: ""
-
-subtitle: "Finding the North Star for your career"
+title: What is your fantasy?
+author: Andrey Petrov
+date: 2014-03-05 01:34:09.445000+00:00
+lastmod: 2020-05-14 12:26:52-04:00
+description: ''
+subtitle: Finding the North Star for your career
 aliases:
-    - "/what-is-your-fantasy-c88bed381f4d"
-
+- /what-is-your-fantasy-c88bed381f4d
+tags:
+- Career
+- Philosophy
 ---
-
 ## Finding the North Star for your career
 
 What do I _really_ want? I’ve been thinking about this for many years.

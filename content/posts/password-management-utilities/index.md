@@ -1,10 +1,13 @@
 ---
-title: "Password Management Utilities"
-date: "2011-06-20 19:26:20 -0700"
+title: Password Management Utilities
+date: 2011-06-20 19:26:20 -0700
 lastmod: 2024-05-28
+tags:
+- Passwords
+- Security
+- Software
+- Tools
 ---
-
-
 We live in a time when cleartext usernames and passwords are leaked on a daily basis. In the last couple of months my accounts got compromised on Gawker, Sony, and MtGox. I decided it's time to start using the one-password-per-service technique. These are tools I found in my research.
 
 ~~I'm currently using SuperGenPass, but considering writing my own version that uses customizeable multipass sha512, more symbol breadth in passwords, and some other improvements.~~
