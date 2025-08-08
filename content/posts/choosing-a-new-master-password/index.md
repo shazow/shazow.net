@@ -1,25 +1,21 @@
 ---
-title: "Choosing a new master password"
-author: "Andrey Petrov"
-date: 2017-01-13T16:35:23.510Z
-lastmod: 2020-05-14T12:26:57-04:00
-
-description: "I’ve been meaning to change and improve my master password for years. I knew the steps but I really wanted someone to spell it out for me anyways, so I’ll spell out the concrete steps for you…"
-
-subtitle: "You’ve been meaning to pick a better master password and this article is your excuse: Step by step, the best practices are spelled out."
+title: Choosing a new master password
+author: Andrey Petrov
+date: 2017-01-13 16:35:23.510000+00:00
+lastmod: 2020-05-14 12:26:57-04:00
+description: I’ve been meaning to change and improve my master password for years.
+  I knew the steps but I really wanted someone to spell it out for me anyways, so
+  I’ll spell out the concrete steps for you…
+subtitle: 'You’ve been meaning to pick a better master password and this article is
+  your excuse: Step by step, the best practices are spelled out.'
 tags:
- - Security
- - Passwords
- - Infosec
- - Safety
+- Passwords
+- Security
 categories:
- - Featured
-
+- Featured
 aliases:
-    - "/choosing-a-new-master-password-cdefe31dff3c"
-
+- /choosing-a-new-master-password-cdefe31dff3c
 ---
-
 I’ve been meaning to change and improve my master password for years. I _knew_ the steps but I really wanted someone to spell it out for me anyways, so I’ll spell out the concrete steps for you.
 
 Popular password managers work by maintaining an encrypted database of many secrets, protected by a combination of the _master password_ and access to the encrypted database file that is synchronized across your devices. Picking a strong master password is crucial in case one of your devices is stolen or the cloud storage that is hosting your password file is compromised.

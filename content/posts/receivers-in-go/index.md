@@ -1,11 +1,15 @@
 ---
-title: "Neither self nor this: Receivers in Go"
-date: "2016-07-05 17:49:06 -0400"
-tags: ["go", "programming"]
-categories: ["featured"]
-syndicated: ["https://blog.heroku.com/neither-self-nor-this-receivers-in-go"]
+title: 'Neither self nor this: Receivers in Go'
+date: 2016-07-05 17:49:06 -0400
+tags:
+- Golang
+- Programming
+- Software Design
+categories:
+- featured
+syndicated:
+- https://blog.heroku.com/neither-self-nor-this-receivers-in-go
 ---
-
 When getting started with Go, there is a strong temptation to bring baggage from
 your previous language. It’s a heuristic which is usually helpful, but sometimes
 counter-productive and inevitably results in regret.

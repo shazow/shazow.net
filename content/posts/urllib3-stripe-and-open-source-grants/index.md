@@ -1,23 +1,21 @@
 ---
-title: "Urllib3, Stripe, and Open Source Grants"
-author: "Andrey Petrov"
-date: 2014-07-07T21:01:26.163Z
-lastmod: 2020-05-14T12:26:54-04:00
-
-description: ""
-
-subtitle: "Helping the future come a little sooner"
-
-image: "/posts/urllib3-stripe-and-open-source-grants/images/1.png" 
+title: Urllib3, Stripe, and Open Source Grants
+author: Andrey Petrov
+date: 2014-07-07 21:01:26.163000+00:00
+lastmod: 2020-05-14 12:26:54-04:00
+description: ''
+subtitle: Helping the future come a little sooner
+image: /posts/urllib3-stripe-and-open-source-grants/images/1.png
 images:
- - "/posts/urllib3-stripe-and-open-source-grants/images/1.png"
-
-
+- /posts/urllib3-stripe-and-open-source-grants/images/1.png
 aliases:
-    - "/urllib3-stripe-and-open-source-grants-edb9c0e46e82"
-
+- /urllib3-stripe-and-open-source-grants-edb9c0e46e82
+tags:
+- Funding
+- Open Source
+- Python
+- urllib3
 ---
-
 ### Helping the future come a little sooner
 
 Six years ago, I built [a better Python http library](https://github.com/shazow/urllib3). It had then-novel things like connection pooling, thread-safety, multipart encoding, and more. Today, every Python user depends on it.

@@ -1,11 +1,14 @@
 ---
-title: "How can open social protocols fail us in 2025"
+title: How can open social protocols fail us in 2025
 date: 2025-03-31
-tags: []
-categories: ["Featured"]
+tags:
+- Decentralization
+- Social Media
+- Technology
+categories:
+- Featured
 aliases: []
 ---
-
 Let's compare the possible failure modes of various open social protocols:
 - ActivityPub/Mastodon
 - ATProto/Bluesky

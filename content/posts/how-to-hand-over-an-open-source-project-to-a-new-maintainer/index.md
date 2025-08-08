@@ -1,26 +1,19 @@
 ---
-title: "How to hand over an Open Source project to a new maintainer"
-author: "Andrey Petrov"
-date: 2018-02-09T13:16:01.563Z
-lastmod: 2020-05-14T12:27:00-04:00
-
-description: ""
-
-subtitle: "After maintaining a project for many years, maybe you’re no longer using it yourself? Or maybe you’re burned out from the grind? Or you…"
+title: How to hand over an Open Source project to a new maintainer
+author: Andrey Petrov
+date: 2018-02-09 13:16:01.563000+00:00
+lastmod: 2020-05-14 12:27:00-04:00
+description: ''
+subtitle: After maintaining a project for many years, maybe you’re no longer using
+  it yourself? Or maybe you’re burned out from the grind? Or you…
 tags:
- - Open Source
- - Software Development
- - Community
- - Github
-
-
-
-
+- Community
+- Github
+- Open Source
+- Project Management
 aliases:
-    - "/how-to-hand-over-an-open-source-project-to-a-new-maintainer-db433aaf57e8"
-
+- /how-to-hand-over-an-open-source-project-to-a-new-maintainer-db433aaf57e8
 ---
-
 After maintaining a project for many years, maybe you’re no longer using it yourself? Or maybe you’re burned out from the grind? Or you can’t afford to allocate time to it? Maybe it’s time to pass it on to somebody else.
 
 I feel like there is more to learn from failure stories than success stories, so let’s start with those.

@@ -1,11 +1,13 @@
 ---
-title: "Conditioning"
+title: Conditioning
 date: 2025-01-20
-tags: []
-categories: ["Featured"]
+tags:
+- Philosophy
+- Society
+categories:
+- Featured
 aliases: []
 ---
-
 I think of conditioning as a long-term conversation between decentralized components.
 
 After breaking my foot, I've been working on conditioning all of the tiny ligaments to properly support movements and impacts I haven't practiced in months. I can't just say "hey foot, you're not broken anymore, go back to normal." I have to slowly and incrementally reinforce each change.
