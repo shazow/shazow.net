@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         post.appendChild(sidenotes);
 
         footnotes.querySelectorAll("li").forEach((footnote) => {
+            // <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a>
             const backref = footnote.querySelector('.footnote-backref').getAttribute("href");
+
+            // <sup id="fnref:1"><a ...>1</a></sup>
             const sup = document.getElementById(backref.slice(1));
 
             if (!sup) return;
