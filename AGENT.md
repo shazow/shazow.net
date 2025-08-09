@@ -1,0 +1,5 @@
+- This project uses a nix flake.
+- If `nix` is not available, use `sudo apt install nix-setup-systemd` to install it.
+- `nix build` will produce a static build.
+- `nix develop` will enter the development environment with the required dependencies.
+- `nix run` will run the hugo development server on `localhost:1313`
