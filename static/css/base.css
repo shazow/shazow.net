@@ -542,7 +542,9 @@ footer a {
   font-size: 21px;
   font-family: 'PT Serif', Georgia, Cambria, Times, serif;
   color: rgba(0, 0, 0, 0.85);
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  position: relative;
+  /* for sidenotes */ }
   .post h1, .post h2, .post h3, .post h4 {
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Arial, sans-serif;
@@ -651,8 +653,10 @@ footer a {
     display: block;
     position: absolute;
     top: 0;
-    right: 20px;
-    width: 200px;
+    left: 100%;
+    margin-left: 20px;
+    width: calc(50vw - 410px - 1em);
+    max-width: 340px;
     color: #3876b3;
     font-size: 0.7em;
     line-height: 1.1; }

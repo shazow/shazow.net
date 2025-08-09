@@ -131,6 +131,7 @@ footer a {
     text-align: center;
 }
 
+
 .post {
     max-width: 740px;
     padding: 0 1em;
@@ -139,6 +140,7 @@ footer a {
     font-family: 'PT Serif', Georgia, Cambria, Times, serif;
     color: rgba(0, 0, 0, 0.85);
     text-rendering: optimizelegibility;
+    position: relative; /* for sidenotes */
 
     h1, h2, h3, h4 {
         color: rgba(0, 0, 0, 0.8);
@@ -260,8 +262,10 @@ footer a {
         display: block;
         position: absolute;
         top: 0;
-        right: 20px;
-        width: 200px;
+        left: 100%;
+        margin-left: 20px;
+        width: calc(50vw - 410px - 1em);
+        max-width: 340px;
 
         color: rgb(56, 118, 179);
         font-size: 0.7em;
