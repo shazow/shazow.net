@@ -31,8 +31,9 @@
 
         if (!sidenotes.hasChildNodes()) return;
 
-        function restack() {
-            // Stack notes vertically as long as the top position is at least the position of the sup link.
+        function reflow() {
+            // Sidenote vertical positioning is subjective to where the sup link is, so we need to handle reflowing on resize.
+            console.log("restacking");
             let lastOffset = 0;
             sidenotes.childNodes.forEach((sidenote, idx) => {
                 const top = Math.max(sups[idx].offsetTop, lastOffset);
@@ -40,13 +41,18 @@
                 lastOffset = top + sidenote.getBoundingClientRect().height;
             });
         };
-        restack();
+        reflow();
 
-        // Apply restacking on resize, once every 200ms
+        // Apply restacking on resize, twice every 250ms (start and end of the debounce)
+        // Once before the debounce makes most resizes feel much more responsive without spamming much, while avoiding a missed reflow at the end.
         let debounce;
         window.addEventListener('resize', () => {
-            clearTimeout(debounce);
-            debounce = setTimeout(restack, 200);
+            if (debounce) return;
+            reflow();
+            debounce = setTimeout(() => {
+                debounce = undefined;
+                reflow();
+            }, 250);
         });
     })
 })()
