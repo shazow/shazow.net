@@ -9,7 +9,6 @@ aliases:
 - /re-facebook-acquires-oculus-f8589a747d11
 tags:
 - Oculus
-- VR
 - Virtual Reality
 ---
 ## A letter of concern

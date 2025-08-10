@@ -70,6 +70,11 @@ h2 {
     margin: 1em 0 0 0;
 }
 
+h3 {
+    margin: 1.5em 0 0 0;
+}
+
+
 a {
     font-style: normal;
     color: #3876b3;
@@ -248,12 +253,13 @@ footer a {
     }
 }
 
-.posts {
+.posts, .tags {
     margin: auto;
     max-width: 40em;
 
     li {
-      margin-bottom: 0.3rem;
+        margin-bottom: 0.3rem;
+        list-style: none;
     }
 }
 
