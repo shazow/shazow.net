@@ -285,14 +285,12 @@ footer a {
     }
 }
 
-.related-posts {
-    margin-top: 3em;
+.related {
+    opacity: 0.5;
+    border-top: 2px solid #ddd;
+    padding-top: 1em;
+    margin-top: 5em;
     font-size: 1.2rem;
-
-    h2 {
-        font-size: 1.4em;
-        margin-bottom: 1em;
-    }
 
     ul {
         list-style: none;
@@ -301,6 +299,10 @@ footer a {
 
     li {
         margin-bottom: 0.5em;
+    }
+
+    &:hover {
+        opacity: 1;
     }
 }
 
