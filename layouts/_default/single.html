@@ -13,6 +13,19 @@
         {{ .Content }}
     </div>
 </article>
+
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<article class="related post container">
+    <h2>Related Posts</h2>
+    <ul>
+        {{ range sort . "Date" "desc" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a> ({{.Date.Format "2006"}})</li>
+        {{ end }}
+    </ul>
+</article>
+{{ end }}
+
 <div class="back">&larr; <a href="/">Back to shazow.net</a></div>
 {{ end }}
 {{ define "title" }}{{ .Title }} | shazow.net{{ end }}
