@@ -4,7 +4,6 @@ author: Andrey Petrov
 date: 2015-11-17 21:34:42.923000+00:00
 lastmod: 2020-05-14 12:26:55-04:00
 tags:
-- JSON
 - Programming
 - Software Design
 categories:

@@ -3,7 +3,6 @@ title: I tried the Oculus Quest 2 for a couple of hours and wrote a review
 date: '2020-12-04'
 tags:
 - Oculus
-- VR
 - Virtual Reality
 ---
 For context, this is comparing with my Valve Index which is not very apples-to-apples.

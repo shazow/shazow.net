@@ -7,7 +7,6 @@ description: ''
 subtitle: Since urllib3 was created in 2008, we have gained several amazing maintainers
   and hundreds of contributors. Any time you do anything that…
 tags:
-- Funding
 - Open Source
 - Python
 - urllib3

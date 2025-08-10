@@ -7,7 +7,6 @@ description: ''
 subtitle: A case study between Python and Go.
 tags:
 - Golang
-- Philosophy
 - Programming
 - Python
 - Software Design

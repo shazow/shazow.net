@@ -8,7 +8,6 @@ subtitle: In a few months, the first iteration of modern consumer virtual realit
   headsets are going to start shipping. A lot is rapidly changing and…
 tags:
 - Technology
-- VR
 - Virtual Reality
 image: /posts/in-vr-would-a-rose-smell-sweeter/images/1.jpeg
 images:

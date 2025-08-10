@@ -2,7 +2,7 @@
 title: Arbitrarily-Structured Data in Relational Databases
 date: 2010-10-20
 tags:
-- JSON
+- Programming
 - Software Design
 ---
 This approach is similar to [FriendFeed's schemaless database framework](http://bret.appspot.com/entry/how-friendfeed-uses-mysql). The key difference is in the data locality.
