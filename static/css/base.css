@@ -669,19 +669,18 @@ footer a {
       margin-top: -0.5em;
       padding-bottom: 0.5em; } }
 
+.ending {
+  color: #ffba44;
+  margin: 4em; }
+
 .related {
-  opacity: 0.5;
-  border-top: 2px solid #ddd;
-  padding-top: 1em;
-  margin-top: 5em;
+  margin-top: 4em;
   font-size: 1.2rem; }
   .related ul {
     list-style: none;
     margin-left: 0; }
   .related li {
     margin-bottom: 0.5em; }
-  .related:hover {
-    opacity: 1; }
 
 .notice {
   font-family: sans-serif;
