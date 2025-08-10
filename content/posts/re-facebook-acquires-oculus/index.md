@@ -1,20 +1,17 @@
 ---
-title: "Re: Facebook acquires Oculus"
-author: "Andrey Petrov"
-date: 2014-03-30T03:37:37.411Z
-lastmod: 2020-05-14T12:26:53-04:00
-
-description: ""
-
-subtitle: "A letter of concern"
-
-
+title: 'Re: Facebook acquires Oculus'
+author: Andrey Petrov
+date: 2014-03-30 03:37:37.411000+00:00
+lastmod: 2020-05-14 12:26:53-04:00
+description: ''
+subtitle: A letter of concern
 aliases:
-    - "/re-facebook-acquires-oculus-f8589a747d11"
-
+- /re-facebook-acquires-oculus-f8589a747d11
+tags:
+- Oculus
+- VR
+- Virtual Reality
 ---
-
-
 ## A letter of concern
 
 Hello, John Carmack.

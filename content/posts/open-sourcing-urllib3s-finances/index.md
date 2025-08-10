@@ -1,22 +1,18 @@
 ---
-title: "Open sourcing urllib3’s finances"
-author: "Andrey Petrov"
-date: 2019-05-06T21:13:09.242Z
-lastmod: 2020-05-14T12:27:06-04:00
-
-description: ""
-
-subtitle: "Since urllib3 was created in 2008, we have gained several amazing maintainers and hundreds of contributors. Any time you do anything that…"
+title: Open sourcing urllib3’s finances
+author: Andrey Petrov
+date: 2019-05-06 21:13:09.242000+00:00
+lastmod: 2020-05-14 12:27:06-04:00
+description: ''
+subtitle: Since urllib3 was created in 2008, we have gained several amazing maintainers
+  and hundreds of contributors. Any time you do anything that…
 tags:
- - Open Source
- - Python
- - urllib3
-
+- Open Source
+- Python
+- urllib3
 aliases:
-    - "/open-sourcing-urllib3s-finances-e183740fcba7"
-
+- /open-sourcing-urllib3s-finances-e183740fcba7
 ---
-
 {{< tweet user="shazow" id="1074729655394074624" >}}
 
 Since [urllib3](https://github.com/urllib3/urllib3) was created in 2008, we have gained several amazing maintainers and hundreds of contributors. Any time you do anything that touches HTTP in Python, you’re probably using urllib3 behind the scenes. It is the 2nd most downloaded third-party Python package, after pip.

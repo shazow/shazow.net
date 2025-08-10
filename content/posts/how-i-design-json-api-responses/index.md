@@ -1,22 +1,16 @@
 ---
-title: "How I design JSON API responses"
-author: "Andrey Petrov"
-date: 2015-11-17T21:34:42.923Z
-lastmod: 2020-05-14T12:26:55-04:00
+title: How I design JSON API responses
+author: Andrey Petrov
+date: 2015-11-17 21:34:42.923000+00:00
+lastmod: 2020-05-14 12:26:55-04:00
 tags:
- - API
- - JSON
- - REST Api
- - Programming
-
+- Programming
+- Software Design
 categories:
- - Featured
-
+- Featured
 aliases:
-    - "/how-i-design-json-api-responses-71900f00f2db"
-
+- /how-i-design-json-api-responses-71900f00f2db
 ---
-
 The goal of designing a public API response layout is to balance ease of use for consumers with commitment of stability from the provider. We can bolt on all kinds of crazy metadata and embedded values that we’ll regret having to maintain years later, like complex pagination schemes that don’t scale for evolving domain spaces or when we’re finally _Web Scale_ and wasting millions on extra bandwidth from that emoji soup we thought would be hilarious to wrap each entry with.
 
 Let’s keep it simple and direct.

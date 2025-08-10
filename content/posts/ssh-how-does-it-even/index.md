@@ -1,26 +1,23 @@
 ---
-title: "Why aren’t we using SSH for everything?"
-author: "Andrey Petrov"
-date: 2015-01-02T20:56:34.379Z
-lastmod: 2020-05-14T12:26:54-04:00
-
-description: ""
-
-subtitle: "Dozens of facts about the SSH protocol and why we should use it for more things."
-
-image: "/posts/ssh-how-does-it-even/images/1.png" 
+title: Why aren’t we using SSH for everything?
+author: Andrey Petrov
+date: 2015-01-02 20:56:34.379000+00:00
+lastmod: 2020-05-14 12:26:54-04:00
+description: ''
+subtitle: Dozens of facts about the SSH protocol and why we should use it for more
+  things.
+image: /posts/ssh-how-does-it-even/images/1.png
 images:
- - "/posts/ssh-how-does-it-even/images/1.png"
- - "/posts/ssh-how-does-it-even/images/2.png"
-
+- /posts/ssh-how-does-it-even/images/1.png
+- /posts/ssh-how-does-it-even/images/2.png
 categories:
- - Featured
-
+- Featured
 aliases:
-    - "/ssh-how-does-it-even-9e43586e4ffc"
-
+- /ssh-how-does-it-even-9e43586e4ffc
+tags:
+- Security
+- Technology
 ---
-
 > _SSH, how does it even?_
 
 

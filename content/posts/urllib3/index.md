@@ -1,9 +1,9 @@
 +++
 title = "urllib3 Origin Story"
 date = "2025-05-21"
-categories = ["featured"]
+categories = [ "featured",]
+tags = [ "History", "Open Source", "Python", "urllib3",]
 +++
-
 {{< notice title="Syndicated" class="note" >}}
 This post was featured on [opensource.org/maintainers/shazow](https://opensource.org/maintainers/shazow)
 {{< /notice >}}

@@ -1,27 +1,27 @@
 ---
-title: "How to maintain a successful open source project"
-author: "Andrey Petrov"
-date: 2013-06-27T21:47:59.378Z
-lastmod: 2020-05-14T12:26:51-04:00
-
-description: ""
-
-subtitle: "Lessons learned from five years of maintaining one of the most-used Python libraries."
-
-image: "/posts/how-to-maintain-a-successful-open-source-project/images/1.png" 
+title: How to maintain a successful open source project
+author: Andrey Petrov
+date: 2013-06-27 21:47:59.378000+00:00
+lastmod: 2020-05-14 12:26:51-04:00
+description: ''
+subtitle: Lessons learned from five years of maintaining one of the most-used Python
+  libraries.
+image: /posts/how-to-maintain-a-successful-open-source-project/images/1.png
 images:
- - "/posts/how-to-maintain-a-successful-open-source-project/images/1.png"
- - "/posts/how-to-maintain-a-successful-open-source-project/images/2.png"
- - "/posts/how-to-maintain-a-successful-open-source-project/images/3.png"
-
+- /posts/how-to-maintain-a-successful-open-source-project/images/1.png
+- /posts/how-to-maintain-a-successful-open-source-project/images/2.png
+- /posts/how-to-maintain-a-successful-open-source-project/images/3.png
 categories:
 - featured
-
 aliases:
-    - "/how-to-maintain-a-successful-open-source-project-aaa2a5437d3a"
-
+- /how-to-maintain-a-successful-open-source-project-aaa2a5437d3a
+tags:
+- Community
+- Open Source
+- Project Management
+- Python
+- urllib3
 ---
-
 ![image](/posts/how-to-maintain-a-successful-open-source-project/images/1.png)
 
 ### Lessons learned from five years of maintaining one of the most-used Python libraries.

@@ -1,9 +1,10 @@
 ---
-title: "I tried the Oculus Quest 2 for a couple of hours and wrote a review"
-date: "2020-12-04"
-tags: ["VR"]
+title: I tried the Oculus Quest 2 for a couple of hours and wrote a review
+date: '2020-12-04'
+tags:
+- Oculus
+- Virtual Reality
 ---
-
 For context, this is comparing with my Valve Index which is not very apples-to-apples.
 
 This is specific to the wireless embedded mode, not tethered Quest Link mode. I tested it with the Elite Strap, which ought to be included by default.

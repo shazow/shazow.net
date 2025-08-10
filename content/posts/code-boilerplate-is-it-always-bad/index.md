@@ -1,24 +1,20 @@
 ---
-title: "Code boilerplate: Is it always bad?"
-author: "Andrey Petrov"
-date: 2017-05-01T16:47:49.595Z
-lastmod: 2020-05-14T12:26:58-04:00
-
-description: ""
-
-subtitle: "A case study between Python and Go."
+title: 'Code boilerplate: Is it always bad?'
+author: Andrey Petrov
+date: 2017-05-01 16:47:49.595000+00:00
+lastmod: 2020-05-14 12:26:58-04:00
+description: ''
+subtitle: A case study between Python and Go.
 tags:
- - Golang
- - Programming
- - Python
+- Golang
+- Programming
+- Python
+- Software Design
 categories:
- - Featured
-
+- Featured
 aliases:
-    - "/code-boilerplate-is-it-always-bad-934827efcfc7"
-
+- /code-boilerplate-is-it-always-bad-934827efcfc7
 ---
-
 > A case study between Python and Go.
 
 In Go, a common complaint from newly-minted gophers who come from another language is the error handling pattern:
