@@ -62,7 +62,7 @@ Most importantly, the business has no recourse![^5]
 
 Recall that with permissive licenses, we all have the same rights: If a maintainer does something that doesn't work for me, I can simply fork and continue using the code as I was before. I don't lose any rights even if I was depending on a custom license before.
 
-**It is safer for a business to do a custom license deal with a permissively licensed project!**
+**It is safer for a business to do a contract deal with a permissively licensed project!**
 
 With copyleft and a custom license, I don't have the protection of retaining my rights if something goes awry. If my business model or infrastructure architecture is incompatible with the copyleft nature of the dependency, then my entire business is at risk.
 
