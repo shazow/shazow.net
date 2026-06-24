@@ -12,7 +12,7 @@
             <ul>
             {{ range .Pages }}
                 <li>
-                    <a href="{{.Permalink}}">{{.Title}}</a>
+                    <a href="{{.RelPermalink}}">{{.Title}}</a>
                     {{ if in .Params.categories "featured" }}
                     <span>⭐</span>
                     {{ end }}
@@ -28,7 +28,7 @@
             <ul>
                 {{ range sort .Site.Taxonomies.tags "Count" "desc" }}
                 <li>
-                    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+                    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
                 </li>
                 {{ end }}
             </ul>
