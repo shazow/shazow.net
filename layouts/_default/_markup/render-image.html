@@ -1,3 +1,17 @@
 {{- $src := .Destination | safeURL -}}
 {{- $alt := .PlainText | safeHTMLAttr -}}
-<img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . | safeHTMLAttr }}"{{ end }}>
+{{- $path := index (split .Destination "#") 0 -}}
+{{- $resource := .Page.Resources.GetMatch (printf "**/%s" (path.Base $path)) -}}
+{{- $width := false -}}
+{{- $height := false -}}
+{{- if and $resource (eq $resource.ResourceType "image") -}}
+    {{- $width = $resource.Width -}}
+    {{- $height = $resource.Height -}}
+{{- else -}}
+    {{- $bundlePath := path.Join "content" .Page.File.Dir $path -}}
+    {{- with images.Config $bundlePath -}}
+        {{- $width = .Width -}}
+        {{- $height = .Height -}}
+    {{- end -}}
+{{- end -}}
+<img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ if and $width $height }} width="{{ $width }}" height="{{ $height }}"{{ end }}{{ with .Title }} title="{{ . | safeHTMLAttr }}"{{ end }}>

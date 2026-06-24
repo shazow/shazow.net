@@ -1,0 +1,20 @@
+{{- $src := .Get "src" -}}
+{{- $alt := or (.Get "alt") (.Get "title") -}}
+{{- $path := index (split $src "#") 0 -}}
+{{- $resource := .Page.Resources.GetMatch (printf "**/%s" (path.Base $path)) -}}
+{{- $image := false -}}
+{{- if and $resource (eq $resource.ResourceType "image") -}}
+    {{- $image = $resource -}}
+{{- end -}}
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    {{- with .Get "link" }}<a href="{{ . }}">{{ end -}}
+    <img src="{{ $src | safeURL }}"{{ with $alt }} alt="{{ . | safeHTMLAttr }}"{{ end }} loading="lazy" decoding="async"{{ with $image }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}>
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (.Get "title") (.Get "caption") (.Get "attr") -}}
+    <figcaption>
+        {{- with .Get "title" }}<h4>{{ . }}</h4>{{ end -}}
+        {{- with .Get "caption" }}<p>{{ . | markdownify }}</p>{{ end -}}
+        {{- with .Get "attr" }}<p>{{ . | markdownify }}</p>{{ end -}}
+    </figcaption>
+    {{- end -}}
+</figure>
