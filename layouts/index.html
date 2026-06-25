@@ -61,7 +61,7 @@
             </li>
                 {{ else }}
             <li class="post-item">
-                <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a> ({{.Date.Format "2006"}})
+                <a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a> ({{.Date.Format "2006"}})
             </li>
                 {{ end }}
             {{ end }}

@@ -1,6 +1,6 @@
 baseurl             = "https://shazow.net/"
 builddrafts         = false
-canonifyurls        = true
+canonifyurls        = false
 contentdir          = "content"
 languageCode        = "en-US"
 layoutdir           = "layouts"
