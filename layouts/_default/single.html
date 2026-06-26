@@ -5,7 +5,8 @@
         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
         <aside class="meta">
             {{ if and .Site.Params.dateformfull .Site.Params.dateform }}
-            Published on <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format .Site.Params.dateform }}.</time>
+            Published on <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format .Site.Params.dateform }}</time>
+            · {{ .WordCount }} {{ cond (eq .WordCount 1) "word" "words" }}.
             {{ end }}
         </aside>
     </header>
