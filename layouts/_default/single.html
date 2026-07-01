@@ -39,6 +39,8 @@
     {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">
     {{ end -}}
     {{ $pageDescription := partial "seo-description.html" . -}}
+    {{ $canonicalURL := .Permalink -}}
+    {{ with .Params.canonical }}{{ $canonicalURL = . }}{{ end -}}
     {{ $schema := dict
         "@context" "https://schema.org"
         "@type" "BlogPosting"
@@ -46,8 +48,8 @@
         "description" $pageDescription
         "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
         "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
-        "url" .Permalink
-        "mainEntityOfPage" .Permalink
+        "url" $canonicalURL
+        "mainEntityOfPage" $canonicalURL
         "author" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.BaseURL)
         "publisher" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.BaseURL)
     -}}

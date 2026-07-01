@@ -23,8 +23,16 @@
     {{ $canonicalURL := .Permalink }}
     {{ with .Params.canonical }}{{ $canonicalURL = . }}{{ end }}
     {{ $imageURL := "" }}
-    {{ with .Params.images }}{{ with index . 0 }}{{ $imageURL = . | absURL }}{{ end }}{{ end }}
-    {{ if and (not $imageURL) .Params.image }}{{ $imageURL = .Params.image | absURL }}{{ end }}
+    {{ $imagePath := "" }}
+    {{ with .Params.images }}{{ with index . 0 }}{{ $imagePath = . }}{{ end }}{{ end }}
+    {{ if and (not $imagePath) .Params.image }}{{ $imagePath = .Params.image }}{{ end }}
+    {{ with $imagePath -}}
+        {{ with $.Resources.GetMatch . -}}
+            {{ $imageURL = .Permalink }}
+        {{ else -}}
+            {{ $imageURL = . | absURL }}
+        {{ end -}}
+    {{ end -}}
     {{ block "extra_head" . }}{{ end }}
     <link rel="canonical" href="{{ $canonicalURL }}">
     {{ with $pageDescription -}}
@@ -34,7 +42,7 @@
     <meta property="og:title" content="{{ $pageTitle }}">
     {{ with $pageDescription }}<meta property="og:description" content="{{ . }}">{{ end }}
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:url" content="{{ $canonicalURL }}">
     {{ with $imageURL }}<meta property="og:image" content="{{ . }}">{{ end }}
     <meta name="twitter:site" content="@shazow">
     <meta name="twitter:creator" content="@shazow">
