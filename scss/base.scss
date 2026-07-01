@@ -42,7 +42,11 @@ ul.horizontal.buttons li {
     }
 
     &.prefer {
-        background: rgba(56, 118, 189, 0.04);
+        background: rgba(56, 118, 189, 0.1);
+
+        a {
+            color: #3470aa;
+        }
     }
 }
 
