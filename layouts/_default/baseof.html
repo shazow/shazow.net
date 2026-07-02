@@ -18,21 +18,38 @@
     <link rel="preload" href="{{ $goudyRegular.RelPermalink }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ $goudyItalic.RelPermalink }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ $fontCSS.RelPermalink }}" integrity="{{ $fontCSS.Data.Integrity }}">
-    {{ block "extra_head" . }}{{ end }}
-    {{ if .IsHome -}}
-    <meta name="description" content="{{ .Site.Params.description | htmlEscape }}">
+    {{ $pageDescription := partial "seo-description.html" . }}
+    {{ $pageTitle := cond .IsHome .Site.Title (printf "%s | shazow.net" .Title) }}
+    {{ $canonicalURL := .Permalink }}
+    {{ with .Params.canonical }}{{ $canonicalURL = . }}{{ end }}
+    {{ $imageURL := "" }}
+    {{ $imagePath := "" }}
+    {{ with .Params.images }}{{ with index . 0 }}{{ $imagePath = . }}{{ end }}{{ end }}
+    {{ if and (not $imagePath) .Params.image }}{{ $imagePath = .Params.image }}{{ end }}
+    {{ with $imagePath -}}
+        {{ with $.Resources.GetMatch . -}}
+            {{ $imageURL = .Permalink }}
+        {{ else -}}
+            {{ $imageURL = . | absURL }}
+        {{ end -}}
     {{ end -}}
+    {{ block "extra_head" . }}{{ end }}
+    <link rel="canonical" href="{{ $canonicalURL }}">
+    {{ with $pageDescription -}}
+    <meta name="description" content="{{ . }}">
+    {{ end -}}
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    {{ with $pageDescription }}<meta property="og:description" content="{{ . }}">{{ end }}
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ $canonicalURL }}">
+    {{ with $imageURL }}<meta property="og:image" content="{{ . }}">{{ end }}
     <meta name="twitter:site" content="@shazow">
     <meta name="twitter:creator" content="@shazow">
-    {{ if .IsPage -}}
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:description" content="{{ .Summary }}" />
-    {{ if .Params.image }}<meta name="twitter:image" content="{{ .Permalink }}{{ .Params.image }}" />{{ end }}
-    {{ else -}}
-    <meta name="twitter:title" content="{{ .Site.Title }}" />
-    <meta name="twitter:description" content="{{ .Site.Params.description | htmlEscape }}" />
-    {{ end }}
+    <meta name="twitter:card" content="{{ if $imageURL }}summary_large_image{{ else }}summary{{ end }}">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    {{ with $pageDescription }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+    {{ with $imageURL }}<meta name="twitter:image" content="{{ . }}">{{ end }}
 </head>
 
 

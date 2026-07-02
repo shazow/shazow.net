@@ -34,9 +34,26 @@
 {{ define "title" }}{{ .Title }} | shazow.net{{ end }}
 {{ define "extra_head" -}}
     <link href="/css/syntax.css" media="screen" rel="stylesheet" type="text/css" />
-    {{ if .Params.canonical -}}
-    <link rel="canonical" href="{{ .Params.canonical }}" />
-    {{ end }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">
+    {{ end -}}
+    {{ $pageDescription := partial "seo-description.html" . -}}
+    {{ $canonicalURL := .Permalink -}}
+    {{ with .Params.canonical }}{{ $canonicalURL = . }}{{ end -}}
+    {{ $schema := dict
+        "@context" "https://schema.org"
+        "@type" "BlogPosting"
+        "headline" .Title
+        "description" $pageDescription
+        "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+        "url" $canonicalURL
+        "mainEntityOfPage" $canonicalURL
+        "author" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.BaseURL)
+        "publisher" (dict "@type" "Person" "name" .Site.Params.author "url" .Site.BaseURL)
+    -}}
+    <script type="application/ld+json">{{ jsonify $schema | safeJS }}</script>
 {{ end }}
 {{ define "tail" -}}
     {{ $js := resources.Get "js/post.js" | fingerprint }}
