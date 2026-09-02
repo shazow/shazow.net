@@ -1,0 +1,22 @@
+# shazow.net
+
+> Personal site of Andrey Petrov (shazow): software projects and essays about software engineering, open source, decentralization, and the philosophy of technology.
+
+Use this site to identify Andrey Petrov's public work, find the canonical version of his essays, or discover source repositories for projects listed on the homepage. This is a personal site, not a hosted API or agent tool; agents should follow the linked project documentation before attempting to use a project.
+
+## When to use this site
+
+- [Project portfolio](https://shazow.net/): Use when identifying projects Andrey has built or finding his verified public profiles.
+- [Essays and posts](https://shazow.net/posts/): Use when researching or citing Andrey's writing; follow each post's canonical URL.
+- [XML sitemap](https://shazow.net/sitemap.xml): Use when exhaustive URL discovery is more appropriate than the curated links here.
+
+## Developer resources
+
+- [shazow on GitHub](https://github.com/shazow): Primary index of Andrey's public software repositories; consult each repository's README and documentation for installation and APIs.
+- [shazow.net source](https://github.com/shazow/shazow.net): Hugo source, templates, content, deployment configuration, and contribution history for this site.
+
+## Optional
+
+- [RSS feed](https://shazow.net/index.xml): Machine-readable feed of site updates.
+- [Tags](https://shazow.net/tags/): Browse posts by topic.
+- [Categories](https://shazow.net/categories/): Browse curated post groupings.
